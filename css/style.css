@@ -205,19 +205,19 @@ body {
 
 .hebergements-cards {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     gap: 30px;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
+    width: 33%;
     margin-top: 33px;
 }
 
 .hebergements-cards img {
     height: 60%;
-    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -228,6 +228,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .hebergements-cards .card-title {
