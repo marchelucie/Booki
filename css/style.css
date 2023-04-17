@@ -207,20 +207,20 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
     gap: 30px;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: 210px;
     margin-top: 33px;
 }
 
 .hebergements-cards img {
-    width: 250px;
+    width: auto;
     height: 60%;
+    width: 220px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
