@@ -10,12 +10,12 @@ header{
 }
 
 .logo{
-    height: 20px;
-    margin: 20px 0 20px 0;
+    height: 19px;
+    margin: 30px 0;
 }
 
 .headline {
-    margin: 35px 0 35px 0;
+    margin: 30px 0;
 }
 
 .headline h1, p {
@@ -30,13 +30,17 @@ nav{
     }
 
 li{
-    border-top: 5px solid white;
+    border-top: 2px solid white;
     padding-top: 10px;
     }
 
 li:hover{
-    border-top: 5px solid #0065FC;
+    border-top: 2px solid #0065FC;
     padding-top: 10px;
+}
+
+li a:hover{
+    color: #0065FC;
 }
 
 a{
@@ -46,9 +50,9 @@ a{
 
 .searchbar{
     display: flex;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    width: 380px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 377px;
     justify-content: space-around;
     align-items: center; 
 }
@@ -57,7 +61,7 @@ a{
     background-color: #0065FC;
     width: 135px;
     padding: 15px;
-    height: 50px;
+    height: 48px;
     border-radius: 0 20px 20px 0;
     color: white;
     font-weight: bold;
@@ -68,10 +72,10 @@ a{
 .searcharea {
     font-weight: bold;
     font-size: 1.1em;
-    border: none;
     text-align: center;
-    height: 50px;
+    height: 44px;
     width: 195px;
+    border: 2px solid #F2F2F2;
 }
 
 .location-dot{
@@ -89,8 +93,8 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     height: 50px;
     align-items: center;
 }
@@ -115,7 +119,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .info-icone {
@@ -124,8 +128,8 @@ a{
     align-items: center;
     border: #F2F2F2 1px solid;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 
 :root {
@@ -205,14 +209,15 @@ body {
 
 .hebergements-cards {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 30px;
+    width: 33%;
+
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: 33%;
     margin-top: 33px;
 }
 
