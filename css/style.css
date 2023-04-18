@@ -307,7 +307,49 @@ body {
     margin-bottom: 5px;
 }
 
+/********* Activités *************/
 
+.activites{
+    margin-top: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/*        *****activable au besoin si rajout d'icone******
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/ 
+.activites-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.activites-cards .card {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 25%;
+    height: 439px;
+    margin-top: 30px;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+    margin: 0;
+    padding: 20px 0 20px 15px;
+    box-sizing: border-box;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
