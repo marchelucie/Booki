@@ -309,7 +309,7 @@ body {
 
 /********* Activités *************/
 
-.activites{
+.activites {
     margin-top: 30px;
     padding: 30px;
     margin-bottom: 30px;
@@ -322,23 +322,23 @@ body {
     align-items: center;
 }
 */ 
-.activites-cards{
+.activites-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
+    justify-content: space-around;
 }
 
 .activites-cards .card {
     display: flex;
     margin-top: 30px;
+    min-width: 300px;
+    padding: 0;
     flex-direction: column;
-    width: 100%;
 }
 
 .activites-cards img {
     width: 100%;
-    min-height: 380px;
+    height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
