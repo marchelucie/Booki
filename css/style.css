@@ -3,7 +3,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -22,24 +22,24 @@ header{
     margin: 10px 0 10px 0;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     gap: 100px;
     list-style-type: none;  /*fait disparaitre les puces de la liste */
     }
 
-li{
+li {
     border-top: 2px solid white;
     padding-top: 10px;
     }
 
-li:hover{
+li:hover {
     border-top: 2px solid #0065FC;
     padding-top: 10px;
 }
 
-li a:hover{
+li a:hover {
     color: #0065FC;
 }
 
@@ -48,7 +48,7 @@ a{
     text-decoration: none;   /* enleve les effets par défaut des liens */
 }
 
-.searchbar{
+.searchbar {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -57,7 +57,7 @@ a{
     align-items: center; 
 }
 
-.searchbutton{
+.searchbutton {
     background-color: #0065FC;
     width: 135px;
     padding: 15px;
@@ -78,7 +78,7 @@ a{
     border: 2px solid #F2F2F2;
 }
 
-.location-dot{
+.location-dot {
     display:flex;
     background-color: #F2F2F2;
     width: 50px;
@@ -184,11 +184,11 @@ body {
     font-weight: 700;
 }
 
-.neutral-star{
+.neutral-star {
     color: var(--main-bg-color)
 }
 
-.activites{
+.activites {
     padding-left: 30px;
 }
 
@@ -216,26 +216,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.hebergements-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-.hebergements-cards .card{
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
-    max-height: 200px;
-    margin-top: 30px;
+    height: 210px;
+    min-width: 235px;
 }
 
 .hebergements-cards img {
-    height: 55%;
+    height: 60%;
+    max-width: 244px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -325,7 +327,6 @@ body {
 .activites-cards {
     display: flex;
     gap: 30px;
-    justify-content: space-around;
 }
 
 .activites-cards .card {
