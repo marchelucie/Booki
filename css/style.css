@@ -188,10 +188,6 @@ body {
     color: var(--main-bg-color)
 }
 
-.activites {
-    padding-left: 30px;
-}
-
 /*************Footer ************/
 
 .footer {
@@ -332,19 +328,19 @@ body {
 /********* Activités *************/
 
 .activites {
+    display: flex;
+    flex-direction : column;
     margin-top: 35px;
     margin-bottom: 35px;
     padding: 30px;
-    width: 100%;
 }
 
-/*        *****activable au besoin si rajout d'icone******
 .activites-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-*/ 
+ 
 .activites-cards {
     display: flex;
     gap: 30px;
@@ -354,9 +350,10 @@ body {
 .activites-cards .card {
     display: flex;
     margin-top: 30px;
-    width: 300px;
+    width: 289px;
     padding: 0;
     flex-direction: column;
+    justify-content: center;
 }
 
 .activites-cards img {
