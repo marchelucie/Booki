@@ -64,10 +64,13 @@ a{
     padding: 15px;
     height: 48px;
     border-radius: 0 20px 20px 0;
+    border: none;
+}
+
+.searchbutton a {
     color: white;
     font-weight: bold;
-    font-size: 1.1em;
-    border: none;
+    font-size: 1.2em;
 }
 
 .searcharea {
@@ -253,7 +256,7 @@ body {
 
 .hebergements-cards img {
     height: 60%;
-    width: 244px;
+    width: 236px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
