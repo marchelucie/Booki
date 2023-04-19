@@ -161,7 +161,7 @@ body {
 }
 
 .section-titleh3 {
-    margin: 0;
+    margin: 30px 0 0 0;
     font-size: 18px;
 }
 
@@ -244,9 +244,8 @@ body {
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
-    margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
@@ -254,12 +253,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 210px;
-    min-width: 242px;
 }
 
 .hebergements-cards img {
     height: 60%;
-    max-width: 244px;
+    width: 244px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -337,6 +335,7 @@ body {
     margin-top: 35px;
     margin-bottom: 35px;
     padding: 30px;
+    width: 100%;
 }
 
 /*        *****activable au besoin si rajout d'icone******
@@ -349,12 +348,13 @@ body {
 .activites-cards {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .activites-cards .card {
     display: flex;
     margin-top: 30px;
-    min-width: 290px;
+    width: 300px;
     padding: 0;
     flex-direction: column;
 }
