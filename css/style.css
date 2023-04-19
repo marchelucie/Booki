@@ -245,7 +245,7 @@ body {
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     margin-bottom: 30px;
     flex-wrap: wrap;
@@ -255,7 +255,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 210px;
-    min-width: 235px;
+    min-width: 242px;
 }
 
 .hebergements-cards img {
