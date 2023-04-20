@@ -61,14 +61,14 @@ a{
     margin-bottom: 35px;
     height: 49px;
     width: 377px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; 
 }
 
 .location-dot {
     display:flex;
     background-color: #F2F2F2;
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -76,11 +76,12 @@ a{
 }
 
 .searcharea {
+    display: flex;
     font-weight: bold;
     font-size: 1.1em;
-    text-align: center;
-    height: 44px;
-    width: 195px;
+    height: 45px;
+    width: 280px;
+    padding-left: 20px;
     border: 2px solid #F2F2F2;
 }
 
@@ -102,7 +103,7 @@ a{
 .filterbar {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    column-gap: 15px;
     margin-bottom: 35px;
     height: 50px;
     align-items: center;
@@ -110,13 +111,15 @@ a{
 
 .boutonfiltre {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     border: #F2F2F2 2px solid;
     border-radius: 30px;
-    padding: 8px 20px 8px 20px;
-    height: 30px;  
-    max-width: 173px;
+    padding: 0 20px 0 20px;
+    white-space: nowrap;
+    height: 50px;  
+    width: 173px;
 }
 
 .boutonfiltre:hover {
@@ -413,8 +416,7 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
     .populaires-cards {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        column-gap: 30px;
     }
 
     .populaires-cards .card {
@@ -454,15 +456,56 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container {
+        padding: 0 10px 0 10px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+
+    nav li {
+        border-bottom: 2px solid white;
+        padding: 10px;
+        border-top: 0;
+        }
+
+    nav li:hover {
+        border-bottom: 2px solid #0065FC;
+        padding: 10px;
+        border-top: 0;
+    }
+     
+    .searcharea {
+        margin-left: 50px;
+        position: absolute;
+    }
     .searchbutton{
         width: 50px;
         height: 50px;
         border-radius: 20px;
+        position: absolute;
+        margin-left: 327px;
     }
+
     span.icon {display: inline-block}
     span.text {display: none}          /* fait disparaitre le texte */
 
-    .populaires-cards .card {
+    .filterbar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        height: auto;
+    }
+
+    .boutonfiltre {
+        width: 270px;
+    }
+
+    .boutonfiltre h3 {
+        font-size: 14px;
+    }
+    
+    .populaires-cards {
         width: 335px;
     }
 
