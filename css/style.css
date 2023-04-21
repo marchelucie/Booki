@@ -69,7 +69,7 @@ a{
     display:flex;
     background-color: #F2F2F2;
     min-width: 50px;
-    height: 50px;
+    height: 51px;
     align-items: center;
     justify-content: center;
     border-radius: 20px 0 0 20px;
@@ -88,16 +88,13 @@ a{
 .searchbutton {
     background-color: #0065FC;
     width: 132px;
-    padding: 15px;
+    padding: 10px;
     height: 49px;
     border-radius: 0 20px 20px 0;
     border: none;
-}
-
-.searchbutton a {
     color: white;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .filterbar {
@@ -155,17 +152,14 @@ a{
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;              /* centrer la page pour les affichages > 1440 px */
-    margin-right: auto;
-    max-width: 1440px;
     margin-top: 0;       /*Pour faire disparaitre la marge du haut*/
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    margin-left: auto;              /* centrer la page pour les affichages > 1440 px */
+    margin-right: auto;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -266,7 +260,7 @@ body {
 }
 
 .hebergements-cards img {
-    height: 60%;
+    height: 120px;
     width: 240px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -457,7 +451,10 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container {
-        padding: 0 10px 0 10px;
+        margin-left: auto;              /* centrer la page pour les affichages > 1440 px */
+        margin-right: auto;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
     nav ul {
         gap: 20px;
@@ -475,20 +472,23 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
         border-top: 0;
     }
      
+    .searchbar {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
     .searcharea {
-        margin-left: 50px;
-        position: absolute;
+        width: 100%;
+        margin-right: -20px;
     }
     .searchbutton{
         width: 50px;
         height: 50px;
         border-radius: 20px;
-        position: absolute;
-        margin-left: 327px;
     }
 
     span.icon {display: inline-block}
-    span.text {display: none}          /* fait disparaitre le texte */
+    span.text {display: none}          /* fait disparaitre le texte et afficher l'icone dans la barre de recherche */
 
     .filterbar {
         display: flex;
