@@ -60,7 +60,7 @@ a {
     margin-top: 35px;
     margin-bottom: 35px;
     height: 49px;
-    width: 377px;
+    width: auto;
     justify-content: flex-start;
 }
 
@@ -80,7 +80,7 @@ a {
     font-weight: bold;
     font-size: 1.1em;
     height: 45px;
-    width: auto;
+    width: 195px;
     border: 2px solid #F2F2F2;
 }
 
