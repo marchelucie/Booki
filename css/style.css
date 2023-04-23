@@ -6,30 +6,31 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
+    height: 79px; 
 }
 
 .logo {
+    align-self: center;
     height: 19px;
-    margin: 30px 0;
+    
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    gap: 68px;
     margin: 0;
     list-style-type: none;  /*fait disparaitre les puces de la liste */
 }
 
 nav li {
-    border-top: 2px solid white;
-    padding-top: 10px;
+    border-top: 2px solid transparent;
+    padding-top: 14px;
 }
 
 nav li:hover {
     border-top: 2px solid #0065FC;
-    padding-top: 10px;
+    padding-top: 14px;
 }
 
 nav li a:hover {
@@ -47,12 +48,12 @@ a {
     margin: 30px 0 35px 0;
 }
 
-.headline h1 {
+.headline h2 {
     margin: 0;
 }
 
 .headline p {
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .searchbar {
@@ -61,7 +62,6 @@ a {
     margin-bottom: 35px;
     height: 49px;
     width: auto;
-    justify-content: flex-start;
 }
 
 .location-dot {
@@ -71,14 +71,14 @@ a {
     height: 51px;
     align-items: center;
     justify-content: center;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
 }
 
 .searcharea {
     display: flex;
     text-align: center;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 18px;
     height: 45px;
     width: 195px;
     border: 2px solid #F2F2F2;
@@ -86,15 +86,16 @@ a {
 
 .searchbutton {
     background-color: #0065FC;
-    padding: 10px;
-    height: 49px;
     width: 132px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 18px;
 }
+
+span.icon {display: none}
+span.text {display: inline-block} /* fait disparaitre l'icone de recherche */
 
 .filterbar {
     display: flex;
@@ -111,10 +112,10 @@ a {
     align-items: center;
     gap: 10px;
     border: #F2F2F2 2px solid;
-    border-radius: 30px;
-    padding: 0 20px 0 20px;
+    border-radius: 25px;
+    padding: 0 19px 0 19px;
     white-space: nowrap;
-    height: 50px;  
+    height: 100%;  
 }
 
 .boutonfiltre:hover {
@@ -133,7 +134,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #F2F2F2 1px solid;
+    border: #d9d9d9 1px solid;
     border-radius: 50%;
     width: 24px;
     height: 24px;
@@ -167,11 +168,10 @@ body {
     font-size: 22px;
 }
 
-.section-titleh3 {
+.hebergements h4 {
     margin: 30px 0 0 0;
     font-size: 18px;
 }
-
 .card {
     background-color: white;
     border-radius: 20px;
@@ -195,27 +195,6 @@ body {
     color: var(--main-bg-color)
 }
 
-/*************Footer ************/
-
-.footer {
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px 20px 20px 20px;
-}
-
-.footer ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-    width: 425px;
-}
-
-.footer li {
-    margin-top: 15px;
-}
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -234,7 +213,7 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 68%;
-}
+}    
 
 .hebergements-title {
     display: flex;
@@ -254,32 +233,35 @@ body {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    height: 207px;
+    height: 200px;
     width: 236px;
 }
 
 .hebergements-cards img {
-    height: 124px;
+    height: 115px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .hebergements-cards .card-content {
-    padding: 10px 0 10px 10px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     box-sizing: border-box;
     height: 100%;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin-top: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
 
@@ -346,18 +328,18 @@ body {
  
 .activites-cards {
     display: flex;
-    justify-content: space-evenly;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .activites-cards .card {
     display: flex;
     margin-top: 30px;
     width: 289px;
+    height: 439px;
     padding: 0;
     flex-direction: column;
-    justify-content: center;
 }
 
 .activites-cards img {
@@ -369,12 +351,30 @@ body {
 
 .activites-cards .card-title {
     margin: 0;
-    padding: 20px 0 20px 15px;
+    padding: 20px 0 20px 20px;
     box-sizing: border-box;
 }
 
-span.icon {display: none}
-span.text {display: inline-block} /* fait disparaitre l'icone */
+/*************Footer ************/
+
+.footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 20px 20px 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    width: 425px;
+}
+
+.footer li {
+    margin-top: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -467,7 +467,7 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
     }
 
     nav li {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid transparent;
         padding: 10px;
         border-top: 0;
     }
@@ -480,9 +480,7 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
     
     .searchbar {
         display: flex;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: center;
     }
 
     .searcharea {
@@ -496,7 +494,7 @@ span.text {display: inline-block} /* fait disparaitre l'icone */
         width: 50px;
         height: 50px;
         padding: 0;
-        border-radius: 20px;
+        border-radius: 15px; 
     }
 
     span.icon {display: inline-block}
