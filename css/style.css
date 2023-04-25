@@ -76,9 +76,9 @@ a {
 
 .searcharea {
     display: flex;
-    text-align: center;
     font-weight: bold;
     font-size: 18px;
+    padding-left: 20px;
     height: 45px;
     width: 195px;
     border: 2px solid #F2F2F2;
@@ -168,9 +168,10 @@ body {
     font-size: 22px;
 }
 
-.hebergements h4 {
+.hebergements p {
     margin: 30px 0 0 0;
     font-size: 18px;
+    font-weight: bold;
 }
 .card {
     background-color: white;
@@ -225,7 +226,6 @@ body {
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -259,6 +259,9 @@ body {
 .hebergements-cards .card-subtitle {
     margin-top: 8px;
     margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: normal;
+
 }
 
 .hebergements-cards .card-rating {
@@ -329,8 +332,8 @@ body {
 .activites-cards {
     display: flex;
     gap: 30px;
+    max-width: 1440px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .activites-cards .card {
@@ -413,13 +416,12 @@ body {
 
     .populaires-cards {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
         column-gap: 30px;
     }
 
     .populaires-cards .card {
-        width: 275px;
+        width: 266px;
     }
 
     .populaires-cards .card-title {
@@ -443,14 +445,6 @@ body {
         font-size: smaller;
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer h3 {
-        margin-top: 40px;
-    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -486,8 +480,6 @@ body {
     .searcharea {
         width: 277px;
         margin-right: -15px;
-        text-align: left;
-        padding-left: 20px;
     }
     
     .searchbutton{
@@ -516,7 +508,7 @@ body {
     }
     
     .populaires-cards .card {
-        width: 335px;
+        max-width: 335px;
     }
 
     .activites-cards .card {
@@ -525,5 +517,17 @@ body {
 
     .activites-cards img {
         height: 74%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h3 {
+        margin-top: 40px;
+    }
+    footer ul {
+        max-width: 425px;
     }
 }
