@@ -1,5 +1,6 @@
 /****** General ***********/
 * {
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -7,6 +8,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --container: 1340px;
 }
 
 .fa-solid {
@@ -18,11 +20,9 @@ body {
     justify-content: center;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+.site-container {
+    width: calc(100% - 50px);
+    max-width: var(--container);
 }
 
 .section-title {
@@ -63,7 +63,6 @@ body {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -100,7 +99,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -108,7 +106,7 @@ body {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards .card-price {
     margin: 0;
 }
 
@@ -151,7 +149,7 @@ body {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires-cards .card-price {
         font-size: 13px;
     }
 }
