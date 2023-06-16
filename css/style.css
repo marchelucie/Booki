@@ -29,7 +29,7 @@ body {
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     display: flex;
-    margin-top: 33px;
+    width: 100%;
 }
 
 .cards__img {
@@ -37,6 +37,19 @@ body {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+.card--col {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cards__img--col {
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-fit: cover;
 }
 
@@ -62,32 +75,18 @@ body {
     margin-bottom: 5px;
 }
 
-
-.card--col {
-    flex-direction: column;
-    gap: 8px;
-}
-
-.cards__img--col {
-    width: 100%;
-    height : clamp(200px, 7vw, 450px);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-
 .euro {
     font-weight: 700;
 }
 
-.neutralStar {
-    color: var(--main-bg-color);
+.neutral-star {
+    color: var(--main-bg-color) !important;
 }
 
 .title {
     font-weight: 700;
     font-size: 22px;
-    margin: 0;
+    margin-bottom: 33px;
 }
 
 .lead__text {
@@ -104,6 +103,26 @@ body {
     color: #000;
 }
 
+/****** General Media queries ***********/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .card__title {
+        font-size: 14px;
+    }
+
+    .card__subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .main {
+        padding: 0;
+        width: 100vw;
+    }
+}
 
 /****** Header ***********/
 
@@ -389,26 +408,111 @@ body {
     width: 32%;  
 }
 
-.populaires__title {
+.populaires__cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
+
+    .populaires__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+        .fa-star {
+            color: var(--main-color);
+        }
+
+        .card-rating__icon {
+            color: var(--main-color);
+        }
+
+/****** Hébergements et populaires Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+        .hebergements-and-populaires {
+            flex-direction: column;
+        }
+        
+        .hebergements {
+            width: 100%;
+        }
+        
+        .populaires {
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        .populaires__cards {
+            flex-direction: row;
+            gap: 20px;
+        }
+        
+        .populaires__cards .card {
+            width: 30%;
+        }
+    }
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+        .hebergements-and-populaires {
+            flex-direction: column-reverse;
+        }
+    
+        .hebergements {
+            background-color: #fff  !important;
+        }
+
+        .hebergements__see-more {
+            padding: 15px;
+        }
+    
+        .hebergements-and-populaires section  {
+            border-radius: 0;
+        }
+    
+        .populaires {
+            margin-top: 0;
+        }
+    
+        .populaires__cards .card {
+            width: 100%;
+        }
+    
+        .hebergements__cards {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+    }
 
 /****** Activités ***********/
 
 
 .city-activities {
-  padding: 30px 30px;
+  padding: 30px;
+  margin-bottom: 35px;
 }
-.city-activities__cards {
-    display: flex;
-    gap: 30px;
-}
+    .city-activities__cards {
+        display: flex;
+        gap: 30px;
+    }
 
-.city-activities__card {
-    padding: 0;
-}
+        .city-activities__card {
+            padding: 0;
+        }
+
+/****** Activités Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+        .city-activities__cards, .populaires__cards {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
 
 /****** Footer ***********/
 
@@ -420,112 +524,23 @@ body {
     padding: 20px 15px;
 }
 
-.footer__section {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 15px;
-}
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires__cards {
+    .footer__section {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        flex: 1;
+        gap: 15px;
     }
 
-    .populaires__cards .card {
-        width: 30%;
-    }
-
-    .card__title {
-        font-size: 14px;
-    }
-
-    .card__subtitle {
-        font-size: 13px;
-    }
-}
-
+/****** Footer Media queries ***********/
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
+        .footer {
+            flex-direction: column;
+            padding: 30px 30px;
+        }
 
-    
-
-    .main {
-        padding: 0;
-        width: 100vw;
-    }
-
-    .city-activities__cards {
-        flex-direction: column;
-    }
-    
-
-    
-
-    .hebergements-and-populaires {
-        flex-direction: column-reverse;
-    }
-
-    .hebergements {
-        background-color: #fff  !important;
-    }
-
-    .hebergements-and-populaires section  {
-        border-radius: 0;
-    }
-
-    .populaires__cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .populaires {
-        margin-top: 0;
-    }
-
-    .populaires__cards .card {
-        width: 100%;
-    }
-
-    .hebergements__cards {
-        grid-template-columns: 1fr;
-    }
-
-    .city-activities__cards {
-        gap: 0px;
-        margin-top: 0;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding: 30px 30px;
-    }
-
-    .footer__section:not(:nth-child(2)) {
-        margin: 50px 0;
-    }
-    
+        .footer__section:not(:first-child) {
+            margin-top: 50px
+        }
 }
