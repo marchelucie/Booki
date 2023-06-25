@@ -7,7 +7,9 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    --second-color: #68a6fc;
+    --second-color: #3865fc;
+    --black-color:#000;
+    --border-btn:#d9d9d9;
 }
 
 .fa-solid {
@@ -18,6 +20,8 @@ body {
     display: flex;
     justify-content: center;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -56,9 +60,14 @@ body {
 }
 
 /************* Header **************/
-
+header{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 /*******      NAVBAR  ************/
-header .container-nav{
+.container-nav{
     width: 100%;
     height: 15%;
     display: flex;
@@ -66,22 +75,21 @@ header .container-nav{
     align-items: center;
 }
 
-.container-nav .logo-booki{
-    width: 5rem;
-    height: 2rem;
+.logo-booki{
+    width: 4rem;
 }
 
-header .container-nav nav{
+.container-nav nav{
     width: 30%;
 }
 
-header .container-nav nav ul{
+.container-nav nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-header .container-nav nav ul li a{
+.container-nav nav ul li a{
     color: var(--second-color);
     font-weight: 400;
     text-decoration: none;
@@ -89,11 +97,10 @@ header .container-nav nav ul li a{
     position: relative;
     padding: 10px;
 }
-
-header .container-nav nav ul li a::after{
+.container-nav nav ul li a::after{
     content: "";
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     height: 0.1rem;
     width: 0;
     left: 0;
@@ -101,64 +108,95 @@ header .container-nav nav ul li a::after{
     transition: 0.3s;
 }
 
-header .container-nav nav ul li a:hover::after{
+.container-nav nav ul li a:hover::after{
     width: 100%;
 }
 
 /**************  Barre de Recherche & Filtres ****************/
 .container-form{
-    height:100vh;
+    height: 42vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
+/*    Title Header      */
+.title-form h1{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.size-sub-title{
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+/*     Fonction recherche    */
 .container-form form label{
-    padding: 10px;
+    padding: 13px;
     border-radius: 15px 0 0 15px;
     background-color: var(--main-bg-color);
 }
 
 .container-form form label .fa-location-dot{
-    color: #000;    
+    color: var(--black-color);    
 }
 
 .container-form form input[type=search]{
-    padding: 10px;
+    padding: 13px;
     border: none;
+}
+#recherche::placeholder{
+    font-weight: 700;
+    color: var(--black-color)
 }
 
 .container-form form .btn-form{
     background-color: var(--main-color);
     border: none;
-    padding: 10px;
+    padding: 13px;
     border-radius: 0 15px 15px 0;
-    font-weight: 700;
     color: #fff;
+} 
+.btn-txt{
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 .btn-icone{
     display: none;
 }
 
 /*********** Filtres ************/
-header .filtres{
-    width: 70%;
+.filtres{
+    width: 65%;
     display: flex;
     justify-content: space-between;
 }
 
-header .filtres .container-filtre{
-    padding: 0px 10px 0 10px;
-    border-radius: 25px;
-    border: 2px solid var(--main-bg-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.filtres h2{
+    font-size: 1rem;
 }
 
-header .filtres .container-filtre p{
-    
+.filtres .container-filtre{
+    padding: 0 15px 0 15px;
+    border-radius: 25px;
+    border: 2px solid var(--border-btn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtres .container-filtre:hover{
+background-color: var(--filter-bg-color);
+}
+
+.filtres .container-filtre p{
     font-weight: 600;
     text-transform: capitalize;
-    
+    margin: 0 0 0 10px;    
 }
 
 /****** Hebergements And Populaires ***********/
