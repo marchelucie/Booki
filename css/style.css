@@ -93,7 +93,7 @@ header{
     color: var(--second-color);
     font-weight: 400;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: relative;
     padding: 10px;
 }
@@ -112,9 +112,9 @@ header{
     width: 100%;
 }
 
-/**************  Barre de Recherche & Filtres ****************/
-.container-form{
-    height: 42vh;
+/************** Titles & Barre de Recherche & Filtres & Info ****************/
+.container-items{
+    height: 45vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -135,17 +135,17 @@ header{
 }
 
 /*     Fonction recherche    */
-.container-form form label{
+.container-items form label{
     padding: 13px;
     border-radius: 15px 0 0 15px;
     background-color: var(--main-bg-color);
 }
 
-.container-form form label .fa-location-dot{
+.container-items form label .fa-location-dot{
     color: var(--black-color);    
 }
 
-.container-form form input[type=search]{
+.container-items form input[type=search]{
     padding: 13px;
     border: none;
 }
@@ -154,12 +154,13 @@ header{
     color: var(--black-color)
 }
 
-.container-form form .btn-form{
+.container-items form .btn-form{
     background-color: var(--main-color);
     border: none;
     padding: 13px;
     border-radius: 0 15px 15px 0;
     color: #fff;
+    cursor: pointer;
 } 
 .btn-txt{
     font-weight: 600;
@@ -171,7 +172,7 @@ header{
 
 /*********** Filtres ************/
 .filtres{
-    width: 65%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -187,6 +188,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .filtres .container-filtre:hover{
@@ -197,6 +199,16 @@ background-color: var(--filter-bg-color);
     font-weight: 600;
     text-transform: capitalize;
     margin: 0 0 0 10px;    
+}
+
+/*     Informations     */
+
+.info{
+    width: 36%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /****** Hebergements And Populaires ***********/
