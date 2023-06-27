@@ -139,6 +139,8 @@ header{
     padding: 13px;
     border-radius: 15px 0 0 15px;
     background-color: var(--main-bg-color);
+    position: relative;
+    right: -2px;
 }
 
 .container-items form label .fa-location-dot{
@@ -151,7 +153,7 @@ header{
 }
 #recherche::placeholder{
     font-weight: 700;
-    color: var(--black-color)
+    color: var(--black-color);
 }
 
 .container-items form .btn-form{
@@ -161,6 +163,8 @@ header{
     border-radius: 0 15px 15px 0;
     color: #fff;
     cursor: pointer;
+    position: relative;
+    left: -3px;
 } 
 .btn-txt{
     font-weight: 600;
@@ -229,6 +233,41 @@ background-color: var(--filter-bg-color);
     width: 65%;
 }
 
+.txt-hebergement{
+    margin-bottom: 0;
+}
+
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card-title{
+    margin-bottom: 3px;
+}
+
+.hebergements-cards .card-subtitle{
+    margin-top: 3px;
+}
+.card-hebergements{
+    width: 30%;
+    margin: 15px 0 15px 0;
+}
+.img-hebergements{
+    width: 100%;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+}
+
+.lien-hebergement{
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 20px 0 20px 0;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
