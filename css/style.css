@@ -345,29 +345,38 @@ padding-left: 10px;
 }
 
 /************** Footer ***************/
+footer{
+    background-color: var(--main-bg-color);
+}
 
 .footer-box{
-    width: 100%;
-    background-color: var(--main-bg-color);
+    width: 80%;
+    height: 50%;
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.colonne-footer{
+    padding: 0 0 0 15px;
+    height: 40%;
+
 }
 
 .colonne-footer li{
+    margin-bottom: 15px;
     list-style: none;
 }
 
 .colonne-footer li a{
     text-decoration: none;
     color: var(--black-color);
-    
+    margin-bottom: 10px;
+    font-size: 0.8rem;
 }
 
 .title-colonne{
     font-weight: 700;
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
