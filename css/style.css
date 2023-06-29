@@ -433,7 +433,25 @@ footer{
     .hebergements {
         width: 100%;
     }
+/************ hebergements ************/
 
+    .card-hebergements{
+      display: flex;
+    }
+
+    .img-hebergements{
+        width: 40%;
+        margin-right: 10px;
+        height: 115px;
+        border-radius: 15px 0 0 15px;
+        object-fit: cover;
+    }
+
+    /*.card-title , .card-subtitle{
+        font-size: 1rem;
+    }*/
+    
+/*******  Populaire ***************/
     .populaires {
         width: 100%;
         margin-top: 50px;
