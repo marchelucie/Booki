@@ -95,7 +95,7 @@ header{
     text-decoration: none;
     font-size: 1rem;
     position: relative;
-    padding: 10px;
+    padding: 0 10px;
 }
 .container-nav nav ul li a::after{
     content: "";
@@ -104,7 +104,7 @@ header{
     height: 0.1rem;
     width: 0;
     left: 0;
-    top: 1%;
+    bottom: -40%;
     transition: 0.3s;
 }
 
@@ -148,7 +148,7 @@ header{
 }
 
 .container-items form input[type=search]{
-    padding: 13px;
+    padding: 13px 50px;
     border: none;
 }
 #recherche::placeholder{
@@ -166,17 +166,17 @@ header{
     position: relative;
     left: -3px;
 } 
+
 .btn-txt{
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-.btn-icone{
     display: none;
+   } 
+.btn-icone{
+    display: block;
 }
 
 /*********** Filtres ************/
 .filtres{
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -186,7 +186,7 @@ header{
 }
 
 .filtres .container-filtre{
-    padding: 0 15px 0 15px;
+    padding: 0 65px 0 15px;
     border-radius: 25px;
     border: 2px solid var(--border-btn);
     display: flex;
@@ -208,11 +208,15 @@ background-color: var(--filter-bg-color);
 /*     Informations     */
 
 .info{
-    width: 36%;
+    width: 50%;
     height: 10%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.icone-info{
+    padding-right: 15px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -383,6 +387,45 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+ /********* Header Navbar **********/
+
+    .container-nav nav ul li a{
+        padding: 5px; 
+    }
+
+    .container-nav nav ul li a::after{
+        top: -10%;
+    }
+
+/********* Recherche ************/
+    .container-items form input[type=search]{
+        padding: 13px;
+    }
+    .btn-txt{
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: block;
+    }
+    .btn-icone{
+        display: none;
+    }
+ 
+/*********** Filtres *********/
+
+    .filtres{
+        width: 90%;
+    }
+
+    .filtres .container-filtre{
+        padding: 0 15px 0 15px;
+    }
+    
+/************ Information **************/    
+    .info{
+        width: 100%;
+    }
+ /******** Hébergement & populaire ****/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -418,12 +461,6 @@ footer{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-    .btn-txt{
-        display: none;
-       } 
-    .btn-icone{
-        display: block;
-    }
 }
 @media (min-width: 768px) {
  
