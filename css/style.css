@@ -417,7 +417,11 @@ footer{
     }
 
     .items-filtres .filtre{
-        padding: 0 15px 0 15px;
+        padding: 0 15px;
+    }
+
+    .items-filtres .filtre p{
+        font-size: 0.7rem;
     }
     
 
@@ -483,8 +487,20 @@ footer{
 
 /* Section Filtre ************/
 
-    .items-filtres .filtre p{
-        font-size: 0.75rem;
+    .container-items{
+        height: auto;
+    }
+
+    .items-filtres{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-filtres{
+        flex-direction: column; 
+    }
+
+    .filtre{
+         width: 14rem; 
     }
 
 /**********  Activités ***************/
