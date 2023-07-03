@@ -113,7 +113,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     
 }
 
@@ -170,13 +170,13 @@ header{
 }
 
 /*********** Filtres ************/
-.filtres{
+.items-filtres{
     width: 90%;
     display: flex;
     gap: 1rem;
 }
 
-.filtres h2{
+.items-filtres h2{
     font-size: 1rem;
 }
 
@@ -184,7 +184,8 @@ header{
     display: flex;
     gap: 1rem;
 }
-.filtres .container-filtre{
+
+.items-filtres .filtre{
     padding: 0 65px 0 15px;
     border-radius: 25px;
     border: 2px solid var(--border-btn);
@@ -194,11 +195,11 @@ header{
     cursor: pointer;
 }
 
-.filtres .container-filtre:hover{
+.items-filtres .filtre:hover{
 background-color: var(--filter-bg-color);
 }
 
-.filtres .container-filtre p{
+.items-filtres .filtre p{
     font-weight: 600;
     text-transform: capitalize;
     margin: 0 0 0 10px;    
@@ -207,9 +208,10 @@ background-color: var(--filter-bg-color);
 /*     Informations     */
 
 .info{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     align-items: center;
+    gap: -0.7rem;
     margin-bottom: 10px;
 }
 
@@ -256,11 +258,11 @@ background-color: var(--filter-bg-color);
 }
 .card-hebergements{
     width: 30%;
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
 }
 .img-hebergements{
     width: 100%;
-    height: 115px;
+    height: 7rem;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
@@ -323,8 +325,8 @@ background-color: var(--filter-bg-color);
 }
 
 .container-activite-card{
-    width: 100%;
     display: flex;
+    gap: 2.5rem;
 }
 
 .card-activites{
@@ -332,7 +334,6 @@ background-color: var(--filter-bg-color);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: white;
     border-radius: 20px;
-    margin-right: 25px;
 }
 
 .img-activites{
@@ -411,18 +412,15 @@ footer{
  
 /*********** Filtres *********/
 
-    .filtres{
+    .items-filtres{
         width: 90%;
     }
 
-    .filtres .container-filtre{
+    .items-filtres .filtre{
         padding: 0 15px 0 15px;
     }
     
-/************ Information **************/    
-    .info{
-        width: 100%;
-    }
+
  /******** Hébergement & populaire ****/
     .hebergements-and-populaires {
         flex-direction: column;
@@ -444,10 +442,11 @@ footer{
         border-radius: 15px 0 0 15px;
         object-fit: cover;
     }
+/**********  Activités ***************/
+    .img-activites{
+        height: 12rem;
+    }
 
-    /*.card-title , .card-subtitle{
-        font-size: 1rem;
-    }*/
     
 /*******  Populaire ***************/
     .populaires {
@@ -472,12 +471,26 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+/*************** Footer **************/
+    .footer-box{
+        flex-direction: column;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-}
-@media (min-width: 768px) {
- 
+
+/* Section Filtre ************/
+
+    .items-filtres .filtre p{
+        font-size: 0.75rem;
+    }
+
+/**********  Activités ***************/
+
+    .img-activites{
+        height: 8rem;
+    }
+
 }
