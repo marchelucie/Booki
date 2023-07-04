@@ -203,7 +203,7 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1400px;
   padding: 0 50px;
   box-sizing: border-box;
 }
@@ -457,27 +457,28 @@ body {
 /*footer*/
 
 footer {
-  margin-top: 73px;
-
+  margin: 70px 50px 0 50px;
+  padding: 0;
+  /* margin-top: 73px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #f2f2f2;
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-around;
   height: auto;
-  bottom: -13px;
   position: relative;
 }
 footer ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  row-gap: 20px;
+  padding-left: 22px;
 }
 
 .footer-titre {
-  margin-bottom: 9px;
   font-size: 20px;
-  padding-right: 50px;
+}
+li a {
+  color: var(--blackColor);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
