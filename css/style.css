@@ -183,7 +183,7 @@ color: red;
 
 .info {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0;
   flex-direction: row;
   align-items: center;
 }
@@ -192,11 +192,13 @@ color: red;
   border: 1px solid var(--main-bg-color);
   border-radius: 30px;
   text-align: center;
-  width: 22px;
+  width: 16px;
+  font-size: 13px;
+  padding: 5px 4px;
 }
 
 .info p {
-  padding-left: 24px;
+  padding-left: 12px;
 }
 
 .main-container {
