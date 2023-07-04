@@ -171,7 +171,6 @@ body {
   color: var(--main-color);
 }
 .block-Filtres i {
-  /* background-color: var(--filter-bg-color); */
   border-radius: 50px;
   padding: 12px 14px 13px 14px;
 }
@@ -400,7 +399,6 @@ body {
 }
 
 .populaires-cards .card-rating {
-
   display: flex;
   flex-direction: row;
   column-gap: 4px;
@@ -412,32 +410,38 @@ body {
 .ActivitesaMarseille {
   height: auto;
   margin-top: 53px;
+  padding: 0 25px;
 }
 
 .lesActivites {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  column-gap: 17px;
+  column-gap: 17px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 26px;
 }
 
 .activites {
   background-color: white;
-  box-shadow: 8px 8px 11px -6px #0000002e;
+  box-shadow: 8px 8px 11px 6px #0000002e;
   display: flex;
   flex-direction: column;
-  border-radius: 27px;
+  border-radius: 20px;
 }
 
 .activites img {
   width: 100%;
+  height: 390px;
   object-fit: cover;
-  margin-top: -20px;
-  border-radius: 35px 35px 0px 0px;
+  /* margin-top: -20px; */
+  border-radius: 20px 20px 0px 0px;
 }
 
 .activites h6 {
   margin: 10px 48px -7px 18px;
   height: 37px;
+  color: var(--blackColor);
 }
 
 .ActivitesaMarseille h2 span {
@@ -446,7 +450,6 @@ body {
 .ActivitesaMarseille h2 {
   font-size: 20px;
   padding-bottom: 18px;
-  padding-left: 24px;
 }
 .photoMobil {
   display: none;
