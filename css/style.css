@@ -71,7 +71,6 @@ body {
 .cherche {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
 }
 
 /* /////////////////////block recherche//////////////////*/
@@ -101,8 +100,8 @@ body {
 
 /* arevoire */
 .input::placeholder {
-color: var(--blackColor);
-text-align: center;
+  color: var(--blackColor);
+  text-align: center;
 }
 .recherche {
   width: 136px;
@@ -251,12 +250,10 @@ text-align: center;
 }
 
 /****** Hebergements ***********/
-.hebergements {
-  width: 65%;
-}
 
 /*    section Hebergements à Marseille */
 .maisons {
+  background-color: red;
   display: grid;
   column-gap: 30px;
   padding: 0px;
@@ -280,7 +277,6 @@ text-align: center;
 }
 
 .hebergements h2 {
-  padding: 18px 31px;
   font-size: 20px;
 }
 
