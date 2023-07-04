@@ -113,8 +113,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    
+    gap: 2rem;   
 }
 
 /*    Title Header      */
@@ -167,6 +166,10 @@ header{
    } 
 .btn-icone{
     display: block;
+}
+
+.fa-magnifying-glass{
+    color: #fff;
 }
 
 /*********** Filtres ************/
@@ -450,8 +453,7 @@ footer{
     .img-activites{
         height: 12rem;
     }
-
-    
+ 
 /*******  Populaire ***************/
     .populaires {
         width: 100%;
@@ -483,7 +485,10 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+/********  Formaulaire de recherche *********/
+    form{
+        margin: 0 auto;
+    }
 
 /* Section Filtre ************/
 
