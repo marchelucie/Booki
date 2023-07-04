@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }
 
 :root {
@@ -14,53 +15,62 @@
 }
 
 body {
-  /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
   max-width: 1400px;
   margin: 0 auto;
 }
-/* sss */
-.icon img{
-        width: 100px;
+/*icon */
+.icon img {
+  width: 100px;
 }
-.header {
-  padding: 0 50px;
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding: 20px 50px;
 }
 .buttonHeader {
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 241px;
+}
+.buttonHeader a {
+  text-decoration: none;
+}
+.buttonHeader a:hover{
+    border-top: solid 3px var(--main-color);
+    padding-top:  33px; 
+}
+
+.hebarg {
+  color: black;
 }
 
 .buttonHeader li {
-  margin-right: 20px;
   text-decoration: none;
 }
 
-.hebarg:hover {
-  border-top: solid 3px var(--primaryColor);
+/* .hebarg:hover {
+  border-top: solid 3px var(--main-color);
   padding-top: 45px;
-}
+} */
 
-.titre h1 {
+.titre h1,
+.titre p {
   font-size: 22px;
+  padding: 0 50px;
 }
 .titre {
   margin-bottom: 20px;
-  padding: 0 50px;
 }
 
 .cherche {
   display: flex;
   flex-direction: column;
 }
-
-/* sss */
 
 .main-container {
   width: 100%;
