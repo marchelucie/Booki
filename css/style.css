@@ -100,9 +100,10 @@ body {
 }
 
 /* arevoire */
-/* .input placeholder{
-color: red;
-} */
+.input::placeholder {
+color: var(--blackColor);
+text-align: center;
+}
 .recherche {
   width: 136px;
   background-color: var(--main-color);
