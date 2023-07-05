@@ -1,5 +1,12 @@
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -30,4 +37,10 @@
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+  .activites img {
+     height: 222px;
+  }
+  .activites h6 {
+    margin: 16px 0px 10px 27px;
+}
 }
