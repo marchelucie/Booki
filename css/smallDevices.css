@@ -1,0 +1,48 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ... */
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    row-gap: 20px;
+  }
+
+  /* le buttonHeader */
+  .buttonHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .title-navbar:hover {
+    border-top: none;
+    border-bottom: solid 3px var(--main-color);
+  }
+  .hebarg:hover {
+    color: var(--main-color);
+  }
+  .buttonHeader a:hover {
+    border-top: none;
+  }
+
+  .title-navbar {
+    padding-bottom: 20px;
+    width: 50%;
+    border-bottom: solid 3px var(--main-bg-color);
+    text-align: center;
+  }
+
+  .titre {
+    margin-bottom: -10px;
+  }
+  .titre h1 {
+    font-size: 20px;
+  }
+
+  .titre p {
+    font-size: 14px;
+    margin-top: -15px;
+  }
+}
