@@ -1,11 +1,21 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
-
+  body {
+   max-width: 767.98px;
+    margin: 0 auto;
+  }
+  .main-container {
+  
+    padding: 0px;
+  }
+  .cherche {
+padding: 0 50px;
+  }
   .navbar {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     row-gap: 20px;
   }
 
@@ -34,15 +44,153 @@
     text-align: center;
   }
 
-  .titre {
+  /* .titre {
     margin-bottom: -10px;
-  }
-  .titre h1 {
+  } */
+  /* .titre h1 {
     font-size: 20px;
-  }
+  } */
 
   .titre p {
-    font-size: 14px;
+    /* font-size: 14px; */
     margin-top: -15px;
+  }
+
+  /* from*/
+
+  .input {
+    width: 80%;
+  }
+
+  /* le btn de recherche */
+  .recherche span {
+    display: none;
+  }
+
+  /*  la loupe le btn de recherche */
+  .recherche i {
+    display: block;
+    color: #ffff;
+  }
+
+  .recherche {
+    width: 60px;
+  }
+  .from-recherche {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  /* block*/
+
+  .block {
+    width: 95%;
+    margin: 0px;
+  display: flex;
+  flex-direction: column;
+  }
+.filtreOptions{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+ 
+.populaires-cards{
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.populaires-cards .card {
+    width:60%;
+}
+ .populaires-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12px;
+}
+ }
+ 
+
+  .hebergements {
+    order: 2;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-top: 8px;
+  }
+  .maisons {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+  .maisons a {
+    width: 90%;
+  }
+  .maison {
+    margin: 0px;
+  }
+
+  .hebergementInfo {
+    row-gap: 5px;
+    padding-left: 29px;
+  }
+
+  .ActivitesaMarseille h2 span {
+    display: block;
+    font-size: 18px;
+  }
+  .hebergements h2 {
+    font-size: 18px;
+    padding: 30px 0px 4px 35px;
+  }
+
+  .hebergementsHref span {
+    display: block;
+    font-size: 16px;
+  }
+  .hebergementsHref span b {
+    font-size: 16px;
+  }
+  .hebergementsHref {
+    margin: 18px 0px 3px 19px;
+  }
+
+  /*Activites à Marseille */
+  .ActivitesaMarseille h2 {
+    font-size: 18px;
+    padding-left: 22px;
+  }
+
+  .ActivitesaMarseille {
+    width: 90%;
+    margin-top: 0px;
+  }
+
+  .lesActivites {
+    flex-direction: column;
+    width: 100%;
+    grid-gap: 32px;
+  }
+
+  .activites {
+    border-radius: 20px;
+  }
+  .activites img {
+    height: 192px;
+  }
+
+  .activites h6 {
+    margin: 19px 17px 1px 18px;
+  }
+
+  .photoMobil {
+    display: block;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
