@@ -46,7 +46,7 @@ body {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: px;
 }
 
 .card {
@@ -139,7 +139,6 @@ body {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
-
 
 /****** Populaires ***********/
 .populaires {
