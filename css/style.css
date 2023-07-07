@@ -112,8 +112,31 @@ body {
     font-size: 16px;
 }
 
-.A123 {
-    background-color: #0065FC;
+.button-rechercher {
+    display: flex;
+}
+
+.button-rechercher input {
+    display: flex;
+    width: 377px;
+    height: 49px;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid var(--grey, #F2F2F2);
+    background: var(--white, #FFF);
+}
+
+.button-rechercher button {
+    display: flex;
+    height: 49px;
+    padding: 15px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: var(--white, #FFF);
+    
 }
 
 .infobar{
