@@ -3,18 +3,31 @@
 header{
     width: 100%;
     height: 79px;
-    background-color: transparent;
+    background-color: rgb(174, 234, 174);
 }
 
 .logo-header{
     width: 61.09px;
     height: 19px;
-    display: flex;
     padding: 30px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
 }
+
+.lien-header{
+    background-color: aqua;
+    margin-top: 0px;
+    margin-right: 25px;
+}
+
+.headerbooki{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 /****** General ***********/
@@ -34,6 +47,7 @@ header{
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -71,6 +85,23 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+/****** Info group ***********/
+
+.info-group {
+    background-color: aquamarine;
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+}
+
+.infobar{
+    display:flex;
+    height: 24px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+} 
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
