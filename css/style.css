@@ -96,9 +96,16 @@ body {
     align-items: center;
 }
 
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .hebergements-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
+    flex-basis: 25%;
 }
 
 .hebergements-cards img {
