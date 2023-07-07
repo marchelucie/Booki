@@ -2,15 +2,14 @@
 @media (max-width: 767.98px) {
   /* ... */
   body {
-   max-width: 767.98px;
+    max-width: 767.98px;
     margin: 0 auto;
   }
   .main-container {
-  
     padding: 0px;
   }
   .cherche {
-padding: 0 50px;
+    padding: 0 50px;
   }
   .navbar {
     display: flex;
@@ -43,13 +42,6 @@ padding: 0 50px;
     border-bottom: solid 3px var(--main-bg-color);
     text-align: center;
   }
-
-  /* .titre {
-    margin-bottom: -10px;
-  } */
-  /* .titre h1 {
-    font-size: 20px;
-  } */
 
   .titre p {
     /* font-size: 14px; */
@@ -87,32 +79,42 @@ padding: 0 50px;
   .block {
     width: 95%;
     margin: 0px;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-.filtreOptions{
+  .filtreOptions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-}
- 
-.populaires-cards{
+    width: 100%;
+  }
+  .hebergements-and-populaires section {
+    border-radius: 0px;
+  }
+  .populaires {
+    background-color: var(--main-bg-color) !important;
+  }
+  .populaires-cards {
     flex-direction: column;
     align-items: center;
- 
-}
-.populaires-cards .card {
-    width:60%;
-}
- .populaires-title{
+  }
+  .populaires-cards .card {
+    width: 90%;
+  }
+  .populaires-title {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 12px;
-}
- }
- 
-
+    padding: 12px 38px;
+  }
+  .orderHebergement1 {
+    order: 1;
+  }
+  .orderHebergement2 {
+    order: 2;
+  }
+  .orderHebergement3 {
+    order: 3;
+  }
   .hebergements {
     order: 2;
     width: 100%;
@@ -132,25 +134,22 @@ padding: 0 50px;
   .maison {
     margin: 0px;
   }
-
+  .maison img {
+    height: 177px;
+  }
   .hebergementInfo {
-    row-gap: 5px;
+    row-gap: 10px;
     padding-left: 29px;
   }
 
-  .ActivitesaMarseille h2 span {
-    display: block;
-    font-size: 18px;
+  .hebergements-and-populaires section {
+    background-color: transparent;
   }
   .hebergements h2 {
     font-size: 18px;
     padding: 30px 0px 4px 35px;
   }
 
-  .hebergementsHref span {
-    display: block;
-    font-size: 16px;
-  }
   .hebergementsHref span b {
     font-size: 16px;
   }
@@ -170,6 +169,7 @@ padding: 0 50px;
   }
 
   .lesActivites {
+    display: flex;
     flex-direction: column;
     width: 100%;
     grid-gap: 32px;
