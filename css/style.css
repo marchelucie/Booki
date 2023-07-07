@@ -100,24 +100,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    height: 207.25px ;
 }
 
 .hebergements-cards .card {
     display: flex;
+    flex-direction: column;
     margin-top: 30px;
-    flex-basis: 25%;
+    flex-basis: 28%;
 }
 
 .hebergements-cards img {
-    width: 33%;
-    height: 136px;
+    width: 100%;
+    height: 124px;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .hebergements-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
+    width: 100%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
