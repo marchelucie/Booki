@@ -409,7 +409,9 @@ body {
   column-gap: 4px;
   margin-bottom: 15px;
 }
-
+.displayMedium{
+    display:none;
+}
 /* /////////////Activites à Marseille /////////////*/
 
 .ActivitesaMarseille {

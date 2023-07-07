@@ -50,6 +50,12 @@
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+  .display {
+    display: none;
+  }
+  .displayMedium {
+    display: block;
+  }
   .activites img {
     height: 222px;
   }
