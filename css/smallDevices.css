@@ -160,19 +160,22 @@
   /*Activites à Marseille */
   .ActivitesaMarseille h2 {
     font-size: 18px;
-    padding-left: 22px;
   }
 
   .ActivitesaMarseille {
-    width: 90%;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 30px;
   }
 
   .lesActivites {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     grid-gap: 32px;
+    padding: 0 auto;
   }
 
   .activites {
@@ -191,6 +194,12 @@
   }
 
   footer {
+    display: flex;
     flex-direction: column;
+    row-gap: 20px;
+    margin: 50px 0 0 0;
+  }
+  footer ul {
+    row-gap: 11px;
   }
 }
