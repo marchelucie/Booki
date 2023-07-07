@@ -66,9 +66,15 @@ body {
   padding: 0 50px;
 }
 .titre {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-
+.titre p {
+  margin-top: 0;
+  font-size: 16px;
+}
+.titre h1 {
+  margin-bottom: 10px;
+}
 .cherche {
   display: flex;
   flex-direction: column;
@@ -93,7 +99,7 @@ body {
   align-items: center;
 }
 .input {
-  max-width: 244px;
+  max-width: 204px;
   font-weight: bold;
   border: 1px solid var(--dgColor);
   font-size: 18px;
@@ -135,7 +141,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -282,6 +287,7 @@ body {
 .hebergements h2 {
   font-size: 22px;
   margin-top: 0;
+  padding-left: 10px;
 }
 
 /*///la coloun de maison Hebergements à Marseille */
@@ -294,7 +300,7 @@ body {
   box-shadow: 0px 0px 6px 0px #0000002e;
   border-radius: 20px;
   justify-content: center;
-  margin: 21px;
+  margin: 14px;
 }
 
 .maison img {
@@ -338,10 +344,13 @@ body {
 .hebergementsHref {
   color: var(--blackColor);
   cursor: pointer;
-  font-size: 22px;
-  margin-top: 17px;
-}
 
+  margin-top: 17px;
+  padding-left: 11px;
+}
+.hebergementsHref b {
+  font-size: 18px;
+}
 /*positioner les stars*/
 .stars {
   display: flex;
@@ -409,8 +418,8 @@ body {
   column-gap: 4px;
   margin-bottom: 15px;
 }
-.displayMedium{
-    display:none;
+.displayMedium {
+  display: none;
 }
 /* /////////////Activites à Marseille /////////////*/
 

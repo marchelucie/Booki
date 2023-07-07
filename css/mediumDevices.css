@@ -5,15 +5,24 @@
     flex-direction: column;
     align-content: flex-start;
     align-items: flex-start;
+    margin-top: 0;
   }
-
+  .titre p {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .titre h1 {
+    margin-bottom: 10px;
+  }
   /*section Hebergements à Marseille */
   .hebergements {
     width: auto;
     width: 97%;
     margin-bottom: 53px;
   }
-
+  .marginHebergementsInfo {
+   padding-right: 0;
+}
   /* size p dans le box de Hebergements à Marseille */
   .hebergementInfo p,
   .hebergementInfo b {
@@ -56,6 +65,10 @@
   .displayMedium {
     display: block;
   }
+  .populaires-cards img {
+    width: 40%;
+  }
+
   .activites img {
     height: 222px;
   }
