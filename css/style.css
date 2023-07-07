@@ -3,7 +3,7 @@
 header{
     width: 100%;
     height: 79px;
-    background-color: transparent;
+    background-color: rgb(174, 234, 174);
 }
 
 .logo-header{
@@ -13,6 +13,12 @@ header{
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+}
+
+.lien-header{
+    background-color: aqua;
+    margin-top: 0px;
+    margin-right: 25px;
 }
 
 .headerbooki{
