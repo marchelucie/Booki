@@ -15,4 +15,4 @@ Le projet a commencé par une analyse minutieuse des maquettes, qui étaient fou
 
 🌐 Design responsive et expérience utilisateur :
 
-J'ai également mis l'accent sur la création d'un design responsive qui s'adapte parfaitement à différentes tailles d'écran et appareils. L'expérience utilisateur était une considération primordiale, et j'ai mis en place des interactions intuitives et des transitions fluides pour améliorer l'utilisabilité.
+J'ai également mis l'accent sur la création d'un design responsive qui s'adapte parfaitement à différentes tailles d'écran et appareils. 
