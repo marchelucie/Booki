@@ -75,12 +75,12 @@ body {
 .titre h1 {
   margin-bottom: 10px;
 }
+/* /////////////////////block recherche//////////////////*/
 .cherche {
   display: flex;
   flex-direction: column;
 }
 
-/* /////////////////////block recherche//////////////////*/
 .from-recherche {
   display: flex;
   align-items: stretch;
@@ -105,7 +105,6 @@ body {
   font-size: 18px;
 }
 
-/* arevoire */
 .input::placeholder {
   color: var(--blackColor);
   text-align: center;
@@ -261,7 +260,7 @@ body {
 
 /****** Hebergements ***********/
 
-/*    section Hebergements à Marseille */
+/*********    section Hebergements à Marseille *********/
 .maisons {
   display: grid;
   column-gap: 30px;
@@ -290,7 +289,7 @@ body {
   padding-left: 10px;
 }
 
-/*///la coloun de maison Hebergements à Marseille */
+/*********la coloun de maison Hebergements à Marseille *********/
 .maison {
   background-color: white;
   border-radius: 20px;
@@ -381,7 +380,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.populaires-cards .card-subtitle,
+.populaires-cards .card-title {
+  color: var(--blackColor);
+}
+.populaires-cards a {
+  width: 100%;
+}
 .populaires-cards .card {
   display: flex;
   margin-top: 33px;
@@ -421,7 +426,7 @@ body {
 .displayMedium {
   display: none;
 }
-/* /////////////Activites à Marseille /////////////*/
+/* ********Activites à Marseille*********/
 
 .ActivitesaMarseille {
   height: auto;
@@ -430,9 +435,6 @@ body {
 }
 
 .lesActivites {
-  /* display: flex;
-      flex-direction: row;
-      column-gap: 17px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 26px;
@@ -440,7 +442,7 @@ body {
 
 .activites {
   background-color: white;
-  box-shadow: 8px 8px 11px 6px #0000002e;
+  box-shadow: 8px 8px 11px 6px #0000001f;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -450,7 +452,6 @@ body {
   width: 100%;
   height: 390px;
   object-fit: cover;
-  /* margin-top: -20px; */
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -470,12 +471,11 @@ body {
 .photoMobil {
   display: none;
 }
-/*footer*/
+/*********footer*********/
 
 footer {
   margin: 70px 50px 0 50px;
   padding: 0;
-  /* margin-top: 73px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #f2f2f2;
@@ -496,11 +496,8 @@ footer ul {
 li a {
   color: var(--blackColor);
 }
-
+/********* media small pc  *********/
 @media (max-width: 1268px) {
-  /* .marginHebergementsInfo {
-      padding-right: 20px;
-    } */
   .pharagraph {
     padding-right: 10px;
   }
@@ -509,14 +506,14 @@ li a {
     font-size: 15px;
   }
 }
-
+/********* media small pc  *********/
 @media (max-width: 1058px) {
   .marginHebergementsInfo {
     padding-right: 40px;
   }
 }
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/****** Medium devices (tablets, less/equal than 1024px) ******/
 @media (max-width: 1024px) {
   .block {
     display: flex;
@@ -532,7 +529,7 @@ li a {
   .titre h1 {
     margin-bottom: 10px;
   }
-  /*section Hebergements à Marseille */
+  /******section Hebergements à Marseille ******/
   .hebergements {
     width: auto;
     width: 97%;
@@ -541,7 +538,7 @@ li a {
   .marginHebergementsInfo {
     padding-right: 0;
   }
-  /* size p dans le box de Hebergements à Marseille */
+  /****** size p dans le box de Hebergements à Marseille ******/
   .hebergementInfo p,
   .hebergementInfo b {
     font-size: 14px;
@@ -557,17 +554,13 @@ li a {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
   }
 
   .populaires-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .populaires-cards .card {
-    width: 30%;
+    column-gap: 3%;
   }
 
   .populaires-cards .card-title {
@@ -583,20 +576,15 @@ li a {
   .displayMedium {
     display: block;
   }
-  .populaires-cards img {
-    width: 40%;
-  }
-
   .activites img {
-    height: 222px;
+    height: 172px;
   }
   .activites h6 {
-    margin: 16px 0px 10px 27px;
+    margin: 18px 0px 8px 19px;
   }
 }
-/* Small devices (phones, less than 768px) */
+/****** Small devices (phones, less than 768px) ******/
 @media (max-width: 767.98px) {
-  /* ... */
   body {
     max-width: 767.98px;
     margin: 0 auto;
@@ -619,7 +607,7 @@ li a {
     padding: 0 30px;
   }
 
-  /* le buttonHeader */
+  /****** le buttonHeader ******/
   .buttonHeader {
     width: 100%;
     display: flex;
@@ -650,18 +638,18 @@ li a {
     font-size: 16px;
   }
 
-  /* from*/
+  /****** from ******/
 
   .input {
     width: 80%;
   }
 
-  /* le btn de recherche */
+  /****** le btn de recherche ******/
   .recherche span {
     display: none;
   }
 
-  /*  la loupe le btn de recherche */
+  /******  la loupe le btn de recherche ******/
   .recherche i {
     display: block;
     color: #ffff;
@@ -678,7 +666,7 @@ li a {
     margin-bottom: 0px;
   }
 
-  /* block*/
+  /****** block******/
 
   .block {
     width: 100%;
@@ -821,6 +809,7 @@ li a {
     padding-left: 30px;
   }
 }
+/****** for Medium mobile  ******/
 @media (max-width: 500px) {
   .maison img {
     height: 118px;
@@ -829,7 +818,7 @@ li a {
     margin-bottom: 0px;
   }
 }
-/* for small  mobile  */
+/****** for small  mobile  ******/
 @media (max-width: 400px) {
   .titre h1 {
     font-size: 16px;
