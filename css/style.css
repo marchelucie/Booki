@@ -598,6 +598,11 @@ li a {
     padding: 20px 0 0 0;
     row-gap: 20px;
   }
+  .input::placeholder {
+    font-size: 13px;
+    text-align: start;
+  }
+
   .titre h1,
   .titre p {
     font-size: 22px;
