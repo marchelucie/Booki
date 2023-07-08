@@ -599,8 +599,7 @@ li a {
     row-gap: 20px;
   }
   .input::placeholder {
-    font-size: 13px;
-    text-align: start;
+    font-size: 14px;
   }
 
   .titre h1,
@@ -772,7 +771,6 @@ li a {
   .ActivitesaMarseille {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 0px;
     padding: 30px;
   }
