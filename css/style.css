@@ -3,6 +3,14 @@ h1, h2 {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
 /****** header **********/
 
 header{
@@ -192,7 +200,6 @@ body {
 .checkbox-filtre div:hover{
     background-color: #DEEBFF;
 }
-
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
