@@ -95,10 +95,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
-    align-self: stretch;
-    
-
-    
+    align-self: stretch; 
 }
 
 .group1 {
@@ -107,7 +104,6 @@ body {
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
-
 }
     /* probleème d'espace dans les titres à voir avec Bastien */
 .group1 h1 {
@@ -143,8 +139,7 @@ body {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--main-color);
     background: var(--main-color);
-    color: var(--white, #FFF);
-    
+    color: var(--white, #FFF); 
 }
 
 .infobar{
