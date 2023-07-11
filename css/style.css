@@ -320,6 +320,16 @@ body {
 
 /****** Activitéss à Marseille ***********/
 
+.Activité-Marseille {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    gap: 30px;
+
+}
+
 .Activité-Marseille-card {
     display: flex;
     flex-direction: wrap;
@@ -328,36 +338,23 @@ body {
     align-self: stretch;
 }
 
-.Activité-Marseille {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 35px;
-
+.card-activité {
+    background-color: white;
+    border-radius: 20px ;
+    padding: 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.Activité-Marseille-card article {
-    height: 439px;
-    width: 100%;
-    flex: 1 0 0;  
-}
-
-
-.Activité-Marseille img{
-    height: 380px;
+/* .Activité-Marseille img{
     width: 100% ;
-    flex-shrink: 0;
+    height: 380px;
     border-radius: 20px 20px 0px 0px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-   
-}
+} */
+
 
 .Activité-Marseille p{
     padding: 20px 19px;
-    border-radius: 0px 0px 20px 20px;
-    background: var(--white, #FFF);
-   
+    font-weight: bold;
 }
 
 /****** Footer***********/
