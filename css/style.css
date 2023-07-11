@@ -1,5 +1,5 @@
 /****** global **********/
-h1, h2 {
+h1, h2, H3 {
     font-weight: bold;
 }
 
@@ -218,11 +218,10 @@ body {
 }
 
 .hebergements-cards{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    height: 207.25px ;
 }
 
 .hebergements-cards .card {
@@ -242,10 +241,16 @@ body {
 .hebergements-cards .card-content {
     width: 100%;
     padding: 15px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+.hebergements-cards .card-content .card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
 }
 
 .hebergements-cards .card-title {
