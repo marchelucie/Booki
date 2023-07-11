@@ -39,13 +39,14 @@ header{
 .lien-header a {
     padding: 15px 68px;
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--noir);
     font-family: 'Raleway', sans-serif;
     transition: 0.3s;
 }
 
 .lien-header a:hover {
     border-top: 5px solid var(--main-color);
+    color: var(--main-color);
 }
 
 
