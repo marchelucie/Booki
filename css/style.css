@@ -195,7 +195,7 @@ header{
     line-height: normal;
 }
 
-.checkbox-filtre div:hover{
+.filtre-bouton:hover{
     background-color: #DEEBFF;
 }
 
@@ -404,6 +404,7 @@ footer div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    
     }
 
     .populaires-cards .card {
@@ -468,6 +469,19 @@ footer div {
         width: 35%;
     }
 
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        
+        border-radius: 0px;  
+    }
+
+    .populaires-title, .hebergements-title {
+        
+        font-size: 22px;
+    }
 
 }
 
