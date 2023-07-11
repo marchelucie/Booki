@@ -174,8 +174,13 @@ header{
     align-items: center;
     gap: 15px;
 }
-
 .checkbox-filtre div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkbox-filtre .filtre-bouton {
     display: flex;
     height: 50px;
     padding: 4px 19px;
@@ -375,6 +380,13 @@ footer div {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .checkbox-filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column; 
