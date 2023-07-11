@@ -130,41 +130,35 @@ body {
     gap: 8px;
     align-self: stretch;
 }
-    /* probleème d'espace dans les titres à voir avec Bastien */
-.group1 h1 {
-    height: 26px;
-    font-size: 22px; 
-}
 
-.group1 h1 {
-    height: 19px;
-    font-size: 16px;
-}
-
-.button-rechercher {
-    display: flex;
-}
-
-.button-rechercher input {
+#search-form {
     display: flex;
     width: 377px;
-    height: 49px;
-    align-items: center;
-    gap: 24px;
-    border: 1px solid var(--grey, #F2F2F2);
+    border-radius: 15px;
     background: var(--white, #FFF);
 }
 
-.button-rechercher button {
+
+#search-input {
     display: flex;
-    height: 49px;
+    width: 377px;
+    border: 1px solid var(--grey, #F2F2F2);
+    background: var(--white, #FFF);
+    padding: 0px 24px;
+}
+
+#search-button {
     padding: 15px 16px;
-    align-items: center;
-    gap: 10px;
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--main-color);
     background: var(--main-color);
     color: var(--white, #FFF); 
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#search-form svg {
+    width: 100%;
 }
 
 .infobar{
