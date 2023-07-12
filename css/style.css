@@ -301,7 +301,7 @@ header{
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards img {
@@ -348,6 +348,7 @@ header{
 .Activité-Marseille-card {
     display: flex;
     gap: 30px;
+    object-fit: scale-down;
    
 }
 
@@ -366,6 +367,7 @@ header{
 
 .Activité-Marseille p{
     padding: 20px 19px;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -418,11 +420,11 @@ footer div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    
+        gap: 20px;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .populaires-cards .card {  
+     background-color: red;
     }
 
     .populaires-cards .card-title {
@@ -438,7 +440,9 @@ footer div {
     }
 
     .card-activité p {
-        font-size: 16px;
+        font-size: 11px;
+        height: 38px;
+        padding-bottom: 0px;
     }
   
 }
@@ -530,6 +534,10 @@ footer div {
         display: flex;
         flex-direction: column;
     }
+
+    .Activité-Marseille {
+        margin-left: 15px;
+    }
     
     .Activité-Marseille-card {
         display: flex;
@@ -538,13 +546,14 @@ footer div {
     }
 
     .Activité-Marseille-card .card-activité{
-        width: 100%;
+        width: 100%; 
     }
+
     footer {
         flex-direction: column;
         gap: 30px;
         padding: 30px;
-
+        width: 100%;
     }
     
 
