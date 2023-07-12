@@ -292,16 +292,16 @@ header{
     background-color: var(--main-bg-color);
     width: 32%;
 }
-
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 30px;
+    margin-top: 33px;;
 }
 
 .populaires-cards img {
@@ -312,7 +312,7 @@ header{
 }
 
 .populaires-cards .card-content {
-    width: 57%;
+    width: 67%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -419,12 +419,12 @@ footer div {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         gap: 20px;
     }
 
     .populaires-cards .card {  
      background-color: red;
+     width: 30%px;
     }
 
     .populaires-cards .card-title {
