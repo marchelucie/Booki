@@ -348,8 +348,6 @@ header{
 .Activité-Marseille-card {
     display: flex;
     gap: 30px;
-    object-fit: scale-down;
-   
 }
 
 .card-activité {
@@ -419,12 +417,8 @@ footer div {
     .populaires-cards {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
-    }
-
-    .populaires-cards .card {  
-     background-color: red;
-     width: 30%px;
     }
 
     .populaires-cards .card-title {
@@ -553,7 +547,6 @@ footer div {
         flex-direction: column;
         gap: 30px;
         padding: 30px;
-        width: 100%;
     }
     
 
