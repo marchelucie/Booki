@@ -60,11 +60,6 @@ body {
     color: var(--main-bg-color)
 }
 
-.no-link {
-    color: #000;
-    text-decoration: none;
-}
-
 h1, h2, h3 {
     font-weight: bold;
 }
@@ -75,6 +70,11 @@ h1, h2, h3 {
 
 .label-filtre, .lien-afficher {
     font-weight: bold;
+}
+
+a {
+    color: #000;
+    text-decoration: none;   
 }
 
 
@@ -437,7 +437,6 @@ footer div {
 
     .card-activité p {
         font-size: 16px;
-    
     }
   
 }
@@ -453,10 +452,6 @@ footer div {
     .lien-header a:hover {
         border-bottom: 2px solid var(--main-color);
         border-top: none;
-    }
-
-    .lien-header a {
-   
     }
 
     .main-container {
@@ -541,7 +536,7 @@ footer div {
     }
 
     .Activité-Marseille-card .card-activité{
-        width: 140%;
+        width: 100%;
     }
     footer {
         flex-direction: column;
