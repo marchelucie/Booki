@@ -486,7 +486,7 @@ footer div {
 
     .checkbox-filtre div {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .checkbox-filtre .filtre-bouton {
