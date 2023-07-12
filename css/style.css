@@ -71,7 +71,7 @@ h1, h2, h3 {
     display: none;
 }
 
-.label-filtre, .lien-afficher {
+.label-filter, .link-display {
     font-weight: bold;
 }
 
@@ -102,11 +102,11 @@ header{
     margin-top: -15px;
 }
 
-.lien-header{
+.link-header{
     margin-right: 25px;
 }
 
-.lien-header a {
+.link-header-hébergements,.link-header-activités{
     padding: 15px 25px;
     text-decoration: none;
     color: var(--noir);
@@ -114,7 +114,7 @@ header{
     transition: 0.2s;
 }
 
-.lien-header a:hover {
+.link-header-hébergements:hover,.link-header-activités:hover {
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
 }
@@ -181,18 +181,18 @@ header{
     font-size: 16PX;
 } 
 
-.checkbox-filtre {
+.checkbox-filter {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.checkbox-filtre div {
+.checkbox-filter div {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.checkbox-filtre .filtre-bouton {
+.checkbox-filter .filter-button {
     display: flex;
     height: 50px;
     padding: 4px 19px;
@@ -207,7 +207,7 @@ header{
     line-height: normal;
 }
 
-.filtre-bouton:hover{
+.filter-button:hover{
     background-color: #DEEBFF;
 }
 
@@ -335,7 +335,7 @@ header{
 
 /****** Activités à Marseille ***********/
 
-.Activité-Marseille {
+.activity-Marseille {
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -345,25 +345,26 @@ header{
 
 }
 
-.Activité-Marseille-card {
+.activity-Marseille-card {
     display: flex;
     gap: 30px;
 }
 
-.card-activité {
+.card-activity {
     background-color: white;
+    object-fit: cover;
     border-radius: 20px ;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.Activité-Marseille img {
+.activity-Marseille img {
     object-fit: cover;
     width: 297px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
 
-.Activité-Marseille p{
+.activity-Marseille p{
     padding: 20px 19px;
     font-size: 11px;
     font-weight: bold;
@@ -394,7 +395,7 @@ footer div {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-    .checkbox-filtre {
+    .checkbox-filter {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -429,11 +430,11 @@ footer div {
         font-size: 13px;
     }
 
-    .Activité-Marseille img {
+    .activity-Marseille img {
         height: 150px;
     }
 
-    .card-activité p {
+    .card-activity p {
         font-size: 11px;
         height: 38px;
         padding-bottom: 0px;
@@ -449,7 +450,7 @@ footer div {
         align-items: center;
     }
 
-    .lien-header a:hover {
+    .link-header-hébergements:hover, .link-header-activités:hover {
         border-bottom: 2px solid var(--main-color);
         border-top: none;
     }
@@ -483,12 +484,12 @@ footer div {
         font-size: 22px; 
     }
 
-    .checkbox-filtre div {
+    .checkbox-filter div {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .checkbox-filtre .filtre-bouton {
+    .checkbox-filter .filter-button {
         width: 35%;
         font-size: 14px;
     }
@@ -529,17 +530,17 @@ footer div {
         flex-direction: column;
     }
 
-    .Activité-Marseille {
+    .activity-Marseille {
         margin-left: 15px;
     }
     
-    .Activité-Marseille-card {
+    .activity-Marseille-card {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
-    .Activité-Marseille-card .card-activité{
+    .activity-Marseille-card .card-activity{
         width: 100%; 
     }
 
