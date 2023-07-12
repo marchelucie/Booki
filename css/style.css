@@ -140,12 +140,17 @@ header{
     width: 377px;
     border-radius: 15px;
     background: var(--white, #FFF);
+    border: 1px solid var(--grey, #F2F2F2);
 }
 
+#search-form svg {
+  height: auto;
+  margin-right: -5px;
+}
 
 #search-input {
     flex: 1;
-    border: 1px solid var(--grey, #F2F2F2);
+    border: transparent;
     background: var(--white, #FFF);
     padding: 0px 24px;
 }
@@ -159,6 +164,10 @@ header{
     font-size: 18px;
     font-weight: 700;
 }
+
+#search-button .mobile-icon {
+    display: none;
+  }
 
 .infobar{
     display:flex;
@@ -455,6 +464,21 @@ footer div {
         margin-top: 100px;
         padding: 0px 20px;
     }
+
+    #search-button {
+        border-radius: 15px;
+        font-size: 0;
+        padding-left: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }   
+    #search-button .mobile-icon {
+        display: inline-block;
+      }
+
+    #search-form {
+        width: 100%;
+      }
 
     .group1 h1 {
         font-size: 22px; 
