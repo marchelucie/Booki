@@ -65,7 +65,7 @@ body {
     text-decoration: none;
 }
 
-h1, h2, H3 {
+h1, h2 {
     font-weight: bold;
 }
 
@@ -216,7 +216,6 @@ header{
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 40px;
     padding: 30px;
     box-sizing: border-box;
@@ -224,6 +223,7 @@ header{
 
 /****** Hebergements ***********/
 .hebergements {
+    background-color: var(--main-bg-color);
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -286,6 +286,7 @@ header{
 
 /****** Populaires ***********/
 .populaires {
+    background-color: var(--main-bg-color);
     width: 32%;
 }
 
@@ -313,6 +314,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    margin: 10px 4px 4px 15px;
 }
 
 .populaires-cards .card-title {
@@ -360,8 +362,9 @@ header{
     border-radius: 20px 20px 0px 0px;
 }
 
-.Activité-Marseille h3{
+.Activité-Marseille p{
     padding: 20px 19px;
+    font-weight: bold;
 }
 
 /****** Footer***********/
@@ -432,9 +435,9 @@ footer div {
         height: 150px;
     }
 
-    .card-activité h3 {
-        font-size: 12px;
-        padding: 10px 15px;
+    .card-activité p {
+        font-size: 16px;
+    
     }
   
 }
@@ -453,7 +456,7 @@ footer div {
     }
 
     .lien-header a {
-      margin: 40px;
+   
     }
 
     .main-container {
@@ -462,6 +465,7 @@ footer div {
 
     .info-group {
         margin-top: 100px;
+        margin-bottom: 0px;
         padding: 0px 20px;
     }
 
@@ -491,6 +495,7 @@ footer div {
 
     .checkbox-filtre .filtre-bouton {
         width: 35%;
+        font-size: 14px;
     }
 
     .hebergements-and-populaires {
@@ -498,13 +503,45 @@ footer div {
     }
 
     .hebergements-and-populaires section {
+        border-radius: 0px; 
         
-        border-radius: 0px;  
     }
 
     .populaires-title, .hebergements-title {
-        
         font-size: 22px;
+    }
+
+    .populaires {
+       margin-top: 35px;
+        
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    .hebergements {
+        background-color: initial; 
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Activité-Marseille-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Activité-Marseille-card .card-activité{
+        width: 140%;
     }
 
 }
