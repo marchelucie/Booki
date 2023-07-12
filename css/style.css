@@ -65,7 +65,7 @@ body {
     text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-weight: bold;
 }
 
@@ -543,6 +543,14 @@ footer div {
     .Activité-Marseille-card .card-activité{
         width: 140%;
     }
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+
+    }
+    
+
 
 }
 
