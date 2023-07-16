@@ -1,15 +1,16 @@
 /****** General ***********/
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
 
 body {
     display: flex;
@@ -68,8 +69,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 .card__rating {
     margin-bottom: 5px;
@@ -83,7 +82,7 @@ body {
     color: var(--main-bg-color) !important;
 }
 
-.title {
+h1, h2 {
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 33px;
@@ -98,9 +97,13 @@ body {
     font-weight: 700;
 }
 
-.nav__link {
+a {
     text-decoration: none;
     color: #000;
+}
+
+ul {
+    list-style: none;
 }
 
 /****** General Media queries ***********/
@@ -133,13 +136,11 @@ body {
 }
 
     .header__logo {
+        width: 61.09px;
+        height: 19px;
         padding: 30px 0;
     }
 
-    .header__logo__img {
-        width: 61.09px;
-        height: 19px;
-    }
 
 .header__nav {
     display: flex;
@@ -178,11 +179,6 @@ body {
 
 @media (max-width: 767.98px) {
 
-    .nav__link {
-        padding-top: 0;
-        padding-bottom: 15px;
-    }
-
     .header {
         align-items: center;
         flex-direction: column;
@@ -192,7 +188,6 @@ body {
         width: 100%;
         display:grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0;
     }
 
     .header__nav__link {
@@ -210,9 +205,8 @@ body {
     }
     
     .header__nav__line {
+        margin-top: 15px;
         width: 100%;
-        height: 2px;
-        background-color: var(--main-bg-color);
     }
 
 }
@@ -224,8 +218,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-block: 30px 35px;
 }
 
     .hero__headline__title {
@@ -254,7 +247,6 @@ body {
         text-align: center;
         font-size: 18px;
         font-weight: 700;
-        user-select: text;
     }
 
     .hero__searchbar__input:focus {
@@ -267,7 +259,6 @@ body {
         border : none;
         color: var(--main-bg-color);
         font-size: 18px;
-        text-align: left;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         font-weight: 700;
@@ -417,7 +408,6 @@ body {
     .populaires__title {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
     }
 
         .fa-star {
@@ -528,7 +518,10 @@ body {
         display: flex;
         flex-direction: column;
         flex: 1;
-        gap: 15px;
+    }
+
+    .footer__section ul li {
+        margin-top: 15px;
     }
 
 /****** Footer Media queries ***********/
