@@ -63,6 +63,7 @@ body {
 header{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
     
 }
 /*******      NAVBAR  ************/
@@ -86,7 +87,7 @@ header{
 }
 
 .container-nav nav ul li a{
-    color: var(--second-color);
+    color: var(--black-color);
     font-weight: 400;
     text-decoration: none;
     position: relative;
@@ -99,8 +100,11 @@ header{
     height: 0.1rem;
     width: 0;
     left: 0;
-    bottom: -40%;
+    top: -60%;
     transition: 0.3s;
+}
+.container-nav nav ul li a:hover{
+    color: var(--main-color);
 }
 
 .container-nav nav ul li a:hover::after{
@@ -108,6 +112,7 @@ header{
 }
 
 /************** Titles & Barre de Recherche & Filtres & Info ****************/
+
 .container-items{
     height: 45vh;
     width: 100%;
@@ -130,8 +135,8 @@ header{
 
 /*     Fonction recherche    */
 .container-items form label{
-    padding: 13px;
-    border-radius: 15px 0 0 15px;
+    padding: 15px;
+    border-radius: 13px 0 0 13px;
     background-color: var(--main-bg-color);
     position: relative;
     right: -2px;
@@ -142,7 +147,7 @@ header{
 }
 
 .container-items form input[type=search]{
-    padding: 13px 50px;
+    padding: 13px 16px;
     border: none;
 }
 #recherche::placeholder{
@@ -154,22 +159,24 @@ header{
     background-color: var(--main-color);
     border: none;
     padding: 13px;
-    border-radius: 0 15px 15px 0;
-    color: #fff;
+    border-radius: 0 13px 13px 0;
+    color: white;
     cursor: pointer;
     position: relative;
     left: -3px;
 } 
 
 .btn-txt{
-    display: none;
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
    } 
 .btn-icone{
-    display: block;
+    display: none;
 }
 
 .fa-magnifying-glass{
-    color: #fff;
+    color: white;
 }
 
 /*********** Filtres ************/
@@ -189,7 +196,7 @@ header{
 }
 
 .items-filtres .filtre{
-    padding: 0 65px 0 15px;
+    padding: 0 35px 0 15px;
     border-radius: 25px;
     border: 2px solid var(--border-btn);
     display: flex;
@@ -211,14 +218,12 @@ background-color: var(--filter-bg-color);
 /*     Informations     */
 
 .info{
-    /* width: 50%; */
     display: flex;
-    align-items: center;
-    gap: -0.7rem;
-    margin-bottom: 10px;
+    align-items: center;   
+    font-size: 0.8rem;
 }
 
-.icone-info{
+.fa-circle-info{
     padding-right: 1rem;
 }
 
@@ -325,6 +330,7 @@ background-color: var(--filter-bg-color);
 
 .activites-marseille{
     width: 100%;
+    margin-top: 3rem;
 }
 
 .container-activite-card{
@@ -396,21 +402,16 @@ footer{
         padding: 5px; 
     }
 
-    .container-nav nav ul li a::after{
-        top: -10%;
-    }
 
 /********* Recherche ************/
     .container-items form input[type=search]{
         padding: 13px;
     }
     .btn-txt{
-        font-weight: 600;
-        font-size: 0.9rem;
-        display: block;
+        display: none;
     }
     .btn-icone{
-        display: none;
+        display: block;
     }
  
 /*********** Filtres *********/
