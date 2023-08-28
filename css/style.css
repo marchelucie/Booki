@@ -57,6 +57,36 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/*!!!le logo*/
+.logo{
+  margin-top: 20px;
+}
+.Booki-Hébergements-Activités{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/*!!!!!Hebergements and Activités*/
+.Hébergements-and-Activités {
+    display: flex;
+    margin-top: 20px;
+    justify-content:flex-end;
+    
+    
+}
+/*!!!!!Activités*/
+.Activités{
+color:black;
+margin-left: 40px;
+
+}
+
+/*hebergements*/
+.Hébergements{
+color:#0065FC;
+margin-bottom: 70px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
