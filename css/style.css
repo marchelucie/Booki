@@ -7,6 +7,9 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --second-color: #3865fc;
+    --black-color:#000;
+    --border-btn:#d9d9d9;
 }
 
 .fa-solid {
@@ -16,6 +19,9 @@
 body {
     display: flex;
     justify-content: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -58,6 +64,174 @@ a {
     color: var(--main-bg-color)
 }
 
+/************* Header **************/
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+/*******      NAVBAR  ************/
+.container-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+.logo-booki{
+    width: 4rem;
+}
+
+.container-nav nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-nav nav ul li a{
+    color: var(--black-color);
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0.625rem;
+}
+.container-nav nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--second-color);
+    height: 0.1rem;
+    width: 0;
+    left: 0;
+    top: -60%;
+    transition: 0.3s;
+}
+.container-nav nav ul li a:hover{
+    color: var(--main-color);
+}
+
+.container-nav nav ul li a:hover::after{
+    width: 100%;
+}
+
+/************** Titles & Barre de Recherche & Filtres & Info ****************/
+
+.container-items{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;   
+}
+
+/*    Title Header      */
+.title-form h1{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.size-sub-title{
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+/*     Fonction recherche    */
+.container-items form label{
+    padding: 15px;
+    border-radius: 13px 0 0 13px;
+    background-color: var(--main-bg-color);
+    position: relative;
+    right: -2px;
+}
+
+.container-items form label .fa-location-dot{
+    color: var(--black-color);    
+}
+
+.container-items form input[type=search]{
+    padding: 13px 16px;
+    border: none;
+}
+#recherche::placeholder{
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.container-items form .btn-form{
+    background-color: var(--main-color);
+    border: none;
+    padding: 13px;
+    border-radius: 0 13px 13px 0;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: -3px;
+} 
+
+.btn-txt{
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+   } 
+.btn-icone{
+    display: none;
+}
+
+.fa-magnifying-glass{
+    color: white;
+}
+
+/*********** Filtres ************/
+.items-filtres{
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+
+.items-filtres h2{
+    font-size: 1rem;
+}
+
+.container-filtres{
+    display: flex;
+    gap: 1rem;
+}
+
+.items-filtres .filtre{
+    padding: 0 35px 0 15px;
+    border-radius: 25px;
+    border: 2px solid var(--border-btn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.items-filtres .filtre:hover{
+background-color: var(--filter-bg-color);
+}
+
+.items-filtres .filtre p{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 0 10px;    
+}
+
+/*     Informations     */
+
+.info{
+    display: flex;
+    align-items: center;   
+    font-size: 0.8rem;
+}
+
+.fa-circle-info{
+    padding-right: 1rem;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -76,6 +250,43 @@ a {
     width: 65%;
 }
 
+.txt-hebergement{
+    margin-bottom: 0;
+}
+
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hebergements-cards .card-title{
+    margin-bottom: 6px;
+}
+
+.hebergements-cards .card-subtitle{
+    margin-top: 0;
+}
+.card-hebergements{
+    width: 30%;
+    margin: 15px 0;
+}
+.img-hebergements{
+    width: 100%;
+    height: 7rem;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.lien-hebergement{
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 20px 0 ;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -120,15 +331,110 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/******************* Activités *****************/
 
+.activites-marseille{
+    width: 100%;
+    margin-top: 3rem;
+}
 
+.container-activite-card{
+    display: flex;
+    gap: 2.5rem;
+}
 
+.card-activites{
+    width: 28%;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img-activites{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.txt-activite{
+padding-left: 10px;
+}
+
+/************** Footer ***************/
+footer{
+    background-color: var(--main-bg-color);
+}
+
+.footer-box{
+    width: 80%;
+    height: 50%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.colonne-footer{
+    padding: 0 0 0 15px;
+    height: 40%;
+
+}
+
+.colonne-footer li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.colonne-footer li a{
+    text-decoration: none;
+    color: var(--black-color);
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.title-colonne{
+    font-weight: 700;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+ /********* Header Navbar **********/
+
+    .container-nav nav ul li a{
+        padding: 5px; 
+    }
+
+
+/********* Recherche ************/
+    .container-items form input[type=search]{
+        padding: 13px;
+    }
+    .btn-txt{
+        display: none;
+    }
+    .btn-icone{
+        display: block;
+    }
+ 
+/*********** Filtres *********/
+
+    .items-filtres{
+        width: 90%;
+    }
+
+    .items-filtres .filtre{
+        padding: 0 15px;
+    }
+
+    .items-filtres .filtre p{
+        font-size: 0.7rem;
+    }
+    
+
+ /******** Hébergement & populaire ****/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -136,7 +442,25 @@ a {
     .hebergements {
         width: 100%;
     }
+/************ hebergements ************/
 
+    .card-hebergements{
+      display: flex;
+    }
+
+    .img-hebergements{
+        width: 40%;
+        margin-right: 10px;
+        height: 115px;
+        border-radius: 15px 0 0 15px;
+        object-fit: cover;
+    }
+/**********  Activités ***************/
+    .img-activites{
+        height: 12rem;
+    }
+ 
+/*******  Populaire ***************/
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -159,9 +483,41 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+/*************** Footer **************/
+    .footer-box{
+        flex-direction: column;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+/********  Formaulaire de recherche *********/
+    form{
+        margin: 0 auto;
+    }
+
+/* Section Filtre ************/
+
+    .container-items{
+        height: auto;
+    }
+
+    .items-filtres{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-filtres{
+        flex-direction: column; 
+    }
+
+    .filtre{
+         width: 14rem; 
+    }
+
+/**********  Activités ***************/
+
+    .img-activites{
+        height: 8rem;
+    }
+
 }
