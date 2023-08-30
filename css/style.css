@@ -65,6 +65,8 @@ a {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  height: 80px;
+ 
 }
 
 /*!!!!!Hebergements and Activités*/
@@ -84,11 +86,50 @@ a {
   color: #0065fc;
   margin-bottom: 70px;
 }
+h1,p{
+font-size: 1em;
+text-align:justify;
+margin-bottom: 20px;
+}
+/******FORMULAIRE DE RECHERCHE*******/
+.conteneur {
+    display: grid;
+    grid-template-columns: 50px 120px 120px;
+}
 
-
-
-
-
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F2F2;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+}
+.box2{
+        display: flex;
+        width: 120px;
+        height:40px;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        text-align: left;
+        color:#494747;
+        border-radius: 0 10px 10px 0;
+    }
+.box3{
+        display: flex;
+        background-color: #0065FC;
+        width: 120px;
+        height:40px;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        color:#F2F2F2;
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+    }
+    
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
