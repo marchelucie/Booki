@@ -23,6 +23,7 @@
   <body>
     <div class="main-container">
       <header>
+        <nav>
         <div class="Booki-Hébergements-Activités">
           <div class="logo">
             <img
@@ -39,13 +40,21 @@
         </div>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
        <p>En plein centre-ville ou en pleine nature</p>
-        <!------Rechercher------->
-        <div class="conteneur">
-            <div class="box1"><i class="fa-sharp fa-solid fa-location-dot" style="color: #000000;"></i></div>
-            <div class="box2"><strong>Marseille,France</strong></div>
-           <div class="box3">Rechercher</div>
-           <p><strong>filtres</strong></p>  
-      </header>
+        <!--Formulaire Rechercher-->
+        <form>
+             <nav class="conteneur">
+                <label for="text"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></label>
+                <input id="location-input" type="text" value="Marseille,France" name="Marseille,France" />
+                <nav class="button">Rechercher</nav>
+                
+             </nav>
+        </form>
+    <!--filtes-->
+    <div>
+        
+    </div>
+            
+        </header>
       <main>
         <div class="hebergements-and-populaires">
           <section class="hebergements"></section>
