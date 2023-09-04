@@ -97,10 +97,10 @@
   .conteneur{
     display: flex;
     font:
-      1rem 'Raleway Sans',
-      sans-serif; 
-    
+      1 px 'Raleway Sans',
+      sans-serif;   
   }
+  
   label {
     display: flex;
     justify-content: center;
@@ -114,9 +114,9 @@
   #location-input {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 35px;
-    width: 130px;
+    align-items: flex-start;
+    width: 120px;
+    height: 40px;
     color: black;
     border: none;
     font-weight: bold;
@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width:120px;
     height: 40px;
     font-size:  12px ;
     color:#f2f2f2;
