@@ -23,45 +23,30 @@
   <body>
     <div class="main-container">
       <header>
-        <nav>
-        <div class="Booki-Hébergements-Activités">
-          <div class="logo">
-            <img
-              src="./images/logo/Booki@3x.png"
-              alt="logo booki"
-              width="40px"
-              height="15px"
-            />
-          </div>
-          <div class="Hébergements-and-Activités">
-            <div class="Hébergements"><a href="#">Hebergements</a></div>
-            <div class="Activités"><a href="#">Activités</a></div>
-          </div>
-        </div>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-       <p>En plein centre-ville ou en pleine nature</p>
-        <!--Formulaire Rechercher-->
-        <form>
-             <nav class="conteneur">
-                <label for="text"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></label>
-                <input id="location-input" type="text" value="Marseille,France" name="Marseille,France" />
-                <input class="Rechercher styled" type="button" value="Rechercher" />
-                <nav class="button"></nav>
-             </nav>
-        </form>
-        <!---Filtres----> 
- <div>
-<h2>Filtres</h2>
-<div><i class="fa-solid fa-money-bill-wave style="color: #0056d6;></i>Economiques</div>
-<div><i class= "fa-solid fa-person" style="color: #0061ff;"></i>Familial</div>
-<div><i class="fa-sharp fa-solid fa-heart" style="color: #0061ff;"></i>Romantique</div>
-<div> <i class="fa-solid fa-dog" style="color: #0056d6;"></i>Animaux autorisés</div>
-
-</div>
-  </header>
+        <img src="./images/logo/Booki@3x.png" alt="Logo de Booki" id="logo-booki">
+        <nav id="menu-nav">
+            <a href="#hotel-searchresults">Hébergements</a>
+            <a href="#activities-searchresults">Activités</a>
+        </nav>
+      </header>
+      <main id="blocpage">
+         <!-- Recherche par location -->
+         <Section id="search">
+            <div>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <form id="location-search">
+                <i class="fas fa-map-marker-alt"></i> 
+                <input id="location-input" type="text" name="ville" placeholder="Ville, Pays"
+                    value="Marseille, France" />
+                <button id="search-desktop">Rechercher</button>
+                <button id="search-mobile"><i class="fas fa-search search-icon"></i></button>
+            </form>
+              
+            </form>
 
 
-      <main>
         <div class="hebergements-and-populaires">
           <section class="hebergements"></section>
           <section class="populaires">
