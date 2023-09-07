@@ -189,13 +189,15 @@
   }
   /*-espace-hebergements-activités**/
   #menu-nav a {
-      padding: 30px;
+      padding: 30px;   
   }
+
   /**survol du Mnu-nav**/
   #menu-nav a:hover {
       border-top: 2px solid #0065FC;
       color:#0065FC;
       padding-top: 28px;   
+      
   }
   
   /* Bienvenue, Rechercher la location */
@@ -206,16 +208,10 @@
   /**h1 & paragraphe**/
   #search h1+p {
       margin-top: 5px;
-      margin-bottom: 15px;
-      
+      margin-bottom: 15px;   
   }
-  /**conteneur map-location-Rechercher**/
-  #location-search {
-      display: flex;
-      align-items: center;
-      font-size: 15px;
-      margin-bottom: 30px;
-  }
+
+    /**icone-map**/  
   .fa-map-marker-alt {
     display:flex;
     justify-content: center;
@@ -223,12 +219,12 @@
       position: relative;
       left: 0px;
       border-radius: 12px 0px 0px 12px;
-      background-color:#f1e7e7;
+      background-color:#d9d9d9;
       height: 40px;
       width: 40px;
   }
   
-  /**input Marseille & France**/
+  /**Button-input Marseille & France**/
   #location-input {
       position: relative;
       right: 2px;
@@ -239,16 +235,24 @@
       font-weight: bold;
       border-top: 1px solid #F2F2F2;
       border-bottom: 1px solid #F2F2F2;
-        
+            
   }
-  /**définition de la couleur du survol input**/
+  /**définition de la couleur du survol button-input**/
   #location-input:focus {
       height: 35.5px;
       background-color: #DEEBFF;
-      outline: 1px solid #0065FC;
-      
+      outline: 1px solid #0065FC; 
   }
-  /**button-search**/
+ /**Button-Rechercher**/
+ #location-search {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  
+}
+
+  /**button-Rechercher**/
   #search-desktop {
       position: relative;
       right: 4px;
