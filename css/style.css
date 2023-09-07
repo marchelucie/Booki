@@ -120,6 +120,9 @@
   .populaires-cards .card-rating {
     margin-bottom: 5px;
   }
+
+
+
   /***bloc***/
 
   #blocpage {
@@ -210,7 +213,7 @@
   #location-search {
       display: flex;
       align-items: center;
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 30px;
   }
   .fa-map-marker-alt {
@@ -220,7 +223,7 @@
       position: relative;
       left: 0px;
       border-radius: 12px 0px 0px 12px;
-      background-color:#dbd7d7;
+      background-color:#f1e7e7;
       height: 40px;
       width: 40px;
   }
@@ -229,7 +232,7 @@
   #location-input {
       position: relative;
       right: 2px;
-      height: 40px;
+      height: 37px;
       width: 120px;
       color: black;
       border: none;
@@ -242,20 +245,21 @@
   #location-input:focus {
       height: 35.5px;
       background-color: #DEEBFF;
-      outline: 1px solid #0065FC; 
+      outline: 1px solid #0065FC;
       
   }
   /**button-search**/
   #search-desktop {
       position: relative;
-      right: 3px;
+      right: 4px;
       color: #ffffff;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 15px;
       background-color: #0065FC;
       border: none;
       border-radius: 0px 12px 12px 0px;
-      height: 42px;
+      height: 40px;
+      width: 120px;
       padding: 9px 12px 9px 12px;
       cursor: pointer;
   }
@@ -264,7 +268,7 @@
       display: none;
   }
   
-  
+  /**fin de la partie Header**/
   
   
   
