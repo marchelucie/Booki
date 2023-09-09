@@ -203,7 +203,7 @@
   /* Bienvenue, Rechercher la location */
   
   #search {
-      margin-bottom: 100px;
+      margin-bottom: 20px;
   }
   /**h1 & paragraphe**/
   #search h1+p {
@@ -235,6 +235,7 @@
       font-weight: bold;
       border-top: 1px solid #F2F2F2;
       border-bottom: 1px solid #F2F2F2;
+      padding-left: 10px;
             
   }
   /**définition de la couleur du survol button-input**/
@@ -267,6 +268,13 @@
       padding: 9px 12px 9px 12px;
       cursor: pointer;
   }
+   #Filtres{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+
   
   #search-mobile {
       display: none;

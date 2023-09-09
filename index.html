@@ -23,28 +23,43 @@
   <body>
     <div class="main-container">
       <header>
-        <img src="./images/logo/Booki@3x.png" alt="Logo de Booki" id="logo-booki">
+        <img
+          src="./images/logo/Booki@3x.png"
+          alt="Logo de Booki"
+          id="logo-booki"
+        />
         <nav id="menu-nav">
-            <a href="#hotel-searchresults">Hébergements</a>
-            <a href="#activities-searchresults">Activités</a>
+          <a href="#hotel-searchresults">Hébergements</a>
+          <a href="#activities-searchresults">Activités</a>
         </nav>
       </header>
       <main id="blocpage">
-         <!-- Recherche par location -->
-         <Section id="search">
-            <div>
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </div>
-            <form id="location-search">
-                <i class="fas fa-map-marker-alt"></i> 
-                <input id="location-input" type="text" name="ville" placeholder="Ville, Pays"
-                    value="Marseille, France" />
-                <button id="search-desktop">Rechercher</button>
-                <button id="search-mobile"><i class="fas fa-search search-icon"></i></button>
-            </form>
-            
-<!---fin de la parti header-->
+        <!-- Recherche par location -->
+        <section id="search">
+          <div>
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+          </div>
+          <form id="location-search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input
+              id="location-input"
+              type="text"
+              name="ville"
+              placeholder="Ville, Pays"
+              value="Marseille, France"
+            />
+            <button id="search-desktop">Rechercher</button>
+            <button id="search-mobile">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+          </form>
+            <!-- An element with a unique id -->
+            <h2 id="Filtres">Filtres</h2>
+          
+        </section>
+
+        <!---fin de la parti header-->
 
         <div class="hebergements-and-populaires">
           <section class="hebergements"></section>
