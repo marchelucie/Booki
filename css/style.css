@@ -7,10 +7,18 @@
     --main-color: #0065fc;
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
-  }
+    --blue : #0065FC;
+    --light-blue : #DEEBFF;
+    --grey : lightgrey;
+    --dark-grey : dimgrey;
+    --light-grey : #f2f2f2;
+    --white: white;
+    --green-fluo: #39FF14;
+}
   
   .fa-solid {
     color: var(--main-color);
+    
   }
   
   body {
@@ -281,7 +289,89 @@
   }
   
   /**fin de la partie Header**/
+  /* 
+^----------------------
+*       FILTERS     
+^----------------------
+*/
+.filters {
+    display: inline-flex;
+    padding-top: 18px;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+
+ }
+
+ .filters h2 {
+    margin-right: 20px;
+
+}
+
+.btn-filter p {
+    margin: 0;
+    padding-right: 20px;
+    cursor: pointer;
+    
+
+
+
+}
+
+.btn-filter {
+    font-weight: bold;
+    border: 1px solid var(--light-grey);
+    border-radius: 30px;
+    border-left: none;
+    
+}
+
+.btn-filter:hover{
+    background-color: var(--light-grey);
+    box-shadow: 0 0 8px var(--blue);
+}
   
+.btn-filter .fa-solid {
+    background-color: var(--light-blue);
+    border-radius: 30px;
+    
+}
+
+.btn-filter .fa-child-reaching {
+    padding: 14px 17px 14px 17px;
+    margin-right: 10px;
+    color: var(--blue);
+    
+
+}
+
+.btn-filter .fa-heart, .fa-dog, .fa-money-bill-wave {
+    padding: 14px 14px 14px 14px;
+    margin-right: 10px;
+    color: var(--blue);
+
+}
+/*
+*        barre d'information
+*/
+#icon-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}  
+
+.fa-solid.fa-info {
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    color: var(--blue);
+    height: 25px;   
+    width: 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
   
   
   
