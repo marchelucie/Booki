@@ -49,7 +49,20 @@
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
-  
+  .card-1  {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+  .card-subtitle{
+margin:0px;
+  }
+  .contener{
+    display:grid;
+    justify-content:space-between;
+    grid-template-columns: 20% 20% 20% 20%;
+  }
   .card img {
     object-fit: cover;
   }
@@ -70,6 +83,7 @@
   .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    
   }
   
   .hebergements-and-populaires section {
@@ -77,11 +91,13 @@
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+     
   }
   
   /****** Hebergements ***********/
   .hebergements {
     width: 65%;
+    
   }
   
   /****** Populaires ***********/
@@ -93,11 +109,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    
+    }
   
   .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+
+    
   }
   
   .populaires-cards img {
@@ -105,6 +124,7 @@
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    
   }
   
   .populaires-cards .card-content {
@@ -114,6 +134,7 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    
   }
   
   .populaires-cards .card-title {
@@ -204,7 +225,7 @@
   #menu-nav a:hover {
       border-top: 2px solid #0065FC;
       color:#0065FC;
-      padding-top: 28px;   
+      padding-top: 28px;  
       
   }
   
@@ -282,12 +303,12 @@
     margin-bottom: 10px;
 
   }
-
   
   #search-mobile {
       display: none;
   }
-  
+ 
+
   /**fin de la partie Header**/
   /* 
 ^----------------------
@@ -312,9 +333,6 @@
     margin: 0;
     padding-right: 20px;
     cursor: pointer;
-    
-
-
 
 }
 
@@ -329,6 +347,7 @@
 .btn-filter:hover{
     background-color: var(--light-grey);
     box-shadow: 0 0 8px var(--blue);
+
 }
   
 .btn-filter .fa-solid {
@@ -340,19 +359,16 @@
 .btn-filter .fa-child-reaching {
     padding: 14px 17px 14px 17px;
     margin-right: 10px;
-    color: var(--blue);
-    
+    color: var(--blue);    
 
 }
-
 .btn-filter .fa-heart, .fa-dog, .fa-money-bill-wave {
     padding: 14px 14px 14px 14px;
     margin-right: 10px;
     color: var(--blue);
-
 }
 /*
-*        barre d'information
+*    barre d'information
 */
 #icon-info {
     display: flex;
@@ -372,10 +388,43 @@
     justify-content: center;
     margin-right: 5px;
 }
+
+/*****Title-Hébergements-à-Marseille$****/
+  h2{
+    font-size: 22px;
+  }
+  .card-1 img {
+    object-fit: cover;
+    width: 180px;
+    height:120px;
+    border-radius:10px 10px 0 0;
+
+  }
+  .card-1{
+    width: 182px;
+
+  }
   
+  .card-title {
+    font-size: 16px;
+  }
   
+  .euro {
+    font-weight: 700;
+  }
   
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
   
+.card{
+    width: 182px;
+
+}
+
+
+
+
   /* Le code ci-dessous correspond à la version responsive uniquement */
   
   /****** Media queries ***********/
