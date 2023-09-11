@@ -477,8 +477,6 @@
     grid-gap: 30px;
   }
  
-
- 
   .box1 {
     height:120px;
     width: 180px;
@@ -520,7 +518,7 @@
   .box6 { 
     height:120px;
      width: 180px;
-    grid-row-start:2;
+    grid: row start 2px;
     grid-row-end: auto;
   }
 
