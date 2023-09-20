@@ -1,18 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-/* 
-^  general statement 
-*/
-body {
-    font-family: "Raleway", "sans-serif";
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
 /* 
 ^    set color variables 
 */
+
 :root {
-    --blue : #0065FC;
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --light-blue : #DEEBFF;
+    -blue : #0065FC;
     --light-blue : #DEEBFF;
     --grey : lightgrey;
     --dark-grey : dimgrey;
@@ -20,46 +23,18 @@ body {
     --white: white;
     --green-fluo: #39FF14;
 }
-
 /*  
 *   hidden <label> position for accessibility       
 */
 .accessibility-label {
-	position:absolute;
-	left:-999px;
+    position:absolute;
+    left:-999px;
 }
 
 main, header, footer {
     max-width: 1400px;                      
     margin: 0 auto;                         
     padding : 0 15px;                       
-}
-
-/* 
-^----------------------
-*    NAVIGATION MENU     
-^----------------------
-*/
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#logo {
-    margin-right: auto;
-} 
-
-.menu {
-    text-decoration: none;
-    padding: 30px;                          
-    color: black;
-    border-top: 3px solid transparent;
-    
-}
-.menu:hover {
-    border-top-color: var(--blue);
-    color: var(--blue);
 }
 
 body {
@@ -220,6 +195,33 @@ header nav ul li:hover a {
     color:#0065FC;
     
 }
+* 
+---------------------
+*    NAVIGATION MENU     
+---------------------
+*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo {
+    margin-right: auto;
+} 
+
+.menu {
+    text-decoration: none;
+    padding: 30px;                          
+    color: black;
+    border-top: 3px solid transparent;
+    
+}
+.menu:hover {
+    border-top-color: var(--blue);
+    color: var(--blue);
+}
+
 /* 
 ^----------------------
 *      SEARCH BAR     
@@ -249,14 +251,9 @@ form input {
     margin-left: -5px;
     width: 146px; 
     background-color:var(--light-blue)
-
 }
-
-
-
 form input::placeholder {
     color: black;
-
 }
 
 form h1 {
@@ -285,9 +282,6 @@ form button:hover {
 .fa-solid.fa-magnifying-glass {
     display: none;  
 }
-
-
-
 
 
 /***filtres**/
@@ -338,8 +332,6 @@ form button:hover {
     margin-right: 10px;
     color: var(--blue);
 }
-
-
 /*
 *        barre d'information
 */
@@ -365,47 +357,44 @@ form button:hover {
 
 
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  .hebergements-and-populaires {
-    flex-direction: column;
-  }
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
 
-  .hebergements {
-    width: 100%;
-  }
+    .hebergements {
+        width: 100%;
+    }
 
-  .populaires {
-    width: 100%;
-    margin-top: 50px;
-  }
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
 
-  .populaires-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-  .populaires-cards a {
-    width: 30%;
-  }
+    .populaires-cards a {
+        width: 30%;
+    }
 
-  .populaires-cards .card-title {
-    font-size: 14px;
-  }
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
 
-  .populaires-cards .card-subtitle {
-    font-size: 13px;
-  }
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+    /* ... */
 }
