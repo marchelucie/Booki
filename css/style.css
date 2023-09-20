@@ -1,22 +1,71 @@
-/****** General ***********/
-* {
-  font-family: "Raleway", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+/* 
+^  general statement 
+*/
+body {
+    font-family: "Raleway", "sans-serif";
+    box-sizing: border-box;
 }
 
+/* 
+^    set color variables 
+*/
 :root {
-  --main-color: #0065fc;
-  --main-bg-color: #f2f2f2;
-  --filter-bg-color: #deebff;
+    --blue : #0065FC;
+    --light-blue : #DEEBFF;
+    --grey : lightgrey;
+    --dark-grey : dimgrey;
+    --light-grey : #f2f2f2;
+    --white: white;
+    --green-fluo: #39FF14;
 }
 
-.fa-solid {
-  color: lightgray;
-  
+/*  
+*   hidden <label> position for accessibility       
+*/
+.accessibility-label {
+	position:absolute;
+	left:-999px;
+}
+
+main, header, footer {
+    max-width: 1400px;                      
+    margin: 0 auto;                         
+    padding : 0 15px;                       
+}
+
+/* 
+^----------------------
+*    NAVIGATION MENU     
+^----------------------
+*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo {
+    margin-right: auto;
+} 
+
+.menu {
+    text-decoration: none;
+    padding: 30px;                          
+    color: black;
+    border-top: 3px solid transparent;
+    
+}
+.menu:hover {
+    border-top-color: var(--blue);
+    color: var(--blue);
 }
 
 body {
   display: flex;
   justify-content: center;
+
 }
 
 .main-container {
@@ -129,6 +178,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1px;
+    
 }
 
 header #logo {
@@ -144,55 +194,69 @@ header nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
+    
 }
 
 header nav ul li {
     padding: 25px;
     border-top: 2px solid transparent;
     margin: 0px 20px 0px 20px;
+
 }
 
 header nav ul li:hover {
     border-color: #0065fc
+    
  
 }
 
 header nav ul li a {
     color: black;
     text-decoration: none;
+
 }
 
 header nav ul li:hover a {
-    color:#0065fc ;
+    color:#0065FC;
+    
 }
+/* 
+^----------------------
+*      SEARCH BAR     
+^----------------------
+*/
+
 
 form {
     display: inline-block;
-    width: 100%;   
+    width: 100%;
+    
 }
 
 form i {
     background-color:rgb(214, 207, 207);
     padding: 12px 12px;
     border-radius: 12px 0 0 12px;
-
-    
+    width: 20px;
 }
 
 
 form input {
-    border: 1px solid var(--light-grey);
+    border: 1px solid lightgrey;
     font-size: 16px;
     font-weight: bold;
     padding: 10px 0 10px 10px;
     margin-left: -5px;
-    width: 145px;
-    
+    width: 146px; 
+    background-color:var(--light-blue)
 
 }
 
+
+
 form input::placeholder {
     color: black;
+
 }
 
 form h1 {
@@ -202,24 +266,30 @@ form h1 {
 
 form button {
     border-radius: 0 10px 10px 0;
-    background-color:#0065fc;
-    border: 2px;
+background-color: #0065FC;
     color: var(--white);
     font-weight: bold;
     font-size: 16px;
-    color:#deebff;
     padding: 10px 10px 10px 10px;
     cursor: pointer;
+    border: none;
     margin-left: -5px;
-    
+  
 }
 form button:hover {
     box-shadow: 1px 1px 10px var(--dark-grey);
 }
-/***make the magnifying glass disappear **/
-.fa-solid fa-magnifying-glass{
+/* 
+*       make the magnifying glass disappear 
+*/
+.fa-solid.fa-magnifying-glass {
     display: none;  
 }
+
+
+
+
+
 /***filtres**/
 
 .filters {
@@ -238,8 +308,6 @@ form button:hover {
     margin: 0;
     padding-right: 20px;
     cursor: pointer;
-    border-radius: 20px 20px 20px 20px;
-    background-color: aqua;
 }
 
 .btn-filter {
@@ -255,27 +323,20 @@ form button:hover {
 }
   
 .btn-filter .fa-solid {
-    color:blue;
+    background-color: var(--light-blue);
     border-radius: 30px;
-    
 }
-
 
 .btn-filter .fa-child-reaching {
     padding: 14px 17px 14px 17px;
     margin-right: 10px;
-    color:blue;
-    background-position-x: left;
-    
-    
+    color: var(--blue);
 }
 
 .btn-filter .fa-heart, .fa-dog, .fa-money-bill-wave {
     padding: 14px 14px 14px 14px;
     margin-right: 10px;
-    color:blue;
-    position: relative;
-    
+    color: var(--blue);
 }
 
 
@@ -286,7 +347,6 @@ form button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    
 }  
 
 .fa-solid.fa-info {
@@ -300,22 +360,8 @@ form button:hover {
     align-items: center;
     justify-content: center;
     margin-right: 5px;
-    background-color: lightgray;
-    
 }
   
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
