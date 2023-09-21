@@ -65,17 +65,20 @@ a {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px lightgrey);
-
 }
+
 
 .card img {
   object-fit: cover;
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 15px;
+ padding-left: 10px;
 }
-
+h3{
+    margin-left: 10px;
+}
 .euro {
   font-weight: 700;
 }
@@ -96,7 +99,10 @@ a {
   padding: 30px;
   box-sizing: border-box;
 }
+.afficher-plus{
+margin-top: 80px;
 
+}
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
@@ -139,6 +145,7 @@ a {
   margin-bottom: 4px;
 }
 
+
 .populaires-cards .card-subtitle {
   margin: 0;
 }
@@ -147,6 +154,17 @@ a {
   margin-bottom: 5px;
 color: #0065FC;
 }
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+
+
 
 /***header nav ****/
 
@@ -355,9 +373,271 @@ form button:hover {
     margin-right: 5px;
 }
   
-/****Hebergements à Marseille---/
+/****Hebergements à Marseille**/
+h2{
+    font-size: 20px;
+    font-weight: 2px 
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.box1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    width: 201px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+.box1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
 
 
+
+.box1 img{
+    
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+
+}
+.box1 .card-content{
+    border-radius: 0 0 20px  20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+}
+.box2{
+    margin-top: 30px;
+    background-color: white;
+    width: 201px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.box2 img{
+    
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+
+}
+.box2 .card-content{
+    border-radius: 0 0 20px  20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+}
+.box3{
+    margin-top: 30px;
+    background-color: white;
+    width: 201px; 
+    border-radius: 20px 20px 20px 20px;
+}
+.box2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+
+.box3 img{
+    
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+
+}
+.box3.card-content{
+    border-radius: 0 0 20px  20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+}
+.box3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+
+.box4{
+    background-color: white;
+    width: 201px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.box4 img{
+    
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+
+}
+.box4.card-content{
+    border-radius: 0 0 20px  20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+}
+.box5{
+    background-color: white;
+    width: 201px; 
+    border-radius: 20px 20px 20px 20px;
+}
+.box4:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+
+.box5 img{
+    
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+
+}
+.box5.card-content{
+    border-radius: 0 0 20px  20px;
+    padding: 5px;
+    
+}
+.box5:hover {
+    transform: scale(1.02);
+    box-shadow:lightskyblue;
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+
+
+.box6{
+    background-color: white;
+    width: 201px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+.box6 img{
+    
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px lightgrey);
+
+}
+.box6.card-content{
+    border-radius: 0 0 20px  20px;
+    padding: 5px; 
+    
+}
+.box6:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+    
+}
+.card .stars {
+    margin-top: auto;
+}
+
+
+
+.card-rating{
+    color:#0065FC;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+h3.card-title{
+margin:0px;
+}
+p.card-subtitle{
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 10px;
+}
+
+/****Activités à Marseille**/
+
+div.gallery {
+    border: 1px solid #ccc;
+    border-radius: 12px 12px 12px 12px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #39FF14;
+  }
+  
+  div.gallery img {
+    width: 265px;
+    height: 300px;
+    border-radius: 12px 12px 0 0;
+   
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+
+  
+ 
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
