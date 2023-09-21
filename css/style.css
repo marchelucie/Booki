@@ -242,6 +242,16 @@ header i {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+/************************** Footer ****************************/
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    align-items: center;
+}
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
