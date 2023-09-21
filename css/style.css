@@ -17,6 +17,24 @@ body {
     display: flex;
     justify-content: center;
 }
+footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+footer li {
+    list-style: none;
+}
+footer ul {
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+
+
+main .hebergements-and-populaires {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 5px;
+}
 
 .main-container {
     width: 100%;
