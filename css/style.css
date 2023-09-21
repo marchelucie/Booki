@@ -236,6 +236,11 @@ header i {
     margin-bottom: 5px;
 }
 
+/******************** Activité - Ville ----------------------*/
+.activite-ville {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
 
 
 
