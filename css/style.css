@@ -175,8 +175,8 @@ header i {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 .hebergements-and-populaires section {
