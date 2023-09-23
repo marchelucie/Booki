@@ -86,7 +86,9 @@ h3{
 .neutral-star {
   color: var(--main-bg-color);
 }
-
+ .line{
+    color:#0065FC;
+ }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -238,10 +240,11 @@ form input {
     height: 38px;  
 }
 
-form input:placeholder {
-    color: black;
-}
 
+
+   form input:hover {
+    background-color:var(--light-blue);
+   }
 
 form h1 {
     font-size: 20px;
@@ -261,6 +264,7 @@ background-color: #0065FC;
 }
 form button:hover {
     box-shadow: 1px 1px 10px var(--dark-grey);
+
 }
 /* 
 *       make the magnifying glass disappear 
