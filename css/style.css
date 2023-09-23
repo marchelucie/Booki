@@ -152,11 +152,11 @@ h3{
   color: #0065FC;
 }
 
-.card:hover {
+.card:hover{
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
     cursor: pointer;
-    background-color:var(--light-blue);
+    background-color:var(--light-grey);
 }
 .card .stars {
     margin-top: auto;
@@ -174,26 +174,25 @@ header {
 }
 
 header #logo {
-    padding: 25px;
+    padding: 0;
 
 }
 
 header #logo img {
     width: 50px;
+    padding-top: 20px;
 }
-
+/*****MENU NAV Hebergements ACTIVITES******/
 header nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
-    
 }
 
 header nav ul li {
     padding: 25px;
     border-top: 2px solid transparent;
     margin: 0px 20px 0px 20px;
-
 }
 
 header nav ul li:hover {
@@ -203,38 +202,11 @@ header nav ul li:hover {
 header nav ul li a {
     color: black;
     text-decoration: none;
-
 }
 
 header nav ul li:hover a {
     color:#0065FC;
     
-}
-* 
----------------------
-*    NAVIGATION MENU     
----------------------
-*/
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#logo {
-    margin-right: auto;
-} 
-
-.menu {
-    text-decoration: none;
-    padding: 30px;                          
-    color: black;
-    border-top: 3px solid transparent;
-    
-}
-.menu:hover {
-    border-top-color: var(--blue);
-    color: var(--blue);
 }
 
 /* 
@@ -243,11 +215,9 @@ nav {
 ^----------------------
 */
 
-
 form {
     display: inline-block;
     width: 50%;
-  
 }
 
 form i {
@@ -255,18 +225,19 @@ form i {
     padding: 12px 12px;
     border-radius: 12px 0 0 12px;
     width: 50px;
-
 }
 
 form input {
-    border: 1px solid lightgrey;
+
+    border: 1px solid var(--light-grey);
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 0 10px 10px;
+    padding: 8px 0 7px 10px;
     margin-left: -5px;
     width: 146px;
     height: 38px;  
 }
+
 form input:placeholder {
     color: black;
 }
@@ -274,7 +245,7 @@ form input:placeholder {
 
 form h1 {
     font-size: 20px;
-    font-weight: 2px;
+    font-weight: 10px;
 }
 
 form button {
@@ -287,6 +258,9 @@ background-color: #0065FC;
     cursor: pointer;
     border: none;
     margin-left: -5px;
+}
+form button:hover {
+    box-shadow: 1px 1px 10px var(--dark-grey);
 }
 /* 
 *       make the magnifying glass disappear 
@@ -305,9 +279,10 @@ background-color: #0065FC;
     align-items: center;
     gap: 20px;
  }
-
+ 
  .filters h3 {
     margin-right: 20px;
+   margin-inline-start: 5px;
 }
 
 
@@ -315,6 +290,7 @@ background-color: #0065FC;
     margin: 0;
     padding-right: 20px;
     cursor: pointer;
+
 }
 
 .btn-filter {
@@ -322,31 +298,36 @@ background-color: #0065FC;
     border: 1px solid var(--light-grey);
     border-radius: 30px;
     border-left: none;
-     
 }
 
 .btn-filter:hover{
     background-color: var(--light-grey);
-    box-shadow: 0 0 8px var(--blue);
+    box-shadow: 0  0  8px var(--blue);
     
 }
   
 .btn-filter .fa-solid {
-    background-color: var(--light-blue);
+    background-color: var(--main-bg-color);
     border-radius: 30px;
+    color: #0065FC;
 }
+.btn-filter:hover{
+    box-shadow: 10px 10px 8px var(--grey);
+}
+
 
 .btn-filter .fa-child-reaching {
     padding: 14px 17px 14px 17px;
     margin-right: 10px;
     color: var(--blue);
-    
+    color:#0065FC;
 }
+
 
 .btn-filter .fa-heart, .fa-dog, .fa-money-bill-wave {
     padding: 14px 14px 14px 14px;
     margin-right: 10px;
-    color: var(--blue);
+
 }
 /*
 *        barre d'information
@@ -368,6 +349,7 @@ background-color: #0065FC;
     align-items: center;
     justify-content: center;
     margin-right: 5px;
+    color:#0065FC;
 }
   
 /****Hebergements à Marseille**/
@@ -388,7 +370,7 @@ h2{
     background-color: white;
     width: 201px; 
     border-radius: 20px 20px 20px 20px;
-    filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
+    filter: drop-shadow(3px 3px 15px rgb(226, 219, 219));
 
 }
 
@@ -409,17 +391,12 @@ h2{
         transform: scale(1.02);
         box-shadow: 0 0 8px var(--blue);
         cursor: pointer;
-        background-color:var(--light-blue);
+        background-color:var(--light-grey);
     }
     .card .stars {
         margin-top: auto;
     }
     
-.card .stars {
-    margin-top: auto;
-}
-
-
 .box2{
     margin-top: 30px;
     background-color: white;
@@ -437,21 +414,22 @@ h2{
     border-radius: 20px 20px 0 0;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
-
-
 }
+
 .box2 .card-content{
     border-radius: 0 0 20px  20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 
 }
-.box2:hover {
+.box2:hover{
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
     cursor: pointer;
-    background-color:var(--light-blue);
+    background-color:var(--light-grey);
 }
+
+
 .card .stars {
     margin-top: auto;
 }
@@ -483,11 +461,11 @@ h2{
     filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 
 }
-.box3:hover {
+.box3:hover{
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
     cursor: pointer;
-    background-color:var(--light-blue);
+    background-color:var(--light-grey);
 }
 .card .stars {
     margin-top: auto;
@@ -517,13 +495,13 @@ h2{
     filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 }
 
-
-.box4:hover {
+.box4:hover{
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
     cursor: pointer;
-    background-color:var(--light-blue);
+    background-color:var(--light-grey);
 }
+
 .card .stars {
     margin-top: auto;
 }
@@ -550,13 +528,12 @@ h2{
     border-radius: 20px 20px 20px 20px;
     filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 }
-.box5:hover {
+.box5:hover{
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
     cursor: pointer;
-    background-color:var(--light-blue);
-   
-} 
+    background-color:var(--light-grey);
+}
 
 .card .stars {
     margin-top: auto;
@@ -587,12 +564,11 @@ h2{
     filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 
 }
-.box6:hover {
-    
+.box6:hover{
     transform: scale(1.02);
-    box-shadow: 2 0 8px var(--blue);
+    box-shadow: 0 0 8px var(--blue);
     cursor: pointer;
-    background-color:var(--light-blue);
+    background-color:var(--light-grey);
 }
 .card .stars {
     margin-top: auto;
@@ -618,22 +594,21 @@ margin-left: 10px;
 div.gallery {
     border: 1px solid #ccc;
     border-radius: 12px 12px 12px 12px;
-    filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
+    filter: drop-shadow(3px 3px 15px rgb(226, 219, 219));
   }
   
   div.gallery:hover {
-    border: 1px solid #39FF14;
-    transform: scale(1.02);
-    box-shadow: 5 0 8px var(--blue);
-    cursor: pointer;
-    background-color:var(--light-blue);
-  }
+    border: 1px solid var(--green-fluo);
+        transform: scale(1.02);
+        cursor: pointer;
+        background-color:var(--light-grey);
+    }
 
   div.gallery img {
-    width: 270px;
+    width: 262px;
     height: 300px;
     border-radius: 12px 12px 0 0;
-    filter: drop-shadow( 0px 3px 15px rgb(226, 219, 219));
+    filter: drop-shadow( 3px 3px 15px rgb(226, 219, 219));
   }
   
   div.desc {
