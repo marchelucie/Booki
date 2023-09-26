@@ -159,32 +159,42 @@ a {
 /********* Navigation **************/
 nav {
     display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 934.91px;
+    align-self: stretch;
+    max-width: 1440px;
+    height: 79px;
 }
 nav ul {
     display: flex;
+    padding: 0px 50px;
     flex-direction: row;
-    justify-content: space-between;
     align-items:center;
-    margin-top: -5px;
-    padding: 0 5px;
-    width: 30%;
+    gap: 68px;
+    margin: 0;
 }
 nav li {
+    display: flex;
     font-weight: 400;
     font-size: 0.9rem;
     position: relative;
     transition: 0.3s ease;
     cursor: pointer;
     padding: 15px 0;
+    margin: 0;
 }
-nav img {
-    height: 25%;
-    width: 25%;
-    padding: 10px;
-    margin: 10px;
+.Logo-Reservia {
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    }
+
+.Logo-Reservia img {
+    height: 19px;
+    width: 61.09px;
 }
 nav li:first-child {
     color: var(--main-color);
@@ -211,10 +221,33 @@ nav li:last-child:before {
 
 /************* Header *************************/
 header {
-    font-size: 0.7rem;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch;
+    width: 1340px;
+    height: 281px;
 }
-header h5 {
+
+.Headline {
+    flex-direction: column;
+    height: 53px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.Headline h2 {
+    align-self: stretch;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    }
+.Headline h5 {
     font-size: 0.7rem;
     margin-top: -10px;
     padding: 0;
@@ -314,60 +347,79 @@ form button {
 
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+div.hebergements-and-populaires {
     display: flex;
     align-items: center;
     gap: 40px;
     align-self: stretch;
-    padding: 30px;
+    margin: 50px, 35px, 50px, 35px;
     box-sizing: border-box;
+    width: 1340px;
+    height: 614px;
 }
 
 
 /****** Offers-Main ***********/
-section .Offers-main {
+section.Offers-main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
     flex: 1 0 0;
     align-self: stretch;
-    padding: 30px;
     background-color: var(--main-bg-color);
     border-radius: 15px;
+    height: 100%;
+    width: 100%;
     }
 
-.Offers-main h2 {
+.Offers-main h2:nth-child(1) {
     align-self: stretch;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 25.83px;
+    top: 10px;
     }
+
+.Offers-main > h2 {
+    position: relative;
+    width: 811px;
+    height: 21px;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+    align-self: stretch;
+    padding: 15px;
+    margin: 0;
+    top: -15px;
+    
+}
 
 div.card-haut, div.card-bas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 40px;
     flex: 1 0 0;
     border-radius: 15px;
     background: var(--Grey, #F2F2F2);
 }
 
-.Offers-main article.card {
+article.card a {
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
-    flex: 1 0 0;  
-    
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 0, 0, 15px, 0;
+           
 }
 
-.Offers-main img {
+article.card img {
     height: 124px;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
@@ -376,13 +428,14 @@ div.card-haut, div.card-bas {
     
 }
 
-.Offers-main div.card-content {
+div.card-content {
     display: flex;
     padding: 0px 15px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    margin-top: -20px;
+    align-self: stretch;
+    
 }
 
 .Offers-main div.card-content h3.card-title {
@@ -412,20 +465,84 @@ div.card-haut, div.card-bas {
 
 
 /****** Populaires ***********/
-.populaires {
-    width: 100%;
+section.populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: 429px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--Grey, #F2F2F2);
 }
 
-.populaires-title {
+#Titre {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50.825px;
+    align-self: stretch;
 }
 
-.populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+i.fa-solid.fa-chart-line {
+    width: 18px;
+    height: 15.75px;
+}
+
+h2.section-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+   
+}
+
+h3.card-title {
+align-self: stretch;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+p.card-title {
+align-self: stretch;
+font-family: Raleway;
+font-size: 14px;
+font-style: normal;
+line-height: normal;
+}
+
+.Card img {
+width: 123px;
+height: 146px;
+border-radius: 20px 0px 0px 20px;
+border-top: 5px solid var(--White, #FFF);
+border-bottom: 5px solid var(--White, #FFF);
+border-left: 5px solid var(--White, #FFF);
+background: lightgray 50% / cover no-repeat;
+
 }
 
 .populaires-cards img {
@@ -435,13 +552,13 @@ div.card-haut, div.card-bas {
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
+.populaires-cards ~ .card-content {
+    width: 246px;
+    height: 136px;
+    padding: 10px 5px 5px 15px;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .populaires-cards .card-title {
