@@ -302,13 +302,13 @@ form button:hover {
 
 .btn-filter {
     font-weight: bold;
-    border: 1px solid var(--light-grey);
+    border: 1px solid var(--light-blue);
     border-radius: 30px;
     border-left: none;
 }
 
 .btn-filter:hover{
-    background-color: var(--light-grey);
+    background-color:var(--light-blue);
     box-shadow: 0  0  8px var(--blue);
     
 }
@@ -319,7 +319,7 @@ form button:hover {
     color: #0065FC;
 }
 .btn-filter:hover{
-    box-shadow: 10px 10px 8px var(--grey);
+    box-shadow: 10px 10px 8px var(--light-blue);
 }
 
 
@@ -788,18 +788,15 @@ margin-left: 10px;
 
    .fa-solid.fa-magnifying-glass {
       display:flex;
-     background-color:#256dd7;
+     background-color:var(--main-color);
      color: var(--main-bg-color);
      border-radius: 0 10px 10px 0; 
+    
     
    }
    form button{
     display:none;
     cursor: pointer;
-}
-form input::placeholder {
-    color: black;   
-
 }
   .btn-search{
     display: flex;
