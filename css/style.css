@@ -788,10 +788,10 @@ margin-left: 10px;
 
    .fa-solid.fa-magnifying-glass {
       display:flex;
-      width: 50px;
      background-color:#256dd7;
      color: var(--main-bg-color);
-     border-radius: 0 10px 10px 0;  
+     border-radius: 0 10px 10px 0; 
+    
    }
    form button{
     display:none;
@@ -804,6 +804,7 @@ form input::placeholder {
   .btn-search{
     display: flex;
     flex-direction:row;
+
   }
 
 
