@@ -9,16 +9,18 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
 .fa-solid {
     color: var(--main-color);
+    transform: translateX(50%);
 }
-
 body {
     display: flex;
     justify-content: center;
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
 }
-
 .activite {
 display: flex;
 flex-direction: column;
@@ -26,9 +28,7 @@ padding: 30px;
 align-items: flex-start;
 gap: 30px;
 align-self: stretch;
-
 }
-
 .activite h2 {
 height: 30.02px;
 font-size: 22px;
@@ -36,7 +36,6 @@ line-height: normal;
 font-weight: 700;
 align-self: stretch;
 }
-
 .activite h3 {
 align-self: stretch;
 font-size: 16px;
@@ -44,7 +43,6 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
-
 .activite article.card {
     display: flex;
     flex-direction: column;
@@ -54,7 +52,6 @@ line-height: normal;
     height: 439px;
     border-radius: 20px;
 }
-
 .activite img {
     height: 380px;
     flex-shrink: 0;
@@ -63,7 +60,6 @@ line-height: normal;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 
 }
-
 footer {
     display: flex;
     align-items: flex-start;
@@ -101,7 +97,6 @@ padding: 0;
 font-size: 16px;
 font-weight: 400;
 }
-
 footer h3 {
 padding: 0;
 font-size: 18px;
@@ -109,38 +104,31 @@ color: black;
 font-weight: 700;
 line-height: normal;
 }
-
-
 main .hebergements-and-populaires {
     display: grid;
     grid-template-columns: 60% 40%;
     margin: 5px;
 }
-
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 .section-title {
     margin: 0;
     font-size: 22px;
 }
-
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
 .card img {
     object-fit: cover;
 }
@@ -190,8 +178,7 @@ nav li {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    }
-
+}
 .Logo-Reservia img {
     height: 19px;
     width: 61.09px;
@@ -229,7 +216,29 @@ header {
     width: 1340px;
     height: 281px;
 }
-
+header p {
+    display: flex;
+    width: 100%;
+    height: 24px fixed;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    bottom: 10px;
+    padding: 0;
+    margin: 10px;
+   
+}
+i.fa-solid.fa-info {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--Grey, #D9D9D9);
+    border-radius: 1500px;
+    transform: translateY(25%);
+}
 .Headline {
     flex-direction: column;
     height: 53px;
@@ -238,7 +247,6 @@ header {
     gap: 8px;
     align-self: stretch;
 }
-
 .Headline h2 {
     align-self: stretch;
     font-size: 22px;
@@ -246,51 +254,32 @@ header {
     font-weight: 700;
     line-height: normal;
     margin: 0;
-    }
+}
 .Headline h5 {
-    font-size: 0.7rem;
-    margin-top: -10px;
-    padding: 0;
-    color: grey;
+    align-self: stretch;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal;
+    margin: 0;
 }
 
-header .filters-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    margin: 10px;
-    padding: 0;
-}
-header .filters-header button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    border-radius: 50px;
-    height: 20px;
-    font-weight: bold;
-    background: white;
-    border: 1px solid grey;
-}
-header i {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 10px;
-    border: 1px solid grey;
-}
+/************************** Formulaire **************************** */
 form {
     display: flex;
-    font-display: column;;
+    align-items: center;
     width: 377px;
     height: 49px;
-    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--Grey, #F2F2F2);
+    background: var(--White, #FFF);
+    gap: 24px;
+    margin: 0;
+}
+form .input-group-text {
+    width: 50px;
+    height: 49px;
+    flex-shrink: 0;
 }
 form span {
     display: flex;
@@ -302,48 +291,61 @@ form span {
     background-color: var(--main-bg-color);
 }
 input {
-    color: black;
-    font-weight: 700;
+    text-align: center;
     font-size: 18px;
-    color: cyan;
+    line-height: normal;
+    font-weight: 700;
     border: none;
 }
-.input-group.mb-3 {
-    height: 49px;
-    width: 377px;
-    border-radius: 15px;
+input::placeholder {
+color: var(--Black, #000);
 }
 form button {
+    display: flex;
     height: 49px;
-    width: 132px;
-    border-radius: 0 15px 15px 0;
-    padding: 15px, 16px, 15px, 16px;
-    color: var(--main-bg-color);
-    background-color: var(--main-color);
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-}
-
-.filters-header {
-    height: 50px;
-    max-width: 758px;
-    padding: 10px;
-    border: 1px solid red;
-}
-.filters-header h3 {
+    padding: 15px 16px;
+    align-items: center;
+    gap:10px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--Blue, #0065FC);
+    background: var(--Blue,#0065FC);
+    color: var(--White, #FFF);
+    text-align: center;
     font-size: 18px;
     font-weight: 700;
+    line-height: normal;
 }
 
-.filters-header button {
-    height: 100px;
-    max-width: 173px;
-    border-radius: 25px;
-    padding: 4px 19px 4px 19px;
+/****************** FILTERBAR ************************* */
+.FilterBar {
+    display: flex;
+    width: 758px;
+    height: 50px;
+    align-items: center;
+    gap: 15px;
+}
+.FilterBar h3 {
     font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
 }
-
+.FilterBar button {
+    display: flex;
+    height: 50px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9); 
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.FilterBar button:nth-child(5) {
+    background: var(--blue-light, #DEEBFF);
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -352,12 +354,10 @@ div.hebergements-and-populaires {
     align-items: center;
     gap: 40px;
     align-self: stretch;
-    margin: 50px, 35px, 50px, 35px;
     box-sizing: border-box;
     width: 1340px;
     height: 614px;
 }
-
 
 /****** Offers-Main ***********/
 section.Offers-main {
@@ -372,7 +372,6 @@ section.Offers-main {
     height: 100%;
     width: 100%;
     }
-
 .Offers-main h2:nth-child(1) {
     align-self: stretch;
     font-size: 22px;
@@ -381,7 +380,6 @@ section.Offers-main {
     line-height: 25.83px;
     top: 10px;
     }
-
 .Offers-main > h2 {
     position: relative;
     width: 811px;
@@ -392,10 +390,8 @@ section.Offers-main {
     align-self: stretch;
     padding: 15px;
     margin: 0;
-    top: -15px;
-    
+    top: -15px;  
 }
-
 div.card-haut, div.card-bas {
     display: flex;
     flex-direction: row;
@@ -405,7 +401,6 @@ div.card-haut, div.card-bas {
     border-radius: 15px;
     background: var(--Grey, #F2F2F2);
 }
-
 article.card a {
     display: flex;
     flex-direction: column;
@@ -415,29 +410,23 @@ article.card a {
     width: 100%;
     height: auto;
     border-radius: 20px;
-    padding: 0, 0, 15px, 0;
-           
+    padding: 0, 0, 15px, 0;         
 }
-
 article.card img {
     height: 124px;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid var(--White, #FFF); 
-    background: lightgray 50% / cover no-repeat;
-    
+    background: lightgray 50% / cover no-repeat; 
 }
-
 div.card-content {
     display: flex;
     padding: 0px 15px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
-    
+    align-self: stretch;  
 }
-
 .Offers-main div.card-content h3.card-title {
     align-self: stretch;
     font-size: 16px;
@@ -445,17 +434,13 @@ div.card-content {
     line-height: normal;
     margin: 0;
 }
-
-
 .Offers-main div.card-content p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0;
-    
 }
-
 .Offers-main div.card-rating {
     width: 81px;
     height: 13.25px;
