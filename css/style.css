@@ -3,6 +3,8 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 /* 
@@ -783,9 +785,7 @@ margin-left: 10px;
     padding: 0px;
     
    }
-   /* Small devices (phones, less than 768px) */
-@media (max-width: 619.98px) {
-
+  
    .fa-solid.fa-magnifying-glass {
       display:flex;
      background-color:var(--main-color);
@@ -808,4 +808,4 @@ margin-left: 10px;
 }
 
 }
-}
+
