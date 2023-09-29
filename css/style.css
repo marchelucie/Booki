@@ -330,7 +330,7 @@ form button {
 }
 
 
-.btn-filter .fa-heart, .fa-dog, .fa-money-bill-wave {
+.btn-filter .fa-heart, .fa-fire, .fa-money-bill-wave {
     padding: 14px 14px 14px 14px;
     margin-right: 10px;
 
@@ -809,5 +809,4 @@ margin-left: 10px;
 
 }
 
-}
-
+}   
