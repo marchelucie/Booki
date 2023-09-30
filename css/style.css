@@ -678,7 +678,7 @@ h4{
       }
   #icon-info{
 display: flex;
-justify-content: left;
+justify-content: left;  
   }
   .filters{
     margin-left: 20px;
