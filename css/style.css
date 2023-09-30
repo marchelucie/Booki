@@ -79,9 +79,9 @@ a {
 }
 
 h3{
-    margin-left: 10px;
-    padding-left: 20px;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
 .euro {
@@ -103,7 +103,7 @@ h3{
     margin-top: 10px;
 }
 
-.titre-{
+.titre-1{
     display: flex;
     justify-content:baseline;
 }
@@ -680,9 +680,46 @@ h4{
 display: flex;
 justify-content: left;  
   }
+
   .filters{
-    margin-left: 20px;
+    padding-bottom: 100%;
+   
   }
+
+.filters {
+  display: flex;
+  padding: 20px;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-left: 100px;
+  
+
+}**/
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+     
+}
+
+.btn-filter p {
+  display:inline-block;
+  flex-direction: column;
+  margin: 0px;
+  padding-right: 5px;
+  cursor: pointer;
+  
+}
+
+.titre-1{
+  padding-left: 20px;   
+}
+
+
+
+
+
+
+
 /**********************FIN DE LAPTOP*************************************/
 /****************************************************************************************/
 /*******************************************************************************************/
@@ -788,28 +825,16 @@ h5{
         text-decoration: none;
         font-size: 15px;
       }
+      
       .filters {
-        display: inline-flex;
-        padding-top: 20px;
-         padding-inline-end: 20px;
-        flex-flow: row wrap;
-        align-items: center;
-        gap: 20px;
-        
-     }
-     .btn-filter p {
-        display:inline-block;
-        flex-direction: column;
-        margin: 0px;
-        padding-right: 5px;
-        cursor: pointer;
-    }
-    
-    .titre-1{
-        padding-left: 20px;
-        
-    }
-
+        display: flex;
+        flex-wrap:wrap;
+        padding: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+          
+      
+      }
 
 
 
@@ -855,12 +880,4 @@ h5{
     padding-bottom: 10px;
     
 }
-
-
-
-
-
-
-
 }
-
