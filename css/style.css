@@ -759,7 +759,12 @@ h5{
 p{
     margin-bottom: 10px;
 }
+.afficher{
+    margin-top: 100px;
+    font-size: 15px;
+    font-weight: bold;
 
+}
 
 /**********************FIN DE LAPTOP*************************************/
 /****************************************************************************************/
@@ -769,6 +774,7 @@ p{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px){
     .hebergements-and-populaires {
         flex-direction: column;
@@ -832,18 +838,23 @@ p{
         flex-wrap:wrap;
         padding: 20px;
         margin-bottom: 40px;
-        margin-left: 20px;   
+         
       }
-      
-      
+     
     
+      
     
   
 
 /***************FIN DE TABLETTE*************************************/
 /*************************************************************************/
 /*********************************************************************************/
-
+/*Small devices (*/
+@media (max-width: 768.98px){
+    .titre-Filtres{
+        padding-right: 100%;
+    }
+}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -880,4 +891,28 @@ p{
     padding-bottom: 10px;
     
 }
+
+.container-grid{
+    display:flex;
+    flex-direction: column;
+    column-gap: normal;
 }
+
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+    width: 100%;
+     margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.populaires-cards{
+    display:flex;
+    flex-direction: column;
+    column-gap: normal;
+    width: 200%;    
+} 
+
+}
+
+
+
