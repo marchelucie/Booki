@@ -515,6 +515,7 @@ i.fa-solid.fa-chart-line {
 }
 .populaires-cards article.card img {
     width: 100%;
+    max-width: 123px;
     height: 146px;
     border-radius: 20px 0px 0px 20px;
     border-top: 5px solid white;
@@ -660,7 +661,6 @@ footer {
     width: 100%;
     max-width: 1440px;
     height: 169px;
-    border: 1px solid red;
 }
 
 footer div {
@@ -850,5 +850,45 @@ background: var(--main-footer-ellipse);
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /* ..... Barre de Navigation ......... */
+
+.header {
+    min-width: 375px;
+    height: 115px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    flex-direction: column;
+    border: 2px solid red;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    height: 36px;
+    padding: 0;
+    flex: 1 0 100%;
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex: 2 1 50%;
+}
+nav li:hover:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: var(--main-color);
+    transform: translateY(25px);
+}
+
 }
