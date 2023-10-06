@@ -61,7 +61,7 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
-    border: 1px solid blue;
+    border: 1px solid var(--main-color);
 }
 nav {
     display: flex;
@@ -174,7 +174,7 @@ form {
     width: 377px;
     height: 49px;
     border-radius: 15px;
-    background: var(--White, #FFF);
+    background: White;
     gap: 24px;
 }
 form .input-group-text {
@@ -200,7 +200,7 @@ input {
     border: none;
 }
 input::placeholder {
-color: var(--Black, #000);
+color: Black;
 }
 form button {
     display: flex;
@@ -209,8 +209,8 @@ form button {
     align-items: center;
     gap:10px;
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid var(--Blue, #0065FC);
-    background: var(--Blue,#0065FC);
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     color: var(--White, #FFF);
     text-align: center;
     font-size: 18px;
@@ -245,7 +245,7 @@ gap: 10px;
     align-items: center;
     gap: 10px;
     border-radius: 25px;
-    border: 2px solid var(--grey-tint-2, #D9D9D9); 
+    border: 2px solid var(--ellipse); 
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -253,7 +253,7 @@ gap: 10px;
     background: white;
 }
 .FilterBar button:hover {
-    background: var(--blue-light, #DEEBFF);
+    background: var(--main-bg-color);
 }
 .info-group p {
     display: flex;
@@ -292,7 +292,7 @@ gap: 10px;
     width: 100%;
     height: 614px;
     align-self: stretch;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
     border-radius: 15px;
 }
 .hebergements-and-populaires h2 {
@@ -301,7 +301,7 @@ gap: 10px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 
 /************************ Rangé du Haut *********************/
@@ -314,7 +314,7 @@ gap: 10px;
     height: 208px;
     width: 100%;
     min-width: 811px;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 .card-haut a {
     width: 100%;
@@ -336,7 +336,7 @@ gap: 10px;
     width: 100%;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    border: 5px solid var(--White, #FFF);
+    border: 5px solid white;
 }
 .card-haut .card-content {
     width: 100%;
@@ -377,15 +377,15 @@ gap: 10px;
     align-items: flex-start;
     gap: 30px;
     align-self: stretch;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 .card-bas a {
     width: 100%;
     border-radius: 15px;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 article.card {
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 .card-bas .card {
     display: flex;
@@ -401,7 +401,7 @@ article.card {
     width: 100%;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    border: 5px solid var(--White, #FFF);
+    border: 5px solid white;
 }
 .card-bas .card-content {
     width: 100%;
@@ -452,7 +452,7 @@ article.card {
     align-items: center;
     gap: 30px;
     align-self: stretch;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
     border-radius: 15px;
 }
 #Titre {
@@ -467,7 +467,7 @@ article.card {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 i.fa-solid.fa-chart-line {
     width: 18px;
@@ -482,7 +482,7 @@ i.fa-solid.fa-chart-line {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 /***************************** Card Populaires ************************/
 .populaires-cards {
@@ -494,13 +494,13 @@ i.fa-solid.fa-chart-line {
     width: 100%;
     height: 498px;
     border-radius: 20px;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 .populaires-cards a {
     width: 100%;
     height: 146px;
     border-radius: 20px;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 .populaires-cards article.card {
     display: flex;
@@ -511,7 +511,7 @@ i.fa-solid.fa-chart-line {
     justify-content: center;
     align-self: stretch;
     border-radius: 20px;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 .populaires-cards article.card img {
@@ -519,9 +519,9 @@ i.fa-solid.fa-chart-line {
     height: 146px;
     border: 5px 0 5px 5px;
     border-radius: 20px 0px 0px 20px;
-    border-top: 5px solid var(--White, #FFF);
-    border-bottom: 5px solid var(--White, #FFF);
-    border-left: 5px solid var(--White, #FFF);
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
 }
 .populaires-cards h3.card-title {
 align-self: stretch;
@@ -613,7 +613,7 @@ line-height: 18.78px;
     flex-shrink: 0;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    background: var(--White, #FFF);
+    background: white;
 }
 .activite article.card {
     display: flex;
@@ -633,7 +633,7 @@ line-height: 18.78px;
     flex-shrink: 0;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: url(<path-to-image>), var(--main-bg-color) 50% / cover no-repeat;
 }
 .activite .card-content {
     display: flex;
@@ -667,7 +667,7 @@ align-items: flex-start;
 align-self: stretch;
 flex: 1 0 0;
 gap: 15px;
-background: var(--Grey, #F2F2F2)
+background: var(--main-bg-color)
 
 }
 footer h3 {
@@ -679,7 +679,7 @@ footer h3 {
     font-style: normal;
     font-weight: 700;
     line-height: 21.13px;
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-color);
 }
 
 footer ul {
@@ -693,13 +693,13 @@ footer ul {
     color: black;
     padding: 20px;
     flex: 1, 0, 0;
-    background: var(--Grey, #F2F2F2)
+    background: var(--main-bg-color)
 }
 footer li {
 padding: 0;
 font-size: 16px;
 font-weight: 400;
-background: var(--Grey, #F2F2F2)
+background: var(--main-bg-color);
 }
 
 
