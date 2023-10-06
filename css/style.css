@@ -572,14 +572,14 @@ line-height: 18.78px;
 
 /*************************** Section activité ****************/
 .activite {
-    min-width: 100%;
+    width: 100%;
+    max-width: 1340px;
     height: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     align-self: stretch;
-    border: 1px solid blue;
 }
 .activite h2 {
     display: flex;
@@ -591,7 +591,6 @@ line-height: 18.78px;
     padding-left: 30px;
     margin-top: 30px;
     align-self: stretch;
-    border: 1px solid violet;
 }
 .activite-ville {
     display: flex;
@@ -600,17 +599,18 @@ line-height: 18.78px;
     gap: 30px;
     margin-left: 30px;
     align-self: stretch;
-    width: 100%;
+    width: 95%;
     max-width: 1280px;
     height: 439px;
-    border: 2px solid red;
 }
 .activite a {
-    width: 23%;
+    display: flex;
+    flex: 1 0 0;
+    width: 100%;
+    max-width: 287px;
     height: 380px;
-    flex-shrink: 0;
     align-self: stretch;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 0px 0px 20px 20px;
     background: white;
 }
 .activite article.card {
@@ -620,10 +620,10 @@ line-height: 18.78px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px 20px 0px 0px;
     flex: 1 0 0;
-    border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    padding: 0;   
+    padding: 0; 
 }
 .activite img {
     width: 100%;
@@ -639,9 +639,12 @@ line-height: 18.78px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    border-radius: px;
     gap: 10px;
     align-self: stretch;
-    border-radius: 0px 0px 20px 20px;
+}
+.activite .card-content .card-txt h3 {
+    max-width: 259px;
 }
 a {
     color: inherit;
@@ -652,10 +655,12 @@ a {
 footer {
     display: flex;
     align-items: flex-start;
+    justify-content: space-evenly;
     align-self: stretch;
     width: 100%;
-    max-width: 1340px;
+    max-width: 1440px;
     height: 169px;
+    border: 1px solid red;
 }
 
 footer div {
