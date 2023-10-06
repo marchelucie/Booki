@@ -313,12 +313,10 @@ gap: 10px;
     align-self: stretch;
     height: 208px;
     width: 100%;
-    min-width: 811px;
     background: var(--main-footer-ellipse);
 }
 .card-haut a {
     width: 100%;
-    min-width: 250px;
     height: 208px;
     border-radius: 15px;
 }
@@ -446,7 +444,8 @@ article.card {
 /**************************** Section Populaires ********************************/
 .populaires {
     display: flex;
-    width: auto;
+    width: 100%;
+    max-width: 429px;
     padding: 30px;
     flex-direction: column;
     align-items: center;
@@ -517,7 +516,6 @@ i.fa-solid.fa-chart-line {
 .populaires-cards article.card img {
     width: 100%;
     height: 146px;
-    border: 5px 0 5px 5px;
     border-radius: 20px 0px 0px 20px;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
@@ -656,12 +654,15 @@ footer {
     align-items: flex-start;
     align-self: stretch;
     width: 100%;
+    max-width: 1340px;
     height: 169px;
-    margin-top: -30px;
 }
+
 footer div {
 display: flex;
+height: 123px;
 width: 100%;
+max-width: 407px;
 flex-direction: column;
 align-items: flex-start;
 align-self: stretch;
@@ -670,7 +671,6 @@ gap: 15px;
 background: var(--main-footer-ellipse);
 }
 footer h3 {
-    padding: 20px;
     width: 100%;
     height: 21px;
     font-size: 18px;
@@ -686,12 +686,12 @@ footer ul {
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
+    padding: 0;
     gap: 15px;
-    width: 447px;
+    width: 100%;
     height: 163px;
     color: black;
-    padding: 20px;
-    flex: 1, 0, 0;
+    flex: 1 0 0;
     background: var(--main-footer-ellipse)
 }
 footer li {
