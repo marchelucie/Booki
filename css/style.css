@@ -687,13 +687,13 @@ h5 {
   margin-bottom: 10px;
 }
 
-.footer.footer {
+.footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 200px;
   background-color: #f2f2f2;
-  margin-top: 280px;
+  margin-top: 300px;
   margin-bottom: 20px;
 }
 .footer-left {
@@ -784,7 +784,6 @@ p {
 
   .filters {
     display: flex;
-   
     flex-wrap: wrap;
     padding: 20px;
     margin-bottom: 20px;
@@ -876,19 +875,10 @@ p {
     border-color: #256dd7;
   }
 
-  .footer.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f2f2f2;
-     height: 100%;
-     width: 100%;
-
-  }
   .footer-left {
     margin-top: 20px;
-    padding-left: 20px;
-    line-height: 20px;
+    padding-left: 30px;
+    line-height: 50px;
   }
   .footer-midle {
     margin-top: 20px;
@@ -957,7 +947,13 @@ p {
     width: 100%;
   
   }
+.footer{
+    display: flex;
+    flex-direction: column;
+margin-top: 25px;
+
+
+}
 
 }
 }
-
