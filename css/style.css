@@ -67,7 +67,7 @@ body {
     display: flex;
     padding: 0px 50px;
     flex-direction: row;
-    align-items:center;
+    align-items:flex-start;
     gap: 68px;
     margin: 0;
 }
@@ -92,16 +92,8 @@ body {
     height: 19px;
     width: 61.09px;
 }
-.header li:first-child {
+.header li:first-child:hover {
     color: var(--main-color);
-}
-.header li:first-child:before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background: var(--main-color);
-    transform: translateY(-14px);
 }
 .header li:hover:before {
     content: "";
@@ -111,7 +103,7 @@ body {
     background: var(--main-color);
     transform: translateY(-14px);
 }
-.header li:last-child:before {
+.header li:last-child:hover {
     color: var(--main-color);
 }
 /************************** section body-desktop ***************/
@@ -181,6 +173,10 @@ form span {
 }
 form i.fa-location-dot {
     color: black;
+}
+form button {
+    display:inline-block;
+    content: "Salut"
 }
 input {
     text-align: center;
@@ -646,11 +642,12 @@ a {
 footer {
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-self: stretch;
     width: 100%;
     max-width: 1440px;
-    height: 169px;
+    height: 163px;
+    background: var(--main-footer-ellipse);
 }
 
 footer div {
@@ -661,6 +658,7 @@ max-width: 407px;
 flex-direction: column;
 align-items: flex-start;
 align-self: stretch;
+padding: 20px;
 flex: 1 0 0;
 gap: 15px;
 background: var(--main-footer-ellipse);
@@ -842,7 +840,6 @@ background: var(--main-footer-ellipse);
 @media (max-width: 767.98px) {
     /* ..... Barre de Navigation ......... */
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -863,31 +860,66 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 36px;
+    height: 100%;
+    gap: 0;
     padding: 0;
-    margin-bottom: 15px;
 }
 .header li {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border-bottom: 3px solid var(--main-footer-ellipse);
 }
-.header li:hover {
-    content: "";
-    width: 50%;
-    height: 2px;
-    position: absolute;
-    color: var(--main-color);
-    background: var(--main-color);
-    transform: translateX(-50px);
-    transform: translateY(50px);
+.header li:hover:before {
+    transform: translateY(35px);
 }
-.Logo-Reservia {
-
+.info-group {
+    display: flex;
+    justify-content: flex-start;
+    height: 432px;
+    width: 100%;
+    min-width: 375px;
+    margin: 0;
+    margin-top: 30px;
+    border: 2px solid red;
 }
-.body-desktop {
-    
+.headline {
+    display: flex;
+    width: 92%;
+    min-width: 335px;
+    height: 79px;
+    margin: 0 20px;
+    gap: 8px; 
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    height: 49px;
+    width: 92%;
+    min-width: 335px;
+    margin: 0 20px;
+}
+form button {
+    height: 49px;
+    width: 49px;
+    border-radius: 15px;
+}
+.FilterBar {
+    width: 100%;
+    min-width: 335px;
+    height: 161px;
+    border: 2px solid blue;
+}
+.FilterBar div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+}
+.FilterBar button {
 }
 
 }
