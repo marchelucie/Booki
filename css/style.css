@@ -53,7 +53,6 @@ body {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 /************* Header *************************/
 .header {
@@ -61,7 +60,6 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
-    border: 1px solid var(--main-color);
 }
 .header ul {
     display: flex;
@@ -894,16 +892,17 @@ body {
     width: 92%;
     min-width: 335px;
     height: 79px;
-    margin: 0 20px;
     gap: 8px; 
+}
+.body-desktop {
+    display: flex;
+    align-items: center;
 }
 form {
     display: flex;
     justify-content: space-between;
     height: 49px;
-    width: 92%;
-    min-width: 335px;
-    margin: 0 20px;
+    width: 100%;
 }
 form button {
     height: 49px;
@@ -916,7 +915,6 @@ form button {
     height: 161px;
 }
 .FilterBar h3 {
-    margin: 0 20px;
     height: 21px;
     display: flex;
     height: auto;
@@ -927,26 +925,23 @@ form button {
     flex-direction: row;
     height: 50px;
     width: 90%;
-    margin: 0 20px;
     min-width: 335px;
 }
 .FilterBar button {
     display: flex;
     height: 42px;
 }
-.FilterBar p {
+.info-group p {
+    display: flex;
     height: 38px;
     width: 100%;
     min-width: 335px;
-    margin: 0 20px;
+    margin: 0;
 }
 .groupe {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
     height: 100%;
     width: 100%;
-    min-width: 375px;
 }
 .populaires {
     height: 569px;
@@ -1004,7 +999,6 @@ form button {
     width: 100%;
 }
 .activite {
-    border: 2px solid red;
     height: 100%;
     width: 100%;
 }
@@ -1018,12 +1012,27 @@ form button {
     margin-left: 0;
     height: 100%;
     width: 100%;
-    border: 2px solid green;
+}
+.activite-ville a {
+    display: flex;
+    width: 100%;
+    min-width: 100%;
 }
 .activite-ville article.card {
-    height: 200px;
-    min-width: 315px;
-    border: 2px Solid cyan;
+    width: 100%;
+    min-width: 215px;
 }
-
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    height: 123px;
+    width: 263.3px;
+}
 }
