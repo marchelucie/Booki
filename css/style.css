@@ -430,7 +430,7 @@ article.card {
 .populaires {
     display: flex;
     width: 100%;
-    min-width: 295px;
+    min-width: 320px;
     max-width: 429px;
     padding: 30px;
     flex-direction: column;
