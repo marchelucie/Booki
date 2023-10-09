@@ -722,18 +722,17 @@ background: var(--main-footer-ellipse);
         margin-top: 30px;
         gap: 35px;
         height: 100%;
+        max-height: 400px;
         flex-wrap: nowrap;
-        border: 2px solid green;
     }
     .FilterBar {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        border: 2px solid red;
         gap: 20px;
         height: 100%;
-        max-height: 200px;
+        max-height: 180px;
     }
     .groupe {
         display: flex;
@@ -774,7 +773,7 @@ background: var(--main-footer-ellipse);
         gap: 30px;
         align-self: stretch;
         width: 100%;
-        min-width: 900px;
+        max-width: 913px;
         height: 252px;
     }
     .populaires #Titre {
@@ -913,6 +912,10 @@ form button {
     height: 49px;
     width: 49px;
     border-radius: 15px;
+}
+form button::before {
+    content:"\f002";
+
 }
 .FilterBar {
     width: 100%;
