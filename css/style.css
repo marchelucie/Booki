@@ -736,7 +736,6 @@ background: var(--main-footer-ellipse);
         display: flex;
         width: 100%;
         padding: 4px 19px;
-        border: 2px solid green;
     }
     .groupe {
         display: flex;
