@@ -624,7 +624,7 @@ line-height: 18.78px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-radius: px;
+    border-radius: 20px;
     gap: 10px;
     align-self: stretch;
 }
@@ -717,18 +717,23 @@ background: var(--main-footer-ellipse);
     }
    
     .info-group {
+        display: flex;
         align-content: space-between;
         margin-top: 30px;
         gap: 35px;
-        height: 322px;
+        height: 100%;
         flex-wrap: nowrap;
+        border: 2px solid green;
     }
     .FilterBar {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
+        border: 2px solid red;
         gap: 20px;
-        height: 91px;
+        height: 100%;
+        max-height: 200px;
     }
     .groupe {
         display: flex;
