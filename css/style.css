@@ -77,8 +77,6 @@ h1{
     font-weight: bold;
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -618,7 +616,8 @@ p.card-subtitle {
 
 /****Activités à Marseille**/
 h4 {
-  padding-left: 10px;
+    font-size: 20px;
+  padding-left: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -844,6 +843,8 @@ h2 {
     
     /* MAIN */
     .main{
+        width: 100%;
+        height: 100%;
         margin-top: 45px;
         margin-bottom: 0;
         padding: 0 20px;
@@ -854,7 +855,6 @@ h2 {
     width: 100%;
     margin-left: 10px;
   }
-
 
   .fa-solid.fa-magnifying-glass {
     display: flex;
@@ -890,7 +890,7 @@ h2 {
   }
 
   #logo {
-    margin-left: 120px;
+    margin-left: 110px;
   }
   header {
     display: flex;
@@ -899,6 +899,7 @@ h2 {
   }
   header nav ul li {
     border-top: none;
+    padding-right: 20px;
     border-bottom: 2px solid transparent;
     margin: 0px 20px 0px 20px;
   }
@@ -907,22 +908,10 @@ h2 {
     border-color: #256dd7;
   }
 
-  .footer-left {
-    margin-top: 20px;
-    padding-left: 30px;
-    line-height: 50px;
-  }
-  .footer-midle {
-    margin-top: 20px;
-    line-height: 50px;
-  }
-  .footer-right {
-    margin: 0%;
-    margin-top: 20px;
-  }
   .hebergements-and-populaires {
     display: flex;
     flex-direction: column-reverse;
+  
   }
   .btn-search {
     display: flex;
@@ -955,6 +944,7 @@ h2 {
   }
   section.hebergements {
     background-color: white;
+    
   }
 
   input#search{
@@ -971,40 +961,35 @@ h2 {
     margin-left: 100px;
   
   }
-.footer{
-    display: flex;
-    flex-direction: column;
-     margin-top: 25px;
+
+.section-title{
+    padding-left: 20px;
+    font-size: 20px;
+    
 }
 html{
     display: flex;
     width: 375px;
-   justify-content: center;
-   padding-left: 120px;
-   margin-left: 100px;
-   margin-right: 120px;
+    flex-direction: row;
+    justify-content: center;
+    margin-left:100px;
+    margin-right: 120px;
     height: 100%;
-   
-   
 }
-.section-title{
-    padding-left: 20px;
-    font-size: 20px;
-   
-    
-}
+
+
 h2 {
 
     font-size: 20px;
     width: 375px;
     font-weight: 20px;
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 20px;
     margin-bottom: 10p
 
 }
 .titre-1 {
-  margin-left:50px;
+  margin-left:100px;
   margin-top: 10px;
 
   }
@@ -1016,22 +1001,38 @@ h2 {
     margin-bottom: 50px;
     
   }
+  .footer{
+    display: flex;
+    flex-direction: column;
+     margin-top: 25px;
+}
   .footer-left{
     font-size: 20px;
     font-size: 30px;
-
+    margin-top: 20px;
+    padding-left: 30px;
+    line-height: 50px;
   }
   .footer-midle{
     font-size: 30px;
     margin-left: 20px;
     line-height: 50px;
+    margin-top: 20px;
+   
       
   }
   .footer-right {
     padding-left: 20px;
     font-size: 30px;
+    margin: 0%;
+    margin-top: 20px;
     padding-bottom: 100px;
     line-height: 50px;
   }
+  .afficher{
+    font-size: 20px;
+    padding-top: 20px;
+  }
 }
+
 }
