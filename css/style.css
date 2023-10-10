@@ -1003,7 +1003,6 @@ form button::before {
 }
 .populaires {
     display: block;
-    flex:0 1 0;
     height: 569px;
     width: 100%;
     min-width: 730px;
