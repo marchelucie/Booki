@@ -260,7 +260,6 @@ gap: 10px;
     display: flex;
     align-items: center;
     gap: 40px;
-    align-self: stretch;
     width: 100%;
     height: 611px;
 }
@@ -835,7 +834,6 @@ background: var(--main-footer-ellipse);
         width: 100%;
         max-width: 913px;
         height: 390px;
-        border: 1px solid green
     }
     .activite a {
         width: 100%;
@@ -855,7 +853,6 @@ background: var(--main-footer-ellipse);
         width: 100%;
         max-width: 913px;
         height: 100%;
-        border:1px solid red;
     }
     .activite-ville img {
         width: 100%;
@@ -864,7 +861,7 @@ background: var(--main-footer-ellipse);
     footer {
         display: flex;
         width: 100%;
-        min-width: 754px;
+        min-width: 654px;
         height: 163px;
     }
 }
@@ -878,9 +875,15 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    min-width: 375px;
+    min-width: 315px;
     height: 100%;
     gap: 30px;
+}
+.body-container {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    border: 1px solid blue;
 }
 .header {
     display: flex;
@@ -917,14 +920,13 @@ body {
     width: 100%;
     gap: 35px;
     min-width: 335px;
-    margin-top: 30px;
 }
 .info-group p {
     margin: 0 20px;
 }
 .headline {
     display: flex;
-    width: 92%;
+    width: 100%;
     min-width: 335px;
     height: 79px;
     gap: 8px; 
@@ -932,12 +934,22 @@ body {
 .body-desktop {
     display: flex;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
 }
 form {
     display: flex;
     justify-content: space-between;
     height: 49px;
+    gap: 0px;
+    min-width: 335px;
     width: 100%;
+}
+form input {
+    display: flex;
+    height: 100%;
+    width: 285px;
 }
 form button {
     height: 49px;
@@ -946,9 +958,11 @@ form button {
 }
 form button::before {
     content:"\f002";
-
+    position: relative;
+    transform: translateZ(100px);
 }
 .FilterBar {
+    display: flex;
     width: 100%;
     min-width: 335px;
     height: 161px;
@@ -959,6 +973,10 @@ form button::before {
     height: auto;
 
 }
+.FilterBar .margin {
+    display: flex;
+    flex-direction: column;
+}
 .FilterBar div {
     display: flex;
     flex-direction: row;
@@ -968,7 +986,9 @@ form button::before {
 }
 .FilterBar button {
     display: flex;
+    width: 100%;
     height: 42px;
+    font-size: 16px;
 }
 .info-group p {
     display: flex;
@@ -979,41 +999,49 @@ form button::before {
 }
 .groupe {
     display: flex;
+    flex-direction: column-reverse;
     height: 100%;
-    width: 100%;
+    width: 335px;
+    min-width: 335px;
 }
 .populaires {
     height: 569px;
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
     padding: 30px 0;
     gap: 15px;
 }
 .populaires #Titre {
-    padding: 0 20px; 
+    display: flex; 
 }
 .populaires-cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+    min-width: 335px;
     height: 146px;
 }
 .populaires-cards article.card {
     display: flex;
     width: 100%;
+    min-width: 335px;
+    background: white;
 }
 .populaires-cards a {
     width: 100%;
-    padding: 0 20px;
 }
 .hebergements-and-populaires {
     height: 100%;
     width: 100%;
+    min-width: 335px;
     padding: 30px 0;
     gap: 15px;
+    background: white;
 }
 .hebergements-and-populaires h2 {
    padding: 0 20px; 
+   background: white;
 }
 .hebergements-and-populaires .card-haut {
     display: flex;
@@ -1021,10 +1049,13 @@ form button::before {
     gap: 15px;
     height: 100%;
     width: 100%;
+    background: white;
+    border: 2px solid red;
 }
 .hebergements-and-populaires .card-haut a {
     height: 100%;
     width: 100%;
+    background: white;
     
 }
 .hebergements-and-populaires .card-bas {
@@ -1032,6 +1063,7 @@ form button::before {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    background: white;
 }
 .hebergements-and-populaires .card-bas a {
     height: 100%;
@@ -1066,12 +1098,17 @@ footer {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 50px;
+    min-width: 315px;
 }
 footer div {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    gap: 50px;
     height: 123px;
-    width: 263.3px;
+    width: auto;
 }
+footer ul {
+    font-size: 16px
+};
 }
