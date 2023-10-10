@@ -366,7 +366,7 @@ gap: 10px;
     background: var(--main-footer-ellipse);
 }
 article.card {
-    background: var(--main-footer-ellipse);
+    background: white;
 }
 .card-bas .card {
     display: flex;
@@ -495,7 +495,7 @@ i.fa-solid.fa-chart-line {
     justify-content: center;
     align-self: stretch;
     border-radius: 20px;
-    background: var(--main-footer-ellipse);
+    background: white;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 .populaires-cards article.card img {
@@ -881,7 +881,6 @@ body {
     display: flex;
     align-items: center;
     min-width: 100%;
-    border: 1px solid blue;
 }
 .header {
     display: flex;
@@ -934,7 +933,6 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    border: 2px solid red;
 }
 form {
     display: flex;
@@ -1004,9 +1002,11 @@ form button::before {
     background: white;
 }
 .populaires {
+    display: block;
+    flex:0 1 0;
     height: 569px;
     width: 100%;
-    min-width: 100%;
+    min-width: 730px;
     padding: 30px 0;
     gap: 15px;
     border-radius: 0px;
