@@ -1,7 +1,3 @@
-@import url(header.css);
-@import url(main.css);
-@import url(footer.css);
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 /****** General ***********/
 * {
@@ -43,8 +39,6 @@ footer {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
     body {
         box-sizing: border-box;
         display: flex;
@@ -62,14 +56,12 @@ footer {
         margin-top: 30px ;
     }
     
-    .main .main_text{
-        margin-top: 10px;
-    }
 
 body {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 h1{
@@ -708,6 +700,7 @@ h5 {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 10px;
+
 }
 
 .footer {
@@ -737,26 +730,17 @@ h5 {
 p {
   margin-bottom: 10px;
 }
+
 .afficher {
   margin-top: 100px;
   font-size: 15px;
   font-weight: bold;
 }
 h2 {
-    font-size: 20px;
-    width: 100%;
-    font-weight: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 10p
-
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
-
-
-
-/**********************FIN DE LAPTOP*************************************/
-/****************************************************************************************/
-/*******************************************************************************************/
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -764,82 +748,94 @@ h2 {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
-  .hebergements-and-populaires {
-    flex-direction: column;
-  }
-
-  .hebergements {
-    width: 100%;
-  }
-
-  .populaires {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .populaires-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .populaires-cards a {
-    width: 30%;
-  }
-
-  .populaires-cards .card-title {
-    font-size: 14px;
-  }
-
-  .populaires-cards .card-subtitle {
-    font-size: 13px;
-  }
-
-  .footer {
-    height: auto;
-    gap: 80px;
-  }
-
-  .main-container {
-    padding: 0px;
+    .hebergements-and-populaires {
+      flex-direction: column;
+    }
+    .titre-Filtres {
+        padding-right: 100%;
+      }
+    .hebergements {
+      width: 100%;
+    }
+  
+    .populaires {
+      width: 100%;
+      margin-top: 50px;
+    }
+  
+    .populaires-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .populaires-cards a {
+      width: 30%;
+    }
+  
+    .populaires-cards .card-title {
+      font-size: 14px;
+    }
+  
+    .populaires-cards .card-subtitle {
+      font-size: 13px;
+    }
+  
+    .footer {
+      height: auto;
+      gap: 80px;
+    }
+  
+    .main-container {
+      padding: 0px;
+      width: 100%;
+    }
+   
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 15px;
+     
+    }
+  
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    
+    }
+    h6 {
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
+    html{
+        display: flex;
+        width: 100%;
+        flex-direction:row;
+        justify-content: center;
+        height: 100%;
+        padding-left: 20px;
+    }
+    
+    /* 
+*       make the magnifying glass disappear 
+*/
+.fa-solid.fa-magnifying-glass {
+    display: none;
   }
  
-  a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 15px;
-  }
-
-  .filters {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-  }
-  h6 {
-    font-size: 11px;
-    margin-bottom: 10px;
-  }
-
   
 
-/***************FIN DE TABLETTE*************************************/
-/*************************************************************************/
-/*********************************************************************************/
-/*Small devices (*/
-@media (max-width: 768.98px) {
-  .titre-Filtres {
-    padding-right: 100%;
-  }
-}
-/* Small devices (phones, less than 768px) */
+
+/**************Fin De Laptop***********************************/
+
+  /** Small devices (phones, less than 768px) **/
 @media (max-width: 767.98px) {
     .main-container{
         padding:0;
     }
-    
-   
 
   section.hebergements {
     width: 100%;
@@ -856,11 +852,14 @@ h2 {
     display: none;
     cursor: pointer;
   }
-  .btn-search {
-    display: flex;
-    flex-direction: row;
+  
+  
+  .responsive {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
- 
 
   .container-grid {
     display: flex;
@@ -880,12 +879,12 @@ h2 {
   }
 
   #logo {
-    margin-left: 110px;
+    margin-left: 130px;
   }
   header {
     display: flex;
     flex-direction: column;
-    padding-left: 30%;
+
   }
   header nav ul li {
     border-top: none;
@@ -917,13 +916,9 @@ h2 {
   section {
     display: flex;
     flex-direction: column;
+    
   }
-  .responsive {
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-  }
+ 
   article.card {
     width: 100%;
   }
@@ -947,72 +942,80 @@ h2 {
     padding-right: 20px;
   }
   .filters{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    margin-left: 100px;
-  
+
   }
 
 .section-title{
     padding-left: 20px;
     font-size: 20px;
-    
-}
-html{
-    display: flex;
-    width: 375px;
-    flex-direction: row;
-    justify-content: center;
-    margin-left:80px;
-    height: 100%;
-    width: 100%;
 }
 
-
-h2 {
-    font-size: 20px;
-    padding-left: 80px;
-}
-
-  h5 {
-    
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 50px;
-    
-  }
   .footer{
     display: flex;
     flex-direction: column;
-     margin-top: 25px;
+    align-items: center;
+     margin-top: 80px;
 }
-  .footer-left{
-    font-size: 20px;
+  .footer-left.p{
+    font-size: 30px;
     font-size: 30px;
     margin-top: 20px;
     padding-left: 30px;
     line-height: 50px;
   }
-  .footer-midle{
+
+  .footer-midle.p{
     font-size: 30px;
     margin-left: 20px;
     line-height: 50px;
-    margin-top: 20px;
-   
-      
+    margin-top: 20px;  
   }
-  .footer-right {
-    padding-left: 20px;
+  .footer-right.p {
     font-size: 30px;
-    margin: 0%;
-    margin-top: 20px;
-    padding-bottom: 100px;
+    margin-left: 20px;
     line-height: 50px;
+    margin-top: 20px;  
   }
-  .afficher{
-    font-size: 20px;
-    padding-top: 5px;
-    margin:10px;
+  .footer-right{
+    margin: 0px;
+  }
+
+h2 {
+    font-size:22px;
+    padding-bottom: 20px;
    
+}
+
+h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+html{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction:row;
+    justify-content: center;
+    margin-left:200px;
+}
+.afficher {
+    margin-top: 20px;
+   padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .responsive{
+    width: 340px;
+    height:200px;
+    margin-top: 40px;
+    align-items: center;
+  }
+  .btn-search{
+  padding:0px 0px 0px 60px;
   }
 }
 
