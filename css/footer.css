@@ -40,4 +40,44 @@
   
   }
   
-  
+  /*Small devices (*/
+@media (max-width: 768.98px) {
+    .titre-Filtres {
+      padding-right: 100%;
+    }
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+     margin-top: 25px;
+}
+  .footer-left{
+    font-size: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    padding-left: 30px;
+    line-height: 50px;
+  }
+  .footer-midle{
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 50px;
+    margin-top: 20px;
+   
+      
+  }
+  .footer-right {
+    padding-left: 20px;
+    font-size: 30px;
+    margin: 0%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    line-height: 50px;
+  }
+  .afficher{
+    font-size: 20px;
+    padding-top: 5px;
+    margin:10px;
+   
+  }
+}
