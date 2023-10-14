@@ -43,7 +43,6 @@ footer {
         width: 100%;
         max-width: 1440px;
         padding: 0 50px;
-        box-sizing: border-box;
     }
     
         /*** MAIN ***/
@@ -53,7 +52,6 @@ footer {
     
 
 body {
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -604,7 +602,7 @@ p.card-subtitle {
 
 /****Activités à Marseille**/
 h4 {
-    font-size: 20px;
+ font-size: 20px;
   padding-left: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -745,9 +743,6 @@ h2 {
     .hebergements-and-populaires {
       flex-direction: column;
     }
-    .titre-Filtres {
-        padding-right: 100%;
-      }
     .hebergements {
       width: 100%;
     }
@@ -777,9 +772,16 @@ h2 {
   
     .footer {
       height: auto;
-      gap: 80px;
+      gap: 50px;
     }
-  
+
+    h4{
+        font-size: 20px;
+         padding-left: 25px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+       }
+
     .main-container {
       padding: 0px;
       width: 100%;
@@ -800,10 +802,25 @@ h2 {
       padding-left: 20px;
     
     }
+    h5 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      
+      }
+
+    .footer-right{
+        margin-right: 200px;
+    }
+    .footer-midle{
+        min-width: 200px;
+    }
+
     h6 {
-      font-size: 11px;
+      font-size: 12px;
       margin-bottom: 10px;
     }
+
     html{
         display: flex;
         width: 100%;
@@ -819,12 +836,15 @@ h2 {
 .fa-solid.fa-magnifying-glass {
     display: none;
   }
- 
   
 
 
 /**************Fin De Laptop***********************************/
-
+@media (max-width: 768px) {
+  .titre-Filtres{
+    padding-right: 100%;
+  }
+}
   /** Small devices (phones, less than 768px) **/
 @media (max-width: 767.98px) {
     .main-container{
@@ -955,31 +975,33 @@ h2 {
   .footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:self-start;
      margin-top: 80px;
+     gap:30px;
 }
   .footer-left.p{
     font-size: 30px;
-    font-size: 30px;
     margin-top: 20px;
-    padding-left: 30px;
     line-height: 50px;
   }
 
   .footer-midle.p{
     font-size: 30px;
     margin-left: 20px;
-    line-height: 50px;
+   
     margin-top: 20px;  
   }
   .footer-right.p {
     font-size: 30px;
     margin-left: 20px;
-    line-height: 50px;
+   
     margin-top: 20px;  
   }
   .footer-right{
     margin: 0px;
+  }
+  .footer-midle{
+    margin-left: 20px;
   }
 
 h2 {
@@ -987,9 +1009,15 @@ h2 {
     padding-bottom: 20px;
    
 }
+h4{
+    font-size: 15px;
+     padding-left: 25px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
 
 h6 {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
 
   }
@@ -1004,7 +1032,7 @@ html{
 .afficher {
     margin-top: 20px;
    padding-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
   }
   .responsive{
