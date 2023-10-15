@@ -1,3 +1,4 @@
+  /* HEADER CSS  */
 /***header nav ****/
 
 
@@ -66,3 +67,52 @@ header {
     border-color: #256dd7;
   }
 
+  /*****MENU NAV Hebergements ACTIVITES******/
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    padding: 25px;
+    border-top: 2px solid transparent;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  header nav ul li:hover {
+    border-color: #256dd7;
+  }
+  
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  header nav ul li:hover a {
+    color: #0065fc;
+  }
+/** Small devices (phones, less than 768px) **/
+@media (max-width: 767.98px) {
+    .main-container{
+        padding:0;
+    }
+}
+#logo {
+    margin-left: 130px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+
+  }
+  header nav ul li {
+    border-top: none;
+    padding-right: 20px;
+    border-bottom: 2px solid transparent;
+    margin: 0px 20px 0px 20px;
+  }
+
+  header nav ul li:hover {
+    border-color: #256dd7;
+  }
