@@ -645,9 +645,9 @@ div.desc {
 }
 
 h6 {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 
@@ -725,7 +725,7 @@ p {
 
 .afficher {
   margin-top: 100px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 h2 {
@@ -808,13 +808,32 @@ h2 {
         margin-bottom: 10px;
       
       }
+      .footer {
+        width: 824px;
+        height: 170px;
+         gap: 20px;
+         padding-bottom: 50px;
+         background-color: #f2f2f2;
 
-    .footer-right{
-        margin-right: 200px;
-    }
-    .footer-midle{
-        min-width: 200px;
-    }
+      }
+      .footer-left {
+        width: 288px;
+        height: 163px;
+       
+        gap:20px;
+        
+      
+      }
+      .footer-midle {
+        margin-top: 20px;
+      
+      }
+      .footer-right {
+        margin-right: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+     
+      }
 
     h6 {
       font-size: 11px;
@@ -976,6 +995,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items:self-start;
+    height: 399px;
+    width: 350px;
      margin-top: 80px;
      gap:30px;
 }
