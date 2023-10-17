@@ -3,9 +3,45 @@
   max-width: 1440px;
   padding: 0 50px;
 }
+.accessibility-label {
+    position: absolute;
+    left: -999px;
+  }
+  .section-title {
+    margin: 0;
+    font-size: 22px;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  
+main,
+header,
+footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .main {
   margin-top: 30px;
 }
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
 .card {
   background-color: white;
   border-radius: 20px;
@@ -120,7 +156,6 @@
 }
 .box1 .card-content {
   border-radius: 0 0 20px 20px;
-
   filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 }
 .box1:hover {
@@ -215,7 +250,6 @@
 }
 .box4.card-content {
   border-radius: 0 0 20px 20px;
-
   filter: drop-shadow(0px 3px 15px rgb(226, 219, 219));
 }
 
@@ -308,9 +342,7 @@ p.card-subtitle {
   margin-left: 10px;
   padding-bottom: 10px;
 }
-h3.card-title {
-  margin: 0px;
-}
+
 p.card-subtitle {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -354,6 +386,46 @@ div.desc {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+    h6 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding-left: 5px;
+    }
+
+    h4 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      h2 {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+
+    html {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .afficher {
+        padding-top: 50px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+  
+  
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+
 /*------------------------------------------------------
   Medium devices (tablets, less/equal than 1024px) 
   -------------------------------------------------------*/
@@ -391,6 +463,24 @@ div.desc {
     padding: 0px;
     width: 100%;
   }
+  h4 {
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h6 {
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .afficher {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+
 }
 /*---------------------------------------------------
 Medium devices (tablets, less/equal than 767,98px)
@@ -447,4 +537,39 @@ Medium devices (tablets, less/equal than 767,98px)
   section.hebergements {
     background-color: white;
   }
+
+  h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h6 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .responsive {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .afficher {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+ 
+  }
 }
+
