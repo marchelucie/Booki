@@ -4,21 +4,21 @@
   padding: 0 50px;
 }
 .accessibility-label {
-    position: absolute;
-    left: -999px;
-  }
-  .section-title {
-    margin: 0;
-    font-size: 22px;
-  }
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
-  p {
-    margin-bottom: 10px;
-  }
-  
+  position: absolute;
+  left: -999px;
+}
+.section-title {
+  margin: 0;
+  font-size: 22px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 10px;
+}
+
 main,
 header,
 footer {
@@ -31,16 +31,15 @@ footer {
   margin-top: 30px;
 }
 body {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  h1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .card {
   background-color: white;
@@ -387,44 +386,42 @@ div.desc {
   padding-bottom: 10px;
 }
 
-    h6 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      padding-left: 5px;
-    }
+h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
 
-    h4 {
-        font-size: 20px;
-        padding-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-      h2 {
-        font-size: 15px;
-        padding-left: 20px;
-        padding-top: 10px;
-      }
+h4 {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
 
-    html {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      flex-direction: row;
-      justify-content: center;
-    }
-    .afficher {
-        padding-top: 50px;
-        font-size: 20px;
-        font-weight: bold;
-      }
-  
-  
-    .responsive {
-        padding: 0 6px;
-        float: left;
-        width: 24.99999%;
-      }
+html {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+.afficher {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
 
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
 
 /*------------------------------------------------------
   Medium devices (tablets, less/equal than 1024px) 
@@ -479,8 +476,6 @@ div.desc {
     font-size: 15px;
     font-weight: bold;
   }
-
-
 }
 /*---------------------------------------------------
 Medium devices (tablets, less/equal than 767,98px)
@@ -539,10 +534,10 @@ Medium devices (tablets, less/equal than 767,98px)
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 15px;
     padding-bottom: 20px;
   }
-  
+
   h4 {
     font-size: 15px;
     padding-left: 25px;
@@ -569,7 +564,5 @@ Medium devices (tablets, less/equal than 767,98px)
     padding-top: 20px;
     font-size: 20px;
     font-weight: bold;
- 
   }
 }
-
