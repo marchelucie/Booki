@@ -10,7 +10,6 @@
   justify-content: baseline;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -100,6 +99,17 @@ form button:hover {
 .fa-solid.fa-magnifying-glass {
   display: none;
 }
+.btn-search {
+    display: flex;
+    justify-content:flex-start;
+    width: 100%;
+    padding-left:25px;
+  }
+  input#search {
+    width: 150px;
+    padding-left: 25x;
+  }
+
 
 .filters {
   display: inline-flex;
@@ -276,7 +286,7 @@ Medium devices (tablets, less/equal than 768px)
     padding: 0px 0px 0px 60px;
   }
   input#search {
-    width: 200px;
-    padding-left: 50px;
+    width: 180px;
+    padding-left: 25px;
   }
 }
