@@ -21,7 +21,14 @@
   padding-left: 20px;
   margin-top: 20px;
   line-height: 20px;
+
 }
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+
 /*---------------------------------------------------
   Medium devices (tablets, less/equal than 1024px) 
   ---------------------------------------------------*/
@@ -51,7 +58,10 @@
     padding-left: 20px;
     margin-top: 20px;
   }
-}
+  p {
+    font-size: 18px;    
+    margin-bottom: 10px;
+  }
 /*--------------------------------------------------
 Medium devices (tablets, less/equal than 767,98px)
 ----------------------------------------------------*/
@@ -88,9 +98,8 @@ Medium devices (tablets, less/equal than 767,98px)
   .footer-midle {
     margin-left: 20px;
   }
-  h5 {
-    font-size: 15px;
-    font-weight: bold;
+  P {
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .afficher {
@@ -98,4 +107,5 @@ Medium devices (tablets, less/equal than 767,98px)
     font-size: 15px;
     font-weight: bold;
   }
+}
 }
