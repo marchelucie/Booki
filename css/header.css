@@ -28,6 +28,7 @@
     display: flex;
     list-style-type: none;
     margin: 0;
+  
   }
   
   header nav ul li {
@@ -37,7 +38,7 @@
   }
   
   header nav ul li:hover {
-    border-color:lightskyblue;
+    border-color:#0065fc;
   }
   
   header nav ul li a {
@@ -45,9 +46,6 @@
     text-decoration: none;
   }
   
-  header nav ul li:hover a {
-    color: 
-  }
   form {
     display: inline-block;
     width: 50%;
@@ -109,7 +107,7 @@
     input#search {
       width: 150px;
       padding-left: 25x;
-     background-color: blue
+   
     }
   .filters {
     display: inline-flex;

@@ -395,12 +395,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  h1 {
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-weight: bold;
-  }
   
   html {
     display: flex;
@@ -530,13 +524,6 @@
     section.hebergements {
       background-color: white;
     }
-    h1{
-      font-size: 22px;
-      padding-left: 20px;
-      padding-top: 10px;
-      font-weight: bold;
-    }
-    
   
     h4 {
       font-size: 15px;
@@ -565,4 +552,5 @@
       font-size: 20px;
       font-weight: bold;
     }
+
   }
