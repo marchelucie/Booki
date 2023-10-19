@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 65px;
+  height: 50px;
 }
 
 #logo {
@@ -10,7 +10,7 @@ header {
   align-items: center;
 }
 header #logo img {
-  width: 50px;
+  width: 50px; 
 }
 
 header #logo {
@@ -19,13 +19,14 @@ header #logo {
 header nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
   list-style-type: none;
+  
 }
 header nav ul li {
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom:10px;
   border-top: 2px solid transparent;
-
 }
 header nav ul li:hover {
   border-color: #0065fc;
@@ -38,6 +39,7 @@ h1 {
 }
 .titre-1 {
   display: flex;
+  padding-left: 20px;
   justify-content: baseline;
 }
 
@@ -111,11 +113,13 @@ form button:hover {
   padding-top: 18px;
   flex-flow: row wrap;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+
 }
 
 .filters h3 {
   margin-right: 20px;
+  padding-left: 20px;
 }
 
 .btn-filter p {
@@ -127,8 +131,9 @@ form button:hover {
 .btn-filter {
   font-weight: bold;
   border: 1px solid var(--light-grey);
-  border-radius: 30px;
+  border-radius:30px;
   border-left: none;
+ 
 }
 
 .btn-filter:hover {
@@ -139,12 +144,14 @@ form button:hover {
 .btn-filter .fa-solid {
   background-color: var(--light-blue);
   border-radius: 30px;
+  background-color: var(--light-grey);
 }
 
 .btn-filter .fa-child-reaching {
   padding: 14px 17px 14px 17px;
   margin-right: 10px;
   color: #0065fc;
+  background-color:var(--light-grey);
 }
 
 .btn-filter .fa-heart,
@@ -153,6 +160,7 @@ form button:hover {
   padding: 14px 14px 14px 14px;
   margin-right: 10px;
   color: #0065fc;
+  background-color:var(--light-grey);
 }
 
 /*
@@ -174,6 +182,8 @@ form button:hover {
   align-items: center;
   justify-content: center;
   margin-right: 5px;
+  background-color:var(--light-grey);   
+ 
 }
 
 /*-------------------------------------------------
@@ -184,9 +194,10 @@ form button:hover {
   .filters {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    justify-content:flex-start;
+    margin-top: 20px;
+    
+    
   }
   .fa-solid.fa-magnifying-glass {
     display: none;
@@ -195,11 +206,11 @@ form button:hover {
 /*-------------------------------------------------------------
   Medium devices (tablets, less/equal than 768px)
   -----------------------------------------------------------*/
-@media (max-width: 768px) {
-  .titre-Filtres {
-    padding-right: 100%;
+  @media (max-width: 768px) {
+    .titre-Filtres {
+      padding-right: 100%;
+    }
   }
-}
 /*-------------------------------------------------------
     Medium devices (tablets, less/equal than 767,98px)
     ---------------------------------------------------------*/
@@ -216,6 +227,8 @@ form button:hover {
   }
   #logo {
     margin-left: 130px;
+    margin-top: 20px;
+   
   }
   header {
     display: flex;
@@ -226,6 +239,7 @@ form button:hover {
     padding-right: 20px;
     border-bottom: 2px solid transparent;
     margin: 0px 20px 0px 20px;
+ 
   }
 
   header nav ul li:hover {
@@ -254,7 +268,11 @@ form button:hover {
   }
   h1 {
     font-size: 26px;
-    margin-bottom: 10px;
+    margin-top: 40px;
     padding-left: 20px;
   }
+  header #logo img {
+    width: 50px;
+  }
+  
 }
