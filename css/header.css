@@ -1,14 +1,16 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1px;
+  height: 65px;
 }
+
 #logo {
+  display: flex;
   margin-right: auto;
+  align-items: center;
 }
 header #logo img {
   width: 50px;
-  padding-top: 20px;
 }
 
 header #logo {
@@ -16,13 +18,14 @@ header #logo {
 }
 header nav ul {
   display: flex;
+  justify-content: space-between;
+  gap: 50px;
   list-style-type: none;
-  margin: 0;
 }
 header nav ul li {
-  padding: 25px;
+  padding-top: 10px;
   border-top: 2px solid transparent;
-  margin: 0px 20px 0px 20px;
+
 }
 header nav ul li:hover {
   border-color: #0065fc;
@@ -51,29 +54,28 @@ form i {
   padding-left: 20px;
 }
 form input {
-    border: 1px solid transparent;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 8px 0 7px 10px;
-    margin-left: -5px;
-    width: 146px;
-    height: 39px;
-  
-  }
-  input#search {
-    width: 140px;
-    padding-left: 25x;
-  }
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 0 7px 10px;
+  margin-left: -5px;
+  width: 146px;
+  height: 39px;
+}
+input#search {
+  width: 140px;
+  padding-left: 25x;
+}
 
-  form input:hover {
-    background-color:var(--light-blue);
-  }
+form input:hover {
+  background-color: var(--light-blue);
+}
 
 form input::placeholder {
   color: black;
 }
 
-form button {
+ form button {
   border-radius: 0 10px 10px 0;
   background-color: #0065fc;
   color: var(--white);
@@ -93,11 +95,11 @@ form button:hover {
   display: none;
 }
 .btn-search {
-    display: flex;
-    justify-content: flex-start;
-    width: 80%;
-    padding-left: 20px;
-  }
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  padding-left: 20px;
+}
 /* 
 ^----------------------
 *       FILTERS     
@@ -105,50 +107,52 @@ form button:hover {
 */
 
 .filters {
-    display: inline-flex;
-    padding-top: 18px;
-    flex-flow: row wrap;
-    align-items: center;
-    gap: 20px;
-   
- }
- .filters h3 {
-    margin-right: 20px; 
+  display: inline-flex;
+  padding-top: 18px;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.filters h3 {
+  margin-right: 20px;
 }
 
 .btn-filter p {
-    margin: 0;
-    padding-right: 20px;
-    cursor: pointer;
+  margin: 0;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .btn-filter {
-    font-weight: bold;
-    border: 1px solid var(--light-grey);
-    border-radius: 30px;
-    border-left: none;
+  font-weight: bold;
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  border-left: none;
 }
 
-.btn-filter:hover{
-    background-color: var(--light-grey);
-    box-shadow: 0 0 8px var(--blue);
+.btn-filter:hover {
+  background-color: var(--light-grey);
+  box-shadow: 0 0 8px var(--blue);
 }
-  
+
 .btn-filter .fa-solid {
-    background-color: var(--light-blue);
-    border-radius: 30px;
+  background-color: var(--light-blue);
+  border-radius: 30px;
 }
 
 .btn-filter .fa-child-reaching {
-    padding: 14px 17px 14px 17px;
-    margin-right: 10px;
-    color:#0065fc;
+  padding: 14px 17px 14px 17px;
+  margin-right: 10px;
+  color: #0065fc;
 }
 
-.btn-filter .fa-heart, .fa-fire, .fa-money-bill-wave {
-    padding: 14px 14px 14px 14px;
-    margin-right: 10px;
-    color:#0065fc;
+.btn-filter .fa-heart,
+.fa-fire,
+.fa-money-bill-wave {
+  padding: 14px 14px 14px 14px;
+  margin-right: 10px;
+  color: #0065fc;
 }
 
 /*
@@ -162,7 +166,7 @@ form button:hover {
 .fa-solid.fa-info {
   border: 1.5px solid var(--light-grey);
   border-radius: 50%;
-  color:#0065fc;
+  color: #0065fc;
   height: 25px;
   width: 25px;
   font-size: 20px;
@@ -171,7 +175,6 @@ form button:hover {
   justify-content: center;
   margin-right: 5px;
 }
-
 
 /*-------------------------------------------------
      Medium devices (tablets, less/equal than 1024px) 
@@ -193,7 +196,7 @@ form button:hover {
   Medium devices (tablets, less/equal than 768px)
   -----------------------------------------------------------*/
 @media (max-width: 768px) {
-    .titre-Filtres {
+  .titre-Filtres {
     padding-right: 100%;
   }
 }
