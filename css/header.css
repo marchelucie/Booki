@@ -13,9 +13,6 @@ header #logo img {
   width: 50px; 
 }
 
-header #logo {
-  padding-left: 20px;
-}
 header nav ul {
   display: flex;
   justify-content: space-between;
@@ -35,7 +32,7 @@ header nav ul li:hover {
 h1 {
   font-size: 15px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .titre-1 {
   display: flex;
@@ -100,7 +97,7 @@ form button:hover {
   display: flex;
   justify-content: flex-start;
   width: 80%;
-  padding-left: 20px;
+  
 }
 /* 
 ^----------------------
@@ -137,21 +134,21 @@ form button:hover {
 }
 
 .btn-filter:hover {
-  background-color: var(--light-grey);
+  background-color:#DEEBFF;
   box-shadow: 0 0 8px var(--blue);
 }
 
 .btn-filter .fa-solid {
   background-color: var(--light-blue);
   border-radius: 30px;
-  background-color: var(--light-grey);
+  background-color: white;
 }
 
 .btn-filter .fa-child-reaching {
   padding: 14px 17px 14px 17px;
   margin-right: 10px;
   color: #0065fc;
-  background-color:var(--light-grey);
+  background-color: white;
 }
 
 .btn-filter .fa-heart,
@@ -160,7 +157,7 @@ form button:hover {
   padding: 14px 14px 14px 14px;
   margin-right: 10px;
   color: #0065fc;
-  background-color:var(--light-grey);
+  background-color:white;
 }
 
 /*
