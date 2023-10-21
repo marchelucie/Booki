@@ -36,7 +36,6 @@ h1 {
 .titre-1 {
   display: flex;
   padding-left: 20px;
-
 }
 
 form {
@@ -63,7 +62,6 @@ form input {
 input#search {
   width: 160px;
   padding-left: 25px;
- 
 }
 
 form input:hover {
