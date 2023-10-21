@@ -10,7 +10,7 @@ header {
   align-items: center;
 }
 header #logo img {
-  width: 50px; 
+  width: 50px;
 }
 
 header nav ul {
@@ -18,11 +18,10 @@ header nav ul {
   justify-content: space-between;
   gap: 30px;
   list-style-type: none;
-  
 }
 header nav ul li {
   padding-top: 20px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
   border-top: 2px solid transparent;
 }
 header nav ul li:hover {
@@ -74,7 +73,7 @@ form input::placeholder {
   color: black;
 }
 
- form button {
+form button {
   border-radius: 0 10px 10px 0;
   background-color: #0065fc;
   color: var(--white);
@@ -97,7 +96,6 @@ form button:hover {
   display: flex;
   justify-content: flex-start;
   width: 80%;
-  
 }
 /* 
 ^----------------------
@@ -111,7 +109,6 @@ form button:hover {
   flex-flow: row wrap;
   align-items: center;
   gap: 15px;
-
 }
 
 .filters h3 {
@@ -128,13 +125,12 @@ form button:hover {
 .btn-filter {
   font-weight: bold;
   border: 1px solid var(--light-grey);
-  border-radius:30px;
+  border-radius: 30px;
   border-left: none;
- 
 }
 
 .btn-filter:hover {
-  background-color:#DEEBFF;
+  background-color: #deebff;
   box-shadow: 0 0 8px var(--blue);
 }
 
@@ -157,7 +153,7 @@ form button:hover {
   padding: 14px 14px 14px 14px;
   margin-right: 10px;
   color: #0065fc;
-  background-color:white;
+  background-color: white;
 }
 
 /*
@@ -179,8 +175,7 @@ form button:hover {
   align-items: center;
   justify-content: center;
   margin-right: 5px;
-  background-color:var(--light-grey);   
- 
+  background-color: var(--light-grey);
 }
 
 /*-------------------------------------------------
@@ -191,10 +186,8 @@ form button:hover {
   .filters {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-top: 20px;
-    
-    
   }
   .fa-solid.fa-magnifying-glass {
     display: none;
@@ -203,11 +196,11 @@ form button:hover {
 /*-------------------------------------------------------------
   Medium devices (tablets, less/equal than 768px)
   -----------------------------------------------------------*/
-  @media (max-width: 768px) {
-    .titre-Filtres {
-      padding-right: 100%;
-    }
+@media (max-width: 768px) {
+  .titre-Filtres {
+    padding-right: 100%;
   }
+}
 /*-------------------------------------------------------
     Medium devices (tablets, less/equal than 767,98px)
     ---------------------------------------------------------*/
@@ -225,7 +218,6 @@ form button:hover {
   #logo {
     margin-left: 130px;
     margin-top: 20px;
-   
   }
   header {
     display: flex;
@@ -236,7 +228,6 @@ form button:hover {
     padding-right: 20px;
     border-bottom: 2px solid transparent;
     margin: 0px 20px 0px 20px;
- 
   }
 
   header nav ul li:hover {
@@ -271,5 +262,4 @@ form button:hover {
   header #logo img {
     width: 50px;
   }
-  
 }
