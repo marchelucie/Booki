@@ -123,13 +123,13 @@ form button:hover {
 
 .btn-filter {
   font-weight: bold;
-  border: 1px solid var(--light-grey);
+  border: 1px solid lightgrey;
   border-radius: 30px;
   border-left: none;
 }
 
 .btn-filter:hover {
-  background-color: #deebff;
+  background-color:#deebff;
   box-shadow: 0 0 8px var(--blue);
 }
 
@@ -138,12 +138,17 @@ form button:hover {
   border-radius: 30px;
   background-color: white;
 }
+.btn-filter .fa-solid:hover{
+    background-color: #deebff;
+    box-shadow: 0 0 8px var(--blue);
+}
 
 .btn-filter .fa-child-reaching {
   padding: 14px 17px 14px 17px;
   margin-right: 10px;
   color: #0065fc;
   background-color: white;
+  
 }
 
 .btn-filter .fa-heart,
