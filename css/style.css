@@ -35,6 +35,10 @@ body {
 
 .euro {
   font-weight: 700;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 41b7057306061d1c3e5e9967efc9a778cc74bb1a
 }
 
 .neutral-star {
@@ -292,6 +296,7 @@ form button:hover {
     padding-left: 100%;
     margin-left: 20px;
     padding-right: 20px;
+<<<<<<< HEAD
   }
 
   .filters {
@@ -315,6 +320,33 @@ form button:hover {
   header #logo img {
     width: 50px;
   }
+=======
+  }
+
+  .filters {
+    border: 1px solid red;
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
+  .btn-search {
+    padding: 0px 0px 0px 60px;
+  }
+  input#search {
+    width: 180px;
+    padding-left: 25px;
+  }
+  h1 {
+    font-size: 26px;
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+  header #logo img {
+    width: 50px;
+  }
+=======
+>>>>>>> 52c1f9ebab07bac2f4c54263dd294481e49ac010
+>>>>>>> 41b7057306061d1c3e5e9967efc9a778cc74bb1a
 }
 
 /**********************
