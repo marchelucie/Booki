@@ -35,6 +35,7 @@ body {
 
 .euro {
   font-weight: 700;
+<<<<<<< HEAD
 }
 
 .neutral-star {
@@ -315,6 +316,8 @@ form button:hover {
   header #logo img {
     width: 50px;
   }
+=======
+>>>>>>> 52c1f9ebab07bac2f4c54263dd294481e49ac010
 }
 
 /**********************
