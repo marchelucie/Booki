@@ -103,10 +103,12 @@ form button:hover {
 */
 
 .filters {
-  display: inline-flex;
+  padding: 10px;
+  display: flex;
   padding-top: 18px;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -129,7 +131,7 @@ form button:hover {
 }
 
 .btn-filter:hover {
-  background-color:#deebff;
+  background-color: #deebff;
   box-shadow: 0 0 8px var(--blue);
 }
 
@@ -138,9 +140,9 @@ form button:hover {
   border-radius: 30px;
   background-color: white;
 }
-.btn-filter .fa-solid:hover{
-    background-color: #deebff;
-    box-shadow: 0 0 8px var(--blue);
+.btn-filter .fa-solid:hover {
+  background-color: #deebff;
+  box-shadow: 0 0 8px var(--blue);
 }
 
 .btn-filter .fa-child-reaching {
@@ -148,7 +150,6 @@ form button:hover {
   margin-right: 10px;
   color: #0065fc;
   background-color: white;
-  
 }
 
 .btn-filter .fa-heart,
@@ -247,9 +248,10 @@ form button:hover {
   }
 
   .filters {
+    border: 1px solid red;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    margin: auto;
+    width: 90%;
   }
   .btn-search {
     padding: 0px 0px 0px 60px;
