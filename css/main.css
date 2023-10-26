@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
+  overflow-x: hidden;
 }
 .accessibility-label {
   position: absolute;
@@ -343,10 +344,6 @@ div.gallery {
   width: 100%;
   height: 250px;
   border-radius: 12px 12px 12px 12px;
-}
-
-div.gallery:hover {
-  border: 1px solid #39ff14;
 }
 
 div.gallery img {
