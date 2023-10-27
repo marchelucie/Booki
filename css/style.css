@@ -173,7 +173,7 @@ form button:hover {
 
 .btn-filter p {
   margin: 0;
-  padding-right: 20px;
+  
   cursor: pointer;
 }
 
@@ -201,7 +201,7 @@ form button:hover {
 
 .btn-filter .fa-child-reaching {
   padding: 14px 17px 14px 17px;
-  margin-right: 10px;
+  
   color: #0065fc;
   background-color: white;
 }
@@ -210,7 +210,7 @@ form button:hover {
 .fa-fire,
 .fa-money-bill-wave {
   padding: 14px 14px 14px 14px;
-  margin-right: 10px;
+  
   color: #0065fc;
   background-color: white;
 }
@@ -306,7 +306,6 @@ form button:hover {
     padding-left:0px ;
 }
   .filters {
-    
     display: flex;
     width: 100%;
     
@@ -314,7 +313,10 @@ form button:hover {
   .btn-filter{
     display:wrap;
     width:45%;
-    
+  }
+  
+  a{
+    font-size: small;
   }
 
   .btn-search {
@@ -977,7 +979,9 @@ p {
     P {
       font-size: 18px;
       margin-bottom: 10px;
+      
     }
+   
     .afficher {
       margin-top: 15px;
       font-size: 15px;
