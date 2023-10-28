@@ -94,7 +94,7 @@ header {
   display: flex;
   margin-right: auto;
   align-items: center;
-  padding-left: 20px;
+  
 }
 
 header #logo img {
@@ -128,6 +128,7 @@ header nav ul li:hover {
 input#search {
     width: 160px;
     padding-left: 25px;
+    border: thin solid var(--light-grey);
   }
 
 form {
@@ -903,15 +904,23 @@ p {
       a {
         font-size: small;
       }
-    
-    
+
       input#search {
         width: 100%;
+        border: thin solid var(--light-grey);
       }
      
       header #logo img {
         width: 50px;
+        
       }
+      #logo {
+        display: flex;
+        padding-left: 45%;
+        margin-top: 20px;
+        
+      }
+      
       .btn-search {
         display: flex;
         justify-content: center;
@@ -921,8 +930,6 @@ p {
         padding-right: 20px;
       }
     
-
-        
       .section-title {
         padding-left: 20px;
         font-size: 20px;
@@ -940,6 +947,9 @@ p {
         color: var(--main-bg-color);
         border-radius: 30%;
         margin-right: 30px;
+      }
+      .fa-solid.fa-magnifying-glass:hover{    
+        box-shadow: 1px 1px 10px grey;
       }
 
      .main-container {
