@@ -614,10 +614,14 @@ p.card-subtitle {
 
 /*-----------------------gallery---------------------*/
 
-div.gallery {
+div.gallery:hover{
   width: 100%;
   height: 250px;
   border-radius: 12px 12px 12px 12px;
+  box-shadow: 0 0 20 20px;
+  background-color:var(--light-grey);
+  box-shadow: 0 0 8px var(--blue);
+  
 }
 
 div.gallery img {
@@ -625,27 +629,32 @@ div.gallery img {
   height: 200px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
-  
+
 }
-    
+
 div.desc {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
+  border-radius: 0 0 10px 10px;
+
 }
 
 .desc1 {
   padding-left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 0 0 10px 10px;
+  
 }
 
 .desc2 {
   padding-left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .afficher {
@@ -659,6 +668,8 @@ div.desc {
   float: left;
   width: 24.99999%;
 }
+
+  
 
 /*----------------footer-------------*/
 .footer {
@@ -852,6 +863,9 @@ p {
     margin-right: 10px;
     margin-bottom: 20px;
   }
+
+
+  
 
   header {
     display: flex;
