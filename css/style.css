@@ -93,6 +93,7 @@ header {
   display: flex;
   margin-right: auto;
   align-items: center;
+  padding-left: 20px;
 }
 
 header #logo img {
@@ -818,6 +819,9 @@ p {
     cursor: pointer;
     width: 150px;
   }
+  .titre-Filtres{
+    padding-left: 10px;
+  }
 }
 
 /*-------------------- Medium devices (tablets, less/equal than 768px)--------------------*/
@@ -837,9 +841,9 @@ p {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 40px;
-    padding-left: 20px;
+    padding-left: 24px;
     padding-top: 20px;
    
   }
