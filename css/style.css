@@ -145,13 +145,14 @@ form i {
 }
 
 form input {
-  border: 1px solid transparent;
+  border: 1px solid var(--filter-bg-color);
   font-size: 15px;
   font-weight: bold;
   padding: 8px 0 7px 10px;
   margin-left: -5px;
   width: 146px;
   height: 39px;
+
 }
 
 form input:hover {
@@ -172,7 +173,6 @@ form button {
   cursor: pointer;
   border: none;
   margin-left: -5px;
-
 }
 
 form button:hover {
@@ -621,7 +621,7 @@ div.gallery:hover{
   width: 100%;
   height: 250px;
   border-radius: 12px 12px 12px 12px;
-  box-shadow: 0 0 20 20px;
+  box-shadow: 0px 0px 20px 20px;
   background-color:var(--light-grey);
   box-shadow: 0 0 8px var(--blue);
   
@@ -904,7 +904,7 @@ p {
   }
 
   .btn-filter {
-    display: wrap;
+    display: flex;
     width: 46%;
   }
 
