@@ -172,10 +172,11 @@ form button {
   cursor: pointer;
   border: none;
   margin-left: -5px;
+
 }
 
 form button:hover {
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 0px 0px 10px grey;
 }
 
 .fa-solid.fa-magnifying-glass {
@@ -841,7 +842,7 @@ p {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 40px;
     padding-left: 24px;
     padding-top: 20px;
@@ -877,8 +878,11 @@ p {
     border-top: none;
     margin-left: 100%;
     border-bottom: 2px solid transparent;
+    width: 282px;
+    padding-left: 10%;
      width:100%;
     margin: 0px 20px 0px 20px;
+     
   }
 
   header nav ul li:hover {
@@ -918,7 +922,7 @@ p {
   }
   #logo {
     display: flex;
-    padding-left: 40%;
+    padding-left: 45%;
     margin-top: 20px;
   }
 
