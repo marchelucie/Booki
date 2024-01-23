@@ -78,22 +78,23 @@ nav {
 }
 .linktop {
     display: flex;
-    align-items: flex-start;
+    align-self: start;
     margin-bottom: 50px;
     gap: 68px;
-    border-top: 2px solid transparent;
 }
 
 .linka {
     padding-top: 25px;
-    width: 113px;
-    height: 35px;
+    width: 112px;
+    height: 19px;
+    border-top: 2px solid transparent;
 }
 
 .linkb {
     padding-top: 25px;
     width: 63px;
-    height: 35px;
+    height: 19px;
+    border-top: 2px solid transparent;
 }
 /*** Attention border top bleu en dessous sur la vers. mobile ****/
 .linka:hover { 
@@ -144,6 +145,32 @@ nav {
     height: 49px;
     color: white;
     padding: 0;
+}
+
+/****** Filtres ******/
+
+.filtre-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+}
+
+.filtre-buttons> button {
+    height: 50px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 17px;
+    padding: 4px 19px;
+}
+
+.filtre-buttons> button> i {
+    padding-right: 8px;
+}
+
+.filtre-buttons> button:hover {
+    background-color: #DEEBFF;
 }
 
 /****** Hebergements And Populaires ***********/
