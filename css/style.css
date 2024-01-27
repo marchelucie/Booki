@@ -21,6 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -244,8 +245,8 @@ nav {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    gap: 3%;
     margin-bottom: 3%;
+    gap: 3%;
 }
 
 .hebergements-and-populaires section {
@@ -257,58 +258,74 @@ nav {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 70%;
 }
 
 .hebergements-title {
-    display: flex;
     align-items: center;
 }
 
-.hebergements-cards {
+.hebergements-cards .card {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 33px;
+    width: 100%;
 }
 
 .hebergements-cards img {
-    border-radius: 20px 20px 0 0;
-    width: 99.5%;
-    height: 55%;  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 150px;
 }
 
-.hebergements-cards .card {
-    margin-top: 33px;
-    width: 250px;
-    height: 200px;
+.hebergements-line-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+} 
+
+.hebergements-line-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 1;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
     margin-top: 8px;
+    margin-bottom: 4px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin-top: 10px;
-}
-
-.hebergements-cards .card-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
+  margin: 0;
 }
 
 .hebergements-cards .card-rating{
     margin-top: 5px;
 }
 
-.hebergements-show> h3{
-    margin: 0;
-    margin-top: 25px;
-}
-
 /****** Populaires ***********/
 .populaires {
-    width: 55%;
+    width: 37%;
 }
 
 .populaires-title {
@@ -365,14 +382,17 @@ nav {
 
 .activity-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 3%;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .activity-cards .card-two {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 3%;
     margin-top: 33px;
-    width: 300px;
+    width: 100%;
 }
 
 .activity-cards img {
@@ -383,7 +403,14 @@ nav {
 }
 
 .activity-cards .card-title {
-    padding: 16px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 10px;
+}
+
+.flex4 {
+    flex: 1;
 }
 
 /***** footer ********/
@@ -459,30 +486,87 @@ nav {
         flex-direction: row;
         justify-content: space-between;
     }
-
-    .activity-cards .card-two {
-        width: 200px;
-    }
-
-    .activity-cards .parc-national> h3 {
-        padding: 20px 10px 20px 10px;
-    }
-
-    .activity-cards .card-title {
-        display: flex;
-        font-size: small;
-        padding: 20px;
-    }
     
     .activity-cards img {
         height: 200px;
     }
 
-    
-
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+      .main-container {
+        padding: 0;
+    }
+
+    .hebergement {
+        background-color: #0065FC;
+    }
+
+    .hebergements-line-top {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .hebergements-line-bottom {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        width: 330%;
+    }
+
+    .activity-cards {
+        flex-direction: column;
+    }
+    
+    body {
+        margin: 0;
+    }
+
+     .logo1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding-bottom: 10px;
+    }
+    
+     .linktop {
+        justify-content: space-evenly;
+        padding-bottom: 0px;
+    }
+
+
+    .linka {
+        border: 0;
+        padding: 0;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 20px;
+    }
+
+    .linkb {
+        border: 0;
+        padding: 0;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 20px;
+    }
+
+    .linka:hover {
+        border: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .linkb:hover {
+        border: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #0065FC; 
+        
     /* ... */
 }
