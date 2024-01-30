@@ -40,14 +40,18 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
 }
 
 .card-two {
     background-color: white;
     border-radius: 20px;
     padding-bottom: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
+}
+
+.card3 {
+    filter: drop-shadow(0px 3px 3px black)
 }
 
 .card img {
@@ -101,10 +105,10 @@ nav {
     align-items: center;
     width: 61px;
     height: 19px;
+
 }
 .linktop {
     display: flex;
-    align-self: start;
     margin-bottom: 50px;
     gap: 68px;
 }
@@ -123,6 +127,7 @@ nav {
     border-top: 2px solid transparent;
 }
 /*************** Attention border top bleu en dessous sur la vers. mobile ****************/
+
 .linka:hover { 
     color: #0065FC;
     border-top:2px solid #0065FC;
@@ -209,6 +214,11 @@ nav {
     font-size: 17px;
     padding: 4px 19px;
     margin: 4px;
+}
+
+
+.magnifying-glass {
+    display: none;
 }
 
 .title-filter {
@@ -446,6 +456,7 @@ nav {
 
     .hebergements {
         width: 100%;
+        background-color: #F2F2F2;
     }
 
     .populaires {
@@ -495,12 +506,93 @@ nav {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-      .main-container {
-        padding: 0;
+    body {
+        margin: 0;
     }
 
-    .hebergement {
+    .main-container {
+        padding: 0;
+        min-width: 320px;
+    }
+
+    nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .linktop {
+        width: 100%;
+        display: flex;
+        gap: 0px;
+    }
+
+    .linktop> a {
+        border-bottom: 2px solid #F2F2F2;
+        width: 50%;
+        text-align: center;
+        padding: 0 0 20px 0;
+        border-top: none;
+    }
+
+    .linktop> a:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+
+    h1 {
+        margin: 0;
+    }
+    
+    .logo1 {
+        padding: 5%;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    .rechercheC {
+        display: none;
+    }
+
+    .recherche-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .magnifying-glass {
+        display: flex;
+        border: 1px solid #0065FC;
         background-color: #0065FC;
+        border-radius: 15px;
+        border-left: none;
+        width:  49px;
+        height: 49px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+
+    .fa-magnifying-glass {
+        color: white;
+
+    }
+
+    .filtre-buttons> button {
+        
+    }
+
+    .hebergements-and-populaires section:nth-child(1) {
+        background: none;
+    }
+
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
     }
 
     .hebergements-line-top {
@@ -514,59 +606,21 @@ nav {
     }
 
     .populaires-cards {
-        display: flex;
         flex-direction: column;
-        width: 330%;
     }
 
     .activity-cards {
         flex-direction: column;
-    }
-    
-    body {
-        margin: 0;
+        padding-right: 7%;
+        padding-left: 4%;
     }
 
-     .logo1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-        padding-bottom: 10px;
-    }
-    
-     .linktop {
-        justify-content: space-evenly;
-        padding-bottom: 0px;
+    .first-container {
+        margin-left: 20px;
     }
 
-
-    .linka {
-        border: 0;
-        padding: 0;
-        border-bottom: 2px solid transparent;
-        padding-bottom: 20px;
+    .search-footer {
+        flex-direction: column;
     }
-
-    .linkb {
-        border: 0;
-        padding: 0;
-        border-bottom: 2px solid transparent;
-        padding-bottom: 20px;
-    }
-
-    .linka:hover {
-        border: 0;
-        padding: 0;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #0065FC;
-    }
-
-    .linkb:hover {
-        border: 0;
-        padding: 0;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #0065FC; 
-        
     /* ... */
 }
