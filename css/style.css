@@ -322,7 +322,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 40px;
 }
 
 .flex1 {
