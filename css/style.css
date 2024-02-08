@@ -97,6 +97,21 @@ nav {
 
 }
 
+/*Bloc formulaire*/
+.bloc-recherche {
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.bloc-recherche h1 {
+    font-size: 22px;
+}
+
+.formulaire-ville {
+    
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
