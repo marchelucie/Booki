@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -65,8 +66,7 @@ header {
     justify-content: space-between;
 }
 
-.logo-header {
-    display: flex;
+header img {
     width: 60px;
     height: 20px;
     padding: 30px 50px 30px 0px;
@@ -77,15 +77,17 @@ nav {
     flex-direction: row;
     width: 320px;
     align-items: space-between;
+    justify-content: flex-end;
+    column-gap: 68px;
 }
 
 .lien-menu {
     font-size: 16px;
     display: flex;
     align-items: flex-end;
-    margin: auto;
+    margin: 0;
     height: 35px;
-    border-top: solid 2px white;
+    border-top: solid 2px transparent;
 }
 
 .lien-menu:hover {
@@ -95,21 +97,6 @@ nav {
         inset 0 0px 4px 4px rgb(255,255,255),
         inset 0 2px 3px 0px rgba(50, 50, 50, 1);
 
-}
-
-/*Bloc formulaire*/
-.bloc-recherche {
-    display:flex;
-    flex-direction: column;
-    align-items: space-between;
-}
-
-.bloc-recherche h1 {
-    font-size: 22px;
-}
-
-.formulaire-ville {
-    
 }
 
 /****** Hebergements And Populaires ***********/
