@@ -348,6 +348,7 @@ form {
 .activites {
     width: 100%;
     margin-top: 35px;
+    margin-bottom: 35px;;
     display: flex;
     flex-direction: column;
 
@@ -360,6 +361,7 @@ form {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: flex-start;
+
 }
 
 .card-activites {
@@ -378,6 +380,37 @@ form {
     object-fit: cover;
 }
 
+.card-activites .card-title {
+    padding-left: 10px;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #F2F2F2;
+    padding: 20px 0 20px 15px;
+}
+
+ul {
+    list-style: none;
+    width: 33%;
+    padding-left: 10px;
+}
+
+.titre-liste {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
