@@ -344,7 +344,39 @@ form {
     margin-bottom: 5px;
 }
 
+/*Activités*/
+.activites {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.activites-align {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-activites {
+    display: flex;
+    flex-direction: column;
+    border: 1px transparent solid;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-activites img {
+    height: 380px;
+    width: 298px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
