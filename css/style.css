@@ -347,42 +347,40 @@ form {
 /*Activités*/
 .activites {
     max-width: 1440px;
-    margin-top: 35px;
-    margin-bottom: 35px;
     padding: 0 30px 0 30px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 30px;
 }
 
-.activites-align {
+.bloc-activites {
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
-    max-width: 100%;
+    gap: 15px;
 }
 
-.card-activites {
-    display: flex;
+.activites-card {
     flex-direction: column;
-    border: 1px transparent solid;
+    align-items: center;
+    max-width: 300px;
+    width: 25%;
+    height: 439px;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
-.card-activites img {
-    min-height:180px;
-    max-height: 380px;
-    width: 100%;
+.activites-card img {
+    width:100%;
+    height: 380px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
 }
 
-
-.card-activites .card-title {
-    padding-left: 10px;
+.activites-card h3 {
+    font-size: 16px;
+    padding: 0 0 0 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /*Footer*/
