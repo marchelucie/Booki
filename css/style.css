@@ -213,7 +213,7 @@ form {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .cercle {
@@ -244,59 +244,58 @@ form {
 
 /****** Hebergements ***********/
 .hebergements {
+    max-width: 1440px;
     width: 65%;
-}
-
-.card-hebergements {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
+    flex-direction: column;
 }
 
-.card-hebergements .card {
+.hebergements a {
+    width: 30%;
+}
+
+.hebergements-cards {
+    max-width: 936px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.hebergements-cards .card {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    width: 250px;
-    height: 207px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.card-hebergements img {
+.hebergements-cards img {
     width: 100%;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
-.card-hebergements .card-content {
+.hebergements-cards .card-content {
     width: 100%;
     padding-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
-    gap: 8px;
+    min-width: max-content;
 }
 
-.card-hebergements .card-title {
-    margin-top: 10px;
-    margin-bottom: 8px;
-    font-size: 16px; 
+.hebergements-cards .card-title {
+    margin-top: 8px;
 }
-
-.card-hebergements .card-subtitle {
-    margin: 0;
-    font-size: 13px;
-}
-
-.card-hebergements .card-rating {
+.hebergements-cards .card-subtitle {
+    font-size: 0.9em;
     margin-bottom: 5px;
-}
-
-.hebergements h3 {
-    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -344,44 +343,41 @@ form {
     margin-bottom: 5px;
 }
 
+
 /*Activités*/
 .activites {
-    width: 100%;
-    margin-top: 35px;
-    margin-bottom: 35px;;
-    display: flex;
-    flex-direction: column;
-
+    max-width: 100%;
+    padding: 30px;
 }
 
-.activites-align {
-    width: 100%;
+.bloc-activites {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
+    gap: 15px;
 }
 
-.card-activites {
-    display: flex;
+.activites-card {
     flex-direction: column;
-    border: 1px transparent solid;
+    align-items: center;
+    width: 25%;
+    height: 439px;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
-.card-activites img {
+.activites-card img {
+    width:100%;
     height: 380px;
-    width: 207px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
 }
 
-.card-activites .card-title {
-    padding-left: 10px;
+.activites-card h3 {
+    font-size: 16px;
+    padding: 0 0 0 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /*Footer*/
