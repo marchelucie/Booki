@@ -17,6 +17,8 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    max-width: 1440px;
+    min-width: 320px;
 }
 
 .main-container {
@@ -76,13 +78,10 @@ header img {
 nav {
     display: flex;
     flex-direction: row;
-    width: 320px;
-    align-items: space-between;
-    justify-content: flex-end;
     column-gap: 68px;
 }
 
-.lien-menu {
+nav a {
     font-size: 16px;
     display: flex;
     align-items: flex-end;
@@ -91,7 +90,7 @@ nav {
     border-top: solid 2px transparent;
 }
 
-.lien-menu:hover {
+nav a:hover {
     border-top: solid 2px #0065FC;
     color:#0065FC;
     box-shadow:
@@ -360,7 +359,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 25%;
-    height: 439px;
+    height: auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
@@ -452,27 +451,44 @@ li {
         font-size: 13px;
     }
 
-    .activites {
-        width: 100%;
-    }
-
-    .activites-align {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .card-activites .card-title {
-        font-size : 14px;
-    }
-
-    .card-activites img {
-        height: 200px;
+    .activites-card img {
+        max-height: 200px;
     }
 }
 
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        padding: 20px 0 20px 0;
+        display: flex;
+    }
+
+    nav {
+        max-width: 768px;
+        width: 100%;
+        column-gap: 0;
+    }
+
+    nav a {
+        min-width: 50%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid transparent;
+        align-items: flex-start;
+
+    }
+    nav a:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: 2px solid transparent;
+        box-shadow: none;
+    }
+
 }
