@@ -244,59 +244,58 @@ form {
 
 /****** Hebergements ***********/
 .hebergements {
+    max-width: 1440px;
     width: 65%;
-}
-
-.card-hebergements {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 10px;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-.card-hebergements .card {
+.hebergements a {
+    width: 30%;
+}
+
+.hebergements-cards {
+    max-width: 936px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.hebergements-cards .card {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    height: 207px;
+    max-width: 600px;
     width: 100%;
+    box-sizing: border-box;
 }
 
-.card-hebergements img {
+.hebergements-cards img {
     width: 100%;
     height: 124px;
-    min-width: 220px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
-.card-hebergements .card-content {
+.hebergements-cards .card-content {
+    width: 100%;
     padding-left: 10px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    gap: 8px;
+    min-width: max-content;
 }
 
-.card-hebergements .card-title {
-    margin-top: 10px;
-    margin-bottom: 8px;
-    font-size: 16px; 
+.hebergements-cards .card-title {
+    margin-top: 8px;
 }
-
-.card-hebergements .card-subtitle {
-    margin: 0;
-    font-size: 13px;
-}
-
-.card-hebergements .card-rating {
+.hebergements-cards .card-subtitle {
+    font-size: 0.9em;
     margin-bottom: 5px;
-}
-
-.hebergements h3 {
-    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -343,6 +342,7 @@ form {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 
 /*Activités*/
 .activites {
