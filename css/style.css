@@ -57,6 +57,20 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Header***********/
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header ul { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    list-style-type: none;
+
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
