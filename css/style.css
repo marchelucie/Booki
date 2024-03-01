@@ -58,6 +58,20 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** CSS HEADER ***************/
+.header-logo-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-hebergement-activities a{
+    margin: 0 50px 0 50px;
+}
+
+.link-hebergement-activities a:hover{
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -74,6 +88,13 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+
+.hebergements-card img{
+    width: 30%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
 }
 
 /****** Populaires ***********/
