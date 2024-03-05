@@ -200,21 +200,40 @@ a {
     width: 65%;
 }
 
-.hebergements-card-section-one  {
+section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make the first section of card flex */
     display: flex;
-    gap: 4px;
+    gap: 25px;
+    margin-top: 33px;
+    padding: inherit;
 }
 
-.hebergements-card-section-one a{
+section .hebergements-card-section-two{
+    padding: inherit;
+}
+
+.hebergements-card-section-one a{/* make the card block take all the width of is parent*/
     width: 100%;
 }
-.hebergements-card img{
+
+.hebergements-card-section-two a{/* make the card block take all the width of is parent*/
+    width: 100%;
+}
+.hebergements-card img{/* make the image take all widht of is parent and have fixed height*/
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
 
-/****** Populaires *********************************************************/
+.card-txt, .card-rating{
+    padding: 0px 15px 0px 15px;
+    margin: 8px 0; /* Make gap btw rating and txt card */
+}
+
+.card-title{
+    margin: 8px 0; /* Make gap btw hotel title and price room*/ 
+}
+
+/****** Populaires **********************************************************************************/
 .populaires {
     width: 32%;
 }
