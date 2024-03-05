@@ -65,12 +65,19 @@ a {
 }
 
 .link-hebergement-activities a{
-    margin: 0 50px 0 50px;
+    margin: 0 50px 0 50px; /*make the gap btw links*/
 }
 
 .link-hebergement-activities a:hover{
     color: #0065FC;
     border-top: #0065FC solid 2px;
+}
+.booki-image{
+    padding: 30px 50px 30px 50px;
+}
+.booki-image img{
+    width: 61.09px;
+    height: 19px;
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
