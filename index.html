@@ -16,21 +16,58 @@
 
 <body>
     <header class="header-logo-link">
-            <div class="booki-image">
-                <img src="./images/logo/Booki.png" alt="logo Booki">
+            <div class="side-padding">
+                <img src="./images/logo/Booki.png" alt="logo Booki" class="booki-image">
             </div> 
             <div class="link-hebergement-activities">
                 <a href="#" target="_blank" rel="noopener noreferrer">Hébergements</a>
                 <a href="#" target="_blank" rel="noopener noreferrer">Activités</a>
             </div>
-        </header>
+    </header>
+    <nav class="info-group side-padding">
+        <div class="headline">
+            <h2 class="section-title marge">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p class="card-subtitle">En plein centre-ville ou en pleine nature</p>
+        </div>
+        <div class="search-bar">
+            <div class="container-icon-location">
+                <img src="./images/icons-boostrap/geo-alt-fill.svg" alt="location icons" class="icon-location">
+            </div>
+            <form action="" method="get">
+                <input type="text" name="city" id="city" placeholder="Marseille, France" class="input text-nav">
+            </form>
+            <button type="button" class="text-nav search-button">Rechercher</button>
+        </div>
+        <div class="filter-bar">
+            <h2 class="text-nav">Filtres</h2>
+            <div class="economies-filter filter-button">
+                <img src="./images/icons-boostrap/cash.svg" alt="icon billet de monnaie" class="filter-image">
+                <h2 class="text-button">Économique</h2>
+            </div>
+            <div class="familial-filter filter-button">
+                <img src="./images/icons-boostrap/person-raised-hand.svg" alt="une personne qui salut" class="filter-image">
+                <h2 class="text-button">Familial</h2>
+            </div>
+            <div class="romantic-filter filter-button">
+                <img src="./images/icons-boostrap/heart-fill.svg" alt="icon d'un coeur" class="filter-image">
+                <h2 class="text-button">Romantique</h2>
+            </div>
+            <div class="our-best-filter filter-button">
+                <img src="./images/icons-boostrap/fire.svg" alt="icon de feu " class="filter-image">
+                <h2 class="text-button">Nos pépites</h2>
+            </div>
+        </div>
+        <div class="info-bar">
+            <img src="./images/icons-boostrap/info-circle.svg" alt="icon d'information" class="image-information">
+            <p class="information">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </nav>
     <div class="main-container">
-        
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Mareseille</h2>
+                        <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-card">
                         <a href="#">
