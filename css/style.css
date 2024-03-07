@@ -105,6 +105,7 @@ h3{/* Inherit all H3 margin*/
     font-size: 18px;
     line-height: 21.13px;
 }
+
 /* Headline CSS*/
 .headline h2{
     margin-bottom: 10px; /*make space btw H2 and P from the nav*/
@@ -147,7 +148,7 @@ h3{/* Inherit all H3 margin*/
 .filter-bar{
     display: flex;
     gap: 15px;
-    height: 50px;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -155,6 +156,7 @@ h3{/* Inherit all H3 margin*/
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 50px;
     border-radius: 25px;
     border: solid 2px #D9D9D9;
     padding: 4px 19px 4px 19px;
@@ -397,36 +399,23 @@ li{/* Put Gap btw each listes*/
     /* ... */
     /****** CSS HEADER *************************************************************************/
 .header-logo-link{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.link-hebergement-activities a:hover{
+.link-hebergement-activities a:hover{/* show the border bottom phone screen*/
     color: #0065FC;
     border-bottom: #0065FC solid 2px;
     border-top: none;
 }
 
-.booki-image{
-    width: 61.09px;
-    height: 19px;
-}
 /****** Nav filter css ****************************************************/
 .search-bar{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    width: 377px;
-    height: 49px;
+    width: 300px;/*Ajust the widht*/
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
 }
 
-.text-nav{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
-}
 /* Headline CSS*/
 .headline h2{
     margin-bottom: 10px; /*make space btw H2 and P from the nav*/
@@ -435,7 +424,7 @@ li{/* Put Gap btw each listes*/
     width: 14px;
     height: 18px;
 }
-.container-icon-location{ /*this part is for background of the icon location and centered it*/
+.container-icon-location{ /*this part is for background of the icon location and center it*/
     width: 50px;
     height: 49px;
     border-radius: 15px 0 0 15px;
@@ -447,50 +436,28 @@ li{/* Put Gap btw each listes*/
 
 /* Div input css*/
 .input{
-    text-align: center;
-    height: 46px;
-    border: solid 1px #F2F2F2 ;
+    border: none;
 }
 
 /* Div search button CSS*/
 .search-button{
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    height: 49px;
-    border-radius: 0 15px 15px 0;
-    padding: 15px 16px 15px 16px;
-    background-color: #0065FC;
-    color: white;
-    border: 1px solid #0065FC;
+    border-radius: 15px;
+    width: 49px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 /****** Filtres  CSS ************/
 .filter-bar{
-    display: flex;
-    gap: 15px;
-    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    grid-template-rows: repeat(3, auto); /* Trois lignes de hauteur automatique */
+    gap: 10px; /* Espacement entre les éléments */
     margin-top: 20px;
 }
 
-.filter-button{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 25px;
-    border: solid 2px #D9D9D9;
-    padding: 4px 19px 4px 19px;
-}
-
-.text-button{
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 19.96px;
-}
-
-.filter-image {
-    width: 22px;
-    height: 22px;
+.grid-adjust{
+    grid-column: 1 / span 2; /* Le titre occupe deux colonnes */
 }
 
 .filter-button:hover{ /* when pass over change background and cursor, on the filter button*/
@@ -509,165 +476,6 @@ li{/* Put Gap btw each listes*/
     font-weight: 400;
     line-height: 19px;
     margin: 0px;
-}
-
-/****** Hebergements And Populaires *******************************************/
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-/****** Hebergements *****************************************************/
-.hebergements { /* Take 65% of page widht*/ 
-    width: 65%;
-}
-
-section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make the first section of card flex */
-    display: flex;
-    gap: 25px;
-    margin-top: 33px;
-    padding: inherit;
-}
-
-section .hebergements-card-section-two{
-    padding: inherit;
-}
-
-.hebergements-card-section-one a{/* make the card block take all the width of is parent*/
-    width: 100%;
-}
-
-.hebergements-card-section-two a{/* make the card block take all the width of is parent*/
-    width: 100%;
-}
-.hebergements-card img{/* make the image take all widht of is parent and have fixed height*/
-    width: 100%;
-    height: 124px;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-txt, .card-rating{
-    padding: 0px 15px 0px 15px;
-    margin: 8px 0; /* Make gap btw rating and txt card */
-}
-
-.card-title{
-    margin: 8px 0; /* Make gap btw hotel title and price room*/ 
-} 
-
-.height-adujst{
-    height: 100%;
-}
-/****** Populaires **********************************************************************************/
-.populaires {
-    width: 32%;
-}
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
-}
-
-.populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-cards  {
-    margin: 0;
-}
-.card-subtitle{
-    margin: 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
-}
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
-
-/***********Activities section ***************************************************/
-.activities{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    gap: 50px;
-    padding: 30px;
-}
-
-.activities-cards{/*Position Cards activities block*/
-    display: flex;
-    gap: 30px;
-}
-
-.activities-cards a {/* Ajust widht max*/
-   width: 100%;
-}
-.card-img{ /* Inherit the pading from class .card*/
-    padding: inherit;
-    height: 100%;
-}
-
-.card-img img{ /*Images from activities card css*/
-    width: 100%;
-    height: 380px;
-    border-radius: 20px 20px 0 0;
-
-}
-
-.title-card-activities{
-    padding: 20px 19px 20px 19px;
-}
-
-/****** Footer CSS *******************************************/
-.footer-content{/* Flex container of footer*/
-    display: flex;
-    background-color: #F2F2F2;
-    margin-top: 50px;
-}
-
-.footer-content section{
-    width: 100%;
-    padding: 20px;
-
-}
-
-ul{/* Sup liste style and padding */
-    list-style: none;
-    padding-left: 0px;
-}
-
-li{/* Put Gap btw each listes*/
-    margin-top: 15px;
 }
 
 }
