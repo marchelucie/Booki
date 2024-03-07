@@ -45,7 +45,7 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.card img {/* Images cannot distort*/
     object-fit: cover;
 }
 
@@ -231,7 +231,7 @@ section .hebergements-card-section-two{
 
 .card-title{
     margin: 8px 0; /* Make gap btw hotel title and price room*/ 
-}
+} 
 
 /****** Populaires **********************************************************************************/
 .populaires {
@@ -283,8 +283,36 @@ section .hebergements-card-section-two{
     margin-bottom: 5px;
 }
 
+/***********Activities section ***************************************************/
+.activities{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+}
 
+.activities-cards{/*Position Cards activities block*/
+    display: flex;
+    gap: 30px;
+}
 
+.activities-cards a {/* Ajust widht max*/
+   width: 300px;
+}
+.card-img{ /* Inherit the pading from class .card*/
+    padding: inherit;
+}
+
+.card-img img{ /*Images from activities card css*/
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 2 0px 0 0;
+
+}
+
+.title-card-activities{
+    padding: 20px 19px 20px 19px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
