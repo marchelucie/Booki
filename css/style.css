@@ -51,6 +51,8 @@ a {
 
 .card-title {
     font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
 }
 
 .euro {
@@ -63,6 +65,10 @@ a {
 
 .side-padding{
     padding: 30px 50px 30px 50px; /* add this to add padding on the side of the page*/
+}
+
+h3{/* Inherit all H3 margin*/ 
+    margin: 0px;
 }
 /****** CSS HEADER *************************************************************************/
 .header-logo-link{
@@ -287,8 +293,9 @@ section .hebergements-card-section-two{
 .activities{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     gap: 50px;
+    padding: 30px;
 }
 
 .activities-cards{/*Position Cards activities block*/
@@ -297,21 +304,44 @@ section .hebergements-card-section-two{
 }
 
 .activities-cards a {/* Ajust widht max*/
-   width: 300px;
+   width: 100%;
 }
 .card-img{ /* Inherit the pading from class .card*/
     padding: inherit;
+    height: 100%;
 }
 
 .card-img img{ /*Images from activities card css*/
     width: 100%;
     height: 380px;
-    border-radius: 20px 2 0px 0 0;
+    border-radius: 20px 20px 0 0;
 
 }
 
 .title-card-activities{
     padding: 20px 19px 20px 19px;
+}
+
+/****** Footer CSS *******************************************/
+.footer-content{/* Flex container of footer*/
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
+
+.footer-content section{
+    width: 100%;
+    padding: 20px;
+
+}
+
+ul{/* Sup liste style and padding */
+    list-style: none;
+    padding-left: 0px;
+}
+
+li{/* Put Gap btw each listes*/
+    margin-top: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -349,6 +379,13 @@ section .hebergements-card-section-two{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .card-img img{ /*Images from activities card css*/
+        width: 100%;
+        height: 200px;
+    
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
