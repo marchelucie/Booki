@@ -357,6 +357,20 @@ li{/* Put Gap btw each listes*/
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /* filter CSS */
+    .filter-bar{/* display flex replace by grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 column with egal widht */
+        grid-template-rows: repeat(2, auto); /* 3 automatic height lines */
+        gap: 10px; /* Spacing between elements */
+        margin-top: 20px;
+    }
+    
+    .grid-adjust{
+        grid-column: 1 / span 4; /* Title  hold the 4 column */
+    }
+
+    /* *************** Hebergement and Popular CSS ***********************/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -420,6 +434,7 @@ li{/* Put Gap btw each listes*/
     padding: 0 20px 0 20px;
     margin-top: 35px;
 }
+
 .search-bar{
     width: 300px;/*Ajust the widht*/
     border: solid 2px #F2F2F2;
@@ -458,16 +473,16 @@ li{/* Put Gap btw each listes*/
 }
 
 /****** Filtres  CSS ************/
-.filter-bar{
+.filter-bar{/* Add one more ROWS and delete one column*/
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
-    grid-template-rows: repeat(3, auto); /* Trois lignes de hauteur automatique */
-    gap: 10px; /* Espacement entre les éléments */
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-rows: repeat(3, auto); /* Three automatic height lines */
+    gap: 10px; /* Spacing between elements */
     margin-top: 20px;
 }
 
 .grid-adjust{
-    grid-column: 1 / span 2; /* Le titre occupe deux colonnes */
+    grid-column: 1 / span 2; /* Title  hold the 2 column */
 }
 
 .filter-button:hover{ /* when pass over change background and cursor, on the filter button*/
