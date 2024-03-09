@@ -85,9 +85,13 @@ h3{/* Inherit all H3 margin*/
     justify-content: space-between;
 }
 
+.link-hebergement-activities{
+    display: flex;
+}
 
 .link-hebergement-activities a{
     margin: 0 50px 0 50px; /*make the gap btw links*/
+    padding: 15px 0 0 0;
 }
 
 .link-hebergement-activities a:hover{
