@@ -333,12 +333,11 @@ section .hebergements-card-section-two{
     display: flex;
     background-color: #F2F2F2;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .footer-content section{
     width: 100%;
-    padding: 20px;
-
 }
 
 ul{/* Sup liste style and padding */
@@ -542,6 +541,16 @@ section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make
 
 .card-img img{ /* Ajust height Images from activities card css*/
     height: 141px;
+}
+
+/****** Footer CSS *******************************************/
+.footer-content{/* changement Flex direction container of footer + add 10px of padding each section*/
+    flex-direction: column;
+    padding: 30px;
+}
+
+.footer-content section{/* Add a margin top to separate each section */ 
+    margin-top: 30px;
 }
 
 }
