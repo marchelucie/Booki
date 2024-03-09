@@ -216,6 +216,9 @@ section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make
     padding: inherit;
 }
 
+.hebergements .show-more{
+    margin-top: 30px;
+}
 section .hebergements-card-section-two{
     padding: inherit;
 }
