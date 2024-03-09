@@ -441,6 +441,17 @@ li{/* Put Gap btw each listes*/
     border-radius: 25px;
 }
 
+.search-button {
+    /* Use an icon image as a background*/
+    background-image: url(/images/icons-boostrap/search.svg);
+    /* Center the icon horizontally and vertically in the button */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Hide text */
+    text-indent: -9999px; /* Cette valeur doit être suffisamment grande pour cacher le texte */
+    cursor: pointer;
+}
+
 /* Headline CSS*/
 .headline h2{
     margin-bottom: 10px; /*make space btw H2 and P from the nav*/
