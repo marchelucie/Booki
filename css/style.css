@@ -435,6 +435,15 @@ li{/* Put Gap btw each listes*/
     flex-direction: column;
 }
 
+.link-hebergement-activities {
+    width: 100%;
+}
+
+.link-hebergement-activities a {
+    margin: inherit;
+    width: 100%;
+    text-align: center;
+}
 .link-hebergement-activities a:hover{/* show the border bottom phone screen*/
     color: #0065FC;
     border-bottom: #0065FC solid 2px;
