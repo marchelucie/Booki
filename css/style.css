@@ -1,4 +1,8 @@
 /****** General ***********/
+html{ /* when widht of screen more than 1440 px, the body is in center of html */
+    display: flex;
+    justify-content: center;
+}
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -17,11 +21,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 1440px;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -70,6 +74,10 @@ a {
 
 h3{/* Inherit all H3 margin*/ 
     margin: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+    
 }
 /****** CSS HEADER *************************************************************************/
 .header-logo-link{
@@ -411,7 +419,7 @@ li{/* Put Gap btw each listes*/
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ... */
     .main-container{  /* Inherit padding make the main no padding */ 
         padding: 0%;
