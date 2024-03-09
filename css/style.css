@@ -531,5 +531,17 @@ section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make
 
 /***********Activities section ***************************************************/
 
+.activities-cards{/*Position Cards activities in column */
+    flex-direction: column;
+}
+
+.card-img{ /* Inherit the pading from class .card*/
+    padding: inherit;
+    height: 100%;
+}
+
+.card-img img{ /* Ajust height Images from activities card css*/
+    height: 141px;
+}
 
 }
