@@ -141,6 +141,9 @@ h3{/* Inherit all H3 margin*/
     border: solid 1px #F2F2F2 ;
 }
 
+::placeholder{
+    color: black;
+}
 /* Div search button CSS*/
 .search-button{
     display: flex;
