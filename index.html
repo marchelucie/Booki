@@ -2,20 +2,21 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- specific caracter-->
+    <meta name="viewport" content="width=320px, initial-scale=1.0"><!--to correctly handle screens with low resolution-->
+    <meta name="viewport" content="width=1440px, initial-scale=1.0"><!--to correctly handle screens with high resolution-->
     <title>Booki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- error link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--error link -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- icon link-->
+    <link rel="stylesheet" href="./css/style.css"><!-- link to css-->
 </head>
 
 <body>
-    <header class="header-logo-link">
+    <header class="header-logo-link"><!-- Header part with LOGO and hebergement, activities link-->
             <div class="side-padding">
                 <img src="./images/logo/Booki.png" alt="logo Booki" class="booki-image">
             </div> 
@@ -24,7 +25,7 @@
                 <a href="#activities" rel="noopener noreferrer"><p class="card-subtitle">Activités</p></a><!-- link going to Activities section-->
             </div>
     </header>
-    <nav class="info-group side-padding">
+    <nav class="info-group side-padding"><!-- Navigation part with presentation, search-bar, filter-bar and info-bar-->
         <div class="headline"> <!-- presentation of the website -->
             <h2 class="section-title marge">Trouvez votre hébergement pour des vacances de rêve</h2>
             <p class="card-subtitle">En plein centre-ville ou en pleine nature</p>
@@ -62,8 +63,8 @@
             <p class="information">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </nav>
-    <div class="main-container"><!-- Main part-->
-        <main>
+    <div class="main-container"><!-- Main part and footer part-->
+        <main><!-- Main part with hebergement, activities and Populare section-->
             <div class="hebergements-and-populares"><!-- First part of main with populare and hebergement section-->
                 <section class="hebergements" id="hebergements"><!-- hebergement section with id who do the link with anchor-->
                     <div class="hebergements-title"><!-- Hebergement title-->
@@ -295,7 +296,7 @@
                 </section>
             </div>
         </main>
-        <footer> <!--Footer Part-->
+        <footer> <!--Footer Part with about us, our hebergement and helping list-->
             <div class="footer-content"><!-- all link to know more about, our hebergment and help. With each one list-->
                 <section class="about">
                     <h3>À propos</h3>
