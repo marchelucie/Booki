@@ -21,7 +21,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1440px;
+    max-width: 1440px;/* maximum width at 1440 px to correctly handle screens with high resolution */
+    min-width: 320px; /* minimum width of 320px to correctly handle screens with low resolution */
     margin: inherit;
 }
 
@@ -444,7 +445,7 @@ li{/* Put Gap btw each listes*/
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px){
     /* ... */
     .main-container{  /* Inherit padding make the main no padding */ 
         padding: 0%;
