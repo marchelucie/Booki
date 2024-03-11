@@ -178,7 +178,7 @@ h3{/* Inherit all H3 margin*/
     border-radius: 25px;
     border: solid 2px #D9D9D9;
     padding: 10px 19px; 
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .text-button{
