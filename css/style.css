@@ -22,7 +22,6 @@ body {
     justify-content: center;
     flex-direction: column;
     max-width: 1440px;/* maximum width at 1440 px to correctly handle screens with high resolution */
-    min-width: 320px; /* minimum width of 320px to correctly handle screens with low resolution */
     margin: inherit;
 }
 
