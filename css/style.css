@@ -225,12 +225,12 @@ h3{/* Inherit all H3 margin*/
 }
 
 /****** Hebergements And Populaires *******************************************/
-.hebergements-and-populaires {
+.hebergements-and-populares {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populares section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -281,30 +281,30 @@ section .hebergements-card-section-two{
 .height-adujst{
     height: 100%;
 }
-/****** Populaires **********************************************************************************/
-.populaires {
+/********************* populares CSS  **********************************************************************************/
+.populares {
     width: 32%;
 }
 
-.populaires-title {
+.populares-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.populares-cards .card {
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.populares-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populares-cards .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -313,12 +313,12 @@ section .hebergements-card-section-two{
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populares-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards  {
+.populares-cards  {
     margin: 0;
 }
 .card-subtitle{
@@ -327,7 +327,7 @@ section .hebergements-card-section-two{
     font-size: 16px;
     line-height: 18.78px;
 }
-.populaires-cards .card-rating {
+.populares-cards .card-rating {
     margin-bottom: 5px;
 }
 
@@ -405,7 +405,7 @@ li{/* Put Gap btw each listes*/
     }
 
     /* *************** Hebergement and Popular CSS ***********************/
-    .hebergements-and-populaires {
+    .hebergements-and-populares {
         flex-direction: column;
     }
 
@@ -413,26 +413,26 @@ li{/* Put Gap btw each listes*/
         width: 100%;
     }
 
-    .populaires {
+    .populares {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .populares-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     
-    .populaires-cards a {
+    .populares-cards a {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .populares-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populares-cards .card-subtitle {
         font-size: 13px;
     }
 
@@ -548,11 +548,11 @@ li{/* Put Gap btw each listes*/
 }
 
 /****** Hebergements And Populaires *******************************************/
-.hebergements-and-populaires { /* direction changement*/
+.hebergements-and-populares { /* direction changement*/
     flex-direction: column-reverse; 
 }
 
-.hebergements-and-populaires section{/* Delete section content radius + background-color */
+.hebergements-and-populares section{/* Delete section content radius + background-color */
     border-radius: 0px;
     background-color: inherit;
 }
@@ -570,23 +570,23 @@ section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make
 
 /*Delete widht 32% from class populaire  for phone display*/
 
-.hebergements-and-populaires .populaires {/* give back the color to populaires section */
+.hebergements-and-populares .populares {/* give back the color to populaires section */
     background-color: var(--main-bg-color);
 }
 
-.populaires-cards{/* card of populaires column direction with display flex */
+.populares-cards{/* card of populaires column direction with display flex */
     flex-direction: column;
 }
 
-.populaires-cards a{/*all card take 100% of his parent*/
+.populares-cards a{/*all card take 100% of his parent*/
     width: 100%;
 }
 
-.populaires-cards img {/* image same height */
+.populares-cards img {/* image same height */
     height: 146px;
 }
 
-.populaires-cards .card-content {
+.populares-cards .card-content {
     padding: 0%;
 }
 
