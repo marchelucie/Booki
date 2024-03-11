@@ -127,6 +127,7 @@ h3{/* Inherit all H3 margin*/
 .container-icon-localisation{ /*this part is for background of the icon location and centered it*/
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
+    border: 1px #F2F2F2 solid;
 }
 
 .container-icon-localisation i{ /* center icon with flexbox and fixed widht widht*/
@@ -138,6 +139,7 @@ h3{/* Inherit all H3 margin*/
     color: black; /* color black for icon localisation*/
 }
 /* Div input css*/
+
 .input{
     text-align: center;
     height: 46px;
@@ -390,9 +392,10 @@ li{/* Put Gap btw each listes*/
     /* filter CSS */
     .filter-bar{/* display flex replace by grid */
         display: grid;
+        width: 668px; /* fixed the width */
         grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 column with egal widht */
         grid-template-rows: repeat(2, auto); /* 3 automatic height lines */
-        gap: 10px; /* Spacing between elements */
+        gap: 20px; /* Spacing between elements */
         margin-top: 20px;
     }
     
@@ -495,19 +498,6 @@ li{/* Put Gap btw each listes*/
 /* Headline CSS*/
 .headline h2{
     margin-bottom: 10px; /*make space btw H2 and P from the nav*/
-}
-.icon-location{ /* this part is for the icon side */
-    width: 14px;
-    height: 18px;
-}
-.container-icon-location{ /*this part is for background of the icon location and center it*/
-    width: 50px;
-    height: 49px;
-    border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Div input css*/
