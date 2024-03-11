@@ -479,14 +479,16 @@ li{/* Put Gap btw each listes*/
 }
 
 .search-bar{
-    width: 300px;/*Ajust the widht*/
+    width: 335px;/*Ajust the widht*/
     border: solid 2px #F2F2F2;
     border-radius: 25px;
+    display: flex;
+    justify-content: space-between;/* Add display flex, like that, all tag take all width */
 }
 
 .search-button {
     /* Use an icon image as a background*/
-    background-image: url(/images/icons-boostrap/search.svg);
+    background-image: url(/images/icons-maquette-figma/Vector.png);
     /* Center the icon horizontally and vertically in the button */
     background-position: center;
     background-repeat: no-repeat;
