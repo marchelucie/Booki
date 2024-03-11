@@ -517,11 +517,12 @@ li{/* Put Gap btw each listes*/
 
 /****** Filtres  CSS ************/
 .filter-bar{/* Add one more ROWS and delete one column*/
+    width: 100%; /* replace widht= 668px of tab version, from width=100%, like that, the width auto adjust*/
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns of equal width */
     grid-template-rows: repeat(3, auto); /* Three automatic height lines */
-    gap: 10px; /* Spacing between elements */
-    margin-top: 20px;
+    gap: 20px; /* Spacing between elements */
+    margin-top: 35px;
 }
 
 .grid-adjust{
@@ -536,8 +537,7 @@ li{/* Put Gap btw each listes*/
 .info-bar{
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 10px
 }
 .information{
     font-size: 16px;
