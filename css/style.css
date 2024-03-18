@@ -120,7 +120,11 @@ h3{/* Inherit all H3 margin*/
 .headline h2{
     margin-bottom: 10px; /*make space btw H2 and P from the nav*/
 }
-
+.healine-txt{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 18.78px;
+}
 .container-icon-localisation{ /*this part is for background of the icon location and centered it*/
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
@@ -321,11 +325,12 @@ section .hebergements-card-section-two{
 .populares-cards  {
     margin: 0;
 }
+
 .card-subtitle{
     margin: 0;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
+    font-size: 14px;
+    line-height: 16.44px;
 }
 .populares-cards .card-rating {
     margin-bottom: 5px;
