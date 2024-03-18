@@ -1,4 +1,8 @@
 /****** General ***********/
+html{ /* when widht of screen more than 1440 px, the body is in center of html */
+    display: flex;
+    justify-content: center;
+}
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -9,6 +13,7 @@
     --filter-bg-color: #DEEBFF;
 }
 
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -16,11 +21,13 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    max-width: 1440px;/* maximum width at 1440 px to correctly handle screens with high resolution */
+    margin: inherit;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -30,9 +37,11 @@ a {
     text-decoration: none;
 }
 
-.section-title {
+.section-title { 
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
 }
 
 .card {
@@ -40,15 +49,14 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
 }
 
-.card img {
+.card img {/* Images cannot distort*/
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-}
+
 
 .euro {
     font-weight: 700;
@@ -58,78 +66,351 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.side-padding{
+    padding: 30px 50px 30px 50px; /* add this to add padding on the side of the page*/
+}
+h2{
+    margin: 0px;
+}
+h3{/* Inherit all H3 margin*/ 
+    margin: 0px;
+}
+
+/****** CSS HEADER *************************************************************************/
+.header-logo-link{
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.link-hebergement-activities{
+    display: flex;
+}
+
+.link-hebergement-activities a{
+    margin: 0 50px 0 50px; /*make the gap btw links*/
+    padding: 15px 0 0 0;
+}
+
+.link-hebergement-activities a:hover{
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+}
+
+.booki-image{
+    width: 61.09px;
+    height: 19px;
+}
+/****** Nav filter css ****************************************************/
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    width: 377px;
+    height: 49px;
+}
+
+.text-nav{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+}
+
+/****************** Headline CSS ******************************************************/
+
+.headline h2{
+    margin-bottom: 10px; /*make space btw H2 and P from the nav*/
+}
+.healine-txt{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 18.78px;
+}
+.container-icon-localisation{ /*this part is for background of the icon location and centered it*/
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+}
+
+.container-icon-localisation i{ /* center icon with flexbox and fixed widht widht*/
+    width: 50px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; /* color black for icon localisation*/
+}
+/* Div input css*/
+
+.input{
+    text-align: center;
+    height: 46px;
+    border: solid 1px #F2F2F2 ;
+}
+
+::placeholder{
+    color: black;
+}
+/* Div search button CSS*/
+.search-button{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    height: 49px;
+    border-radius: 0 15px 15px 0;
+    padding: 15px 16px 15px 16px;
+    background-color: #0065FC;
+    color: white;
+    border: 1px solid #0065FC;
+}
+
+/************************ Filtres  CSS *******************************************************/
+
+.filter-bar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.filter-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: solid 2px #D9D9D9;
+    padding: 10px 19px; 
+    white-space: nowrap;
+}
+
+.text-button{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19.96px;
+}
+
+.filter-image { /* make all icon align to the center zith fixed height and width*/
+    display: flex;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+}
+
+.filter-button:hover{ /* when pass over change background and cursor, on the filter button*/
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+/* Div info-bar CSS */
+
+.icon-information{
+    width: 24px;
+    height: 24px;
+    border: solid 1px #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.information{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0px;
+}
+
+/****** Hebergements And Populaires *******************************************/
+.hebergements-and-populares {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populares section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
+/****** Hebergements *****************************************************/
+.hebergements { /* Take 65% of page widht*/ 
     width: 65%;
 }
 
-/****** Populaires ***********/
-.populaires {
+section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make the first section of card flex */
+    display: flex;
+    gap: 25px;
+    margin-top: 33px;
+    padding: inherit;
+}
+
+.hebergements .show-more{
+    margin-top: 30px;
+}
+section .hebergements-card-section-two{
+    padding: inherit;
+}
+
+.hebergements-card-section-one a{/* make the card block take all the width of is parent*/
+    width: 100%;
+}
+
+.hebergements-card-section-two a{/* make the card block take all the width of is parent*/
+    width: 100%;
+}
+.hebergements-card img{/* make the image take all widht of is parent and have fixed height*/
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-txt, .card-rating{
+    padding: 0px 0px 0px 15px;
+    margin: 4px 0; /* Make gap btw rating and txt card */
+}
+
+.card-title{
+    margin-bottom: 8px; /* Make gap btw hotel title and price room*/ 
+    white-space: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+} 
+
+.height-adujst{
+    height: 100%;
+}
+/********************* populares CSS  **********************************************************************************/
+.populares {
     width: 32%;
 }
 
-.populaires-title {
+.populares-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.populares-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
+    height: 146px;/* fixed height*/
 }
 
-.populaires-cards img {
+.populares-cards img {
     width: 33%;
-    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populares-cards .card-content {
     width: 67%;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populares-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populares-cards  {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.card-subtitle{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.44px;
+}
+.populares-cards .card-rating {
     margin-bottom: 5px;
 }
 
+/***********Activities section ***************************************************/
+.activities{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 30px;
+}
 
+.activities-cards{/*Position Cards activities block*/
+    display: flex;
+    gap: 30px;
+}
 
+.activities-cards a {/* Ajust widht max*/
+   width: 100%;
+}
+.card-img{ /* Inherit the pading from class .card*/
+    padding: inherit;
+    height: 100%;
+}
+
+.card-img img{ /*Images from activities card css*/
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.title-card-activities{
+    padding: 20px 19px 20px 19px;
+}
+
+/****** Footer CSS *******************************************/
+.footer-content{/* Flex container of footer*/
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.footer-content section{
+    width: 100%;
+}
+
+ul{/* Sup liste style and padding */
+    list-style: none;
+    padding-left: 0px;
+}
+
+li{/* Put Gap btw each listes*/
+    margin-top: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+    /* filter CSS */
+    .filter-bar{/* display flex replace by grid */
+        display: grid;
+        width: 668px; /* fixed the width */
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 column with egal widht */
+        grid-template-rows: repeat(2, auto); /* 3 automatic height lines */
+        gap: 20px; /* Spacing between elements */
+        margin-top: 20px;
+    }
+    
+    .grid-adjust{
+        grid-column: 1 / span 4; /* Title  hold the 4 column */
+    }
+
+    /* *************** Hebergement and Popular CSS ***********************/
+    .hebergements-and-populares {
         flex-direction: column;
     }
 
@@ -137,31 +418,211 @@ a {
         width: 100%;
     }
 
-    .populaires {
+    .populares {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .populares-cards {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .populares-cards a {
+        width: 100%;
     }
 
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
+    .populares-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populares-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .card-img img{ /*Images from activities card css*/
+        width: 100%;
+        height: 200px;
+    
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px){
     /* ... */
+    .main-container{  /* Inherit padding make the main no padding */ 
+        padding: 0%;
+    }
+
+    /****** CSS HEADER *************************************************************************/
+.header-logo-link{
+    align-items: center;
+    flex-direction: column;
+}
+
+.link-hebergement-activities {
+    width: 100%;
+}
+
+.link-hebergement-activities a {
+    margin: inherit;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.link-hebergement-activities a:hover{/* show the border bottom phone screen*/
+    color: #0065FC;
+    border-bottom: #0065FC solid 2px;
+    border-top: none;
+}
+
+/****** Nav filter css ****************************************************/
+.info-group{
+    padding: 0 20px 0 20px;
+    margin-top: 35px;
+}
+
+.search-bar{
+    width: 335px;/*Ajust the widht*/
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;/* Add display flex, like that, all tag take all width */
+}
+
+.search-button {
+    /* Use an icon image as a background*/
+    background-image: url(/images/icons-maquette-figma/Vector.png);
+    /* Center the icon horizontally and vertically in the button */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Hide text */
+    text-indent: -9999px; /* Cette valeur doit être suffisamment grande pour cacher le texte */
+    cursor: pointer;
+}
+
+/* Headline CSS*/
+.headline h2{
+    margin-bottom: 10px; /*make space btw H2 and P from the nav*/
+}
+
+/* Div input css*/
+.input{
+    border: none;
+}
+
+/* Div search button CSS*/
+.search-button{
+    border-radius: 15px;
+    width: 49px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+/****** Filtres  CSS ************/
+.filter-bar{/* Add one more ROWS and delete one column*/
+    width: 100%; /* replace widht= 668px of tab version, from width=100%, like that, the width auto adjust*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-rows: repeat(3, auto); /* Three automatic height lines */
+    gap: 20px; /* Spacing between elements */
+    margin-top: 35px;
+}
+
+.grid-adjust{
+    grid-column: 1 / span 2; /* Title  hold the 2 column */
+}
+
+.text-button{/* change for more space into button*/
+    font-size: 14px;
+    line-height: 16.44px;
+}
+
+.filter-button:hover{ /* when pass over change background and cursor, on the filter button*/
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+/* Div info-bar CSS */
+.info-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.information{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0px;
+}
+
+/****** Hebergements And Populaires *******************************************/
+.hebergements-and-populares { /* direction changement*/
+    flex-direction: column-reverse; 
+}
+
+.hebergements-and-populares section{/* Delete section content radius + background-color */
+    border-radius: 0px;
+    background-color: inherit;
+}
+
+/****** Hebergements *****************************************************/
+.hebergements { /* Take 100% of page widht phone display*/ 
+    width: 100%;
+}
+
+section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make the first section of card flex */
+    display: flex;
+    flex-direction: column;
+}
+/****** Populaires **********************************************************************************/
+
+/*Delete widht 32% from class populaire  for phone display*/
+
+.hebergements-and-populares .populares {/* give back the color to populaires section */
+    background-color: var(--main-bg-color);
+}
+
+.populares-cards{/* card of populaires column direction with display flex */
+    flex-direction: column;
+}
+
+.populares-cards a{/*all card take 100% of his parent*/
+    width: 100%;
+}
+
+.populares-cards img {/* image same height */
+    height: 146px;
+}
+
+.populares-cards .card-content {
+    padding: 0%;
+}
+
+/***********Activities section ***************************************************/
+
+.activities-cards{/*Position Cards activities in column */
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-img{ /* Inherit the pading from class .card*/
+    padding: inherit;
+    height: 100%;
+}
+
+.card-img img{ /* Ajust height Images from activities card css*/
+    height: 141px;
+}
+
+/****** Footer CSS *******************************************/
+.footer-content{/* changement Flex direction container of footer + add 10px of padding each section*/
+    flex-direction: column;
+    padding: 30px;
+}
+
+.footer-content section{/* Add a margin top to separate each section */ 
+    margin-top: 30px;
+}
+
 }
