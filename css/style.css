@@ -603,6 +603,7 @@ section .hebergements-card-section-one, .hebergements-card-section-two  {/* Make
 
 .activities-cards{/*Position Cards activities in column */
     flex-direction: column;
+    gap: 15px;
 }
 
 .card-img{ /* Inherit the pading from class .card*/
