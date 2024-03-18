@@ -13,6 +13,7 @@ html{ /* when widht of screen more than 1440 px, the body is in center of html *
     --filter-bg-color: #DEEBFF;
 }
 
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -55,11 +56,7 @@ a {
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.78px;
-}
+
 
 .euro {
     font-weight: 700;
@@ -270,12 +267,16 @@ section .hebergements-card-section-two{
 }
 
 .card-txt, .card-rating{
-    padding: 0px 15px 0px 15px;
-    margin: 8px 0; /* Make gap btw rating and txt card */
+    padding: 0px 0px 0px 15px;
+    margin: 4px 0; /* Make gap btw rating and txt card */
 }
 
 .card-title{
-    margin: 8px 0; /* Make gap btw hotel title and price room*/ 
+    margin-bottom: 8px; /* Make gap btw hotel title and price room*/ 
+    white-space: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
 } 
 
 .height-adujst{
@@ -306,7 +307,6 @@ section .hebergements-card-section-two{
 
 .populares-cards .card-content {
     width: 67%;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
