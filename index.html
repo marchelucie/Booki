@@ -19,24 +19,97 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <div class="main-container">
-      <header></header>
+      <!--creation d'une nav avec image logo et 2 elements de liste-->
+      <header>
+        <nav>
+            <!--logo-->
+          <img src="./images/logo/Booki.png" alt="logo" />
+          <!--menu-->
+          <ul>
+            <li>Hebergements</li>
+            <li>Activités</li>
+          </ul>
+        </nav>
+      </header>
+      <!--formulaire de recherche en 3 parties-->
+      <div class="info-group">
+        <form>
+          <section id="information">
+            <div class="head-line">
+              <!--partie headline du formulaire-->
+              <h1>Trouvez votre hebergements pour des vacances de rêves</h1>
+              <small>En plein centre-ville ou en pleine nature</small>
+            </div>
+          </section>
+          <!--search bar -->
+          <section id="search-and-filter">
+            <div class="search-bar"></div>
+            <!--filter-->
+            <div class="filter_bar"></div>
+          </section>
+          <!--infobar-->
+          <section id="infobar">
+            <div class="info"></div>
+          </section>
+        </form>
+      </div>
       <main>
+          <!--section group offers/main and Offers/sponsored-->  
         <div class="hebergements-and-populaires">
-          <section class="hebergements"></section>
+          <!--section hebergements-->
+          <section class="hebergements">
+            <!-- title-->
+            <div class="hebergements-title">
+              <h2 class="section-title">Hébergements à Marseille</h2>
+            </div>
+            <!--first line of cards-->
+            <div class="hebergements-line-1">
+              <div class="hebergements-cards"></div>
+              <!--card number 1 of line 1-->
+                <a href="#">
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="card-txt"></div>
+                            <div class="card-rating"></div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <!--second line of cards-->
+            <div class="hebergements-line-2">
+              <div class="hebergements-cards"></div>
+              <!--card number 1 of line 2-->
+                <a href="#">
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="card-txt"></div>
+                            <div class="card-rating"></div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <!--déroulement de la page : afficher plus-->
+            <div class="title-filter">
+              <a href="#">Afficher plus</a>
+            </div>
+          </section>
+          <!--section populaires-->
           <section class="populaires">
+            <!-- title-->
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
+            <!--column of cards-->
             <div class="populaires-cards">
+              <!--card number 1 -->
               <a href="#">
                 <article class="card">
                   <img
                     src="./images/hebergements/emile-guillemot.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
+                    alt="Image de la chambre d'hôtel montrant un lit  "
                   />
                   <div class="card-content">
                     <div class="card-txt">
@@ -59,11 +132,12 @@
                   </div>
                 </article>
               </a>
+              <!--card number 2 -->
               <a href="#">
                 <article class="card">
                   <img
                     src="./images/hebergements/aw-creative.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
+                    alt=" Image de la chambre d'hôtel montrant un lit"
                   />
                   <div class="card-content">
                     <div class="card-txt">
@@ -88,11 +162,12 @@
                   </div>
                 </article>
               </a>
+              <!--card number 3 -->
               <a href="#">
                 <article class="card">
                   <img
                     src="./images/hebergements/febrian-zakaria2.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
+                    alt="Image de la chambre d'hôtel montrant un lit "
                   />
                   <div class="card-content">
                     <div class="card-txt">
@@ -118,8 +193,53 @@
             </div>
           </section>
         </div>
+        <div class="Activités">
+         <!--construction de la section activités-->
+          <section class="Activités à">
+            <!-- title-->            
+            <div class="activités-title"></div>
+            <!--line of 4 cards-->
+            <div class="activités-cards">
+                <!--card photo et card title-->
+                <a href="#">
+                    <article class="card">
+                      <img src="#" alt="" />
+                      <div class="card-content">
+                        <div class="card-txt">
+                            <h4 class="card-title"></h4>
+                        </div>
+                       </div> 
+                    </article>
+                  </a>
+            </div>
+        </div>
       </main>
-      <footer></footer>
+      <footer>        
+        <div class="footer">           
+            <div id="a-propos">
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul> 
+            </div>
+            <div id="nos-hebergements">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>                    
+                </ul> 
+            </div>
+            <div id="assistance">
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>                    
+                </ul> 
+            </div>        
+        </div>
+      </footer>
     </div>
   </body>
 </html>
