@@ -17,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   /*enlever la marge du body par défaut*/
-  margin: 0;
 }
 /* Ajout du css pour le header*/
 nav {
@@ -27,17 +26,26 @@ nav {
 }
 /*reduction de la taille du logo*/
 nav img {
-  height: 20px;
+  height: 15px;
 }
 /* liste mise en flex et enlever les puces*/
 nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 /*séparation des 2 LI */
 nav li {
-  margin: 0 0 0 20px;
+  margin: 10px 10px 0 10px;
 }
+/*mise en place de la couleur bleu et de la barre au survol du lien*/
+header nav ul li a:hover {
+  padding-top: 15px;
+  color: #0065fc; /*text-decoration-line: overline;*/
+  border-top: 2px solid #0065fc;
+  text-decoration-color: #0065fc;
+}
+
 /* fin mise en forme du header */
 .main-container {
   width: 100%;
