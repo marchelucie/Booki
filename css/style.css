@@ -19,39 +19,93 @@ body {
   /*enlever la marge du body par défaut*/
 }
 /* Ajout du css pour le header*/
+header {
+  height: 79px;
+  gap: 0px;
+  opacity: 0px;
+}
+
 nav {
   display: flex;
-  justify-content: space-between; /*remplir d'espace entre le logo et le menu*/
-  align-items: center; /*centrer le menu au milieu du logo*/
+  justify-content: space-between;
+  align-items: center;
 }
-/*reduction de la taille du logo*/
-nav img {
-  height: 15px;
-}
-/* liste mise en flex et enlever les puces*/
+/*liste mise en flex et enlever les puces*/
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
 }
-/*séparation des 2 LI */
-nav li {
-  margin: 10px 10px 0 10px;
+ul {
+  padding: 0px 50px 0px 0px;
+  gap: 45px;
+}
+
+.logo {
+  padding: 30px 50px 30px 50px;
+  gap: 10px;
+  opacity: 0px;
+}
+img {
+  width: 61.09px;
+  height: 19px;
+  top: 30px;
+  left: 50px;
+  gap: 0px;
+  opacity: 0px;
 }
 /*mise en place de la couleur bleu et de la barre au survol du lien*/
 header nav ul li a:hover {
-  padding-top: 15px;
-  color: #0065fc; /*text-decoration-line: overline;*/
+  width: 140px;
+  padding-top: 16px;
+  color: #0065fc;
   border-top: 2px solid #0065fc;
   text-decoration-color: #0065fc;
 }
 
+/*
+.menu {
+    width: Hug (344px)px;
+    height: Hug (35px)px;
+    left: 1096px;
+    padding: 0px 50px 0px 50px;
+    gap: 68px;
+    opacity: 0px;  
+}
+
+     
+
+/*séparation des 2 LI 
+nav li {
+    width: 113px;
+    height: 35px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+*/
+.A {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  text-align: center;
+}
+.HM {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  text-align: center;
+}
+
 /* fin mise en forme du header */
+/*mise en forme du formulaire*/
+
 .main-container {
+  display: block;
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
+  gap: 30px;
 }
 
 a {
@@ -105,7 +159,7 @@ a {
   width: 65%;
 }
 
-/* ajouter le css de title, cards,img,card content, card title,card subtitle, card rating*/
+/* ajouter le css de title, cards,img,card content, card title,card subtitle, card rating
 .hebergements-cards .card {
   display: flex;
 }
@@ -153,6 +207,27 @@ a {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+.Activités {
+  display: flex;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer ul {
+  list-style: none;
+}
+#a-propos #nos-hebergements #assitance {
+  width: 77px;
+  height: 21px;
+  gap: 0px;
+  opacity: 0px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -193,5 +268,39 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  /* .hebergements-and-populaires {
+        flex-direction: column;*/
 }
+/*essai sur effet barre navigation bleu en dessous */
+/*
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements {
+    width: 100%;
+  }
+
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 30%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+}*/
