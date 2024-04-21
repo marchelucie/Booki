@@ -14,30 +14,50 @@
 }
 
 body {
+  width: 1440px;
+  height: 1831.02px;
   display: flex;
   justify-content: center;
+  margin: 0;
   /*enlever la marge du body par défaut*/
 }
 /* Ajout du css pour le header*/
 header {
+  width: 1440px;
   height: 79px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 nav {
+  width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.menu {
+  width: 344px;
+  height: 35px;
+  padding: 0px 50px 0px 0px;
+  margin-bottom: 35px;
+}
 /*liste mise en flex et enlever les puces*/
-nav ul {
+.menu ul {
   display: flex;
+  left: 1096px;
   list-style: none;
+  align-items: center;
 }
 ul {
-  padding: 0px 50px 0px 0px;
-  gap: 45px;
+  width: 244px;
+  height: 35px;
+  padding: 0px 50px 0px 50px;
+  gap: 68px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 161.09px;
+  height: 79px;
 }
 
 .logo {
@@ -48,10 +68,10 @@ ul {
 img {
   width: 61.09px;
   height: 19px;
-  top: 30px;
+  /*top: 30px;
   left: 50px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 0px;*/
 }
 /*mise en place de la couleur bleu et de la barre au survol du lien*/
 header nav ul li a:hover {
@@ -84,16 +104,18 @@ nav li {
 }
 */
 .A {
+  width: 63px;
+  height: 35px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18.78px;
-  text-align: center;
 }
 .HM {
+  width: 112px;
+  height: 35px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18.78px;
-  text-align: center;
 }
 
 /* fin mise en forme du header */
