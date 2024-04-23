@@ -1,6 +1,10 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    /* largeur minimum fixée à 320 px */
+    /* min-width: 320px; */
+    /* largeur maximum à 1440 px */
+    /* max-width: 1440px; */
 }
 
 :root {
