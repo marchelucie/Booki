@@ -45,14 +45,11 @@ nav {
   left: 1096px;
   list-style: none;
   align-items: center;
-}
-ul {
   width: 244px;
   height: 35px;
   padding: 0px 50px 0px 50px;
   gap: 68px;
 }
-
 .header-logo {
   display: flex;
   align-items: center;
@@ -68,10 +65,6 @@ ul {
 img {
   width: 61.09px;
   height: 19px;
-  /*top: 30px;
-  left: 50px;
-  gap: 0px;
-  opacity: 0px;*/
 }
 /*mise en place de la couleur bleu et de la barre au survol du lien*/
 header nav ul li a:hover {
@@ -81,28 +74,6 @@ header nav ul li a:hover {
   border-top: 2px solid #0065fc;
   text-decoration-color: #0065fc;
 }
-
-/*
-.menu {
-    width: Hug (344px)px;
-    height: Hug (35px)px;
-    left: 1096px;
-    padding: 0px 50px 0px 50px;
-    gap: 68px;
-    opacity: 0px;  
-}
-
-     
-
-/*séparation des 2 LI 
-nav li {
-    width: 113px;
-    height: 35px;
-    gap: 0px;
-    opacity: 0px;
-    
-}
-*/
 .A {
   width: 63px;
   height: 35px;
@@ -117,7 +88,9 @@ nav li {
   font-weight: 400;
   line-height: 18.78px;
 }
-
+button {
+  background-color: white;
+}
 /* fin mise en forme du header */
 /*mise en forme du formulaire*/
 
@@ -167,6 +140,7 @@ a {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -180,11 +154,61 @@ a {
 .hebergements {
   width: 65%;
 }
-
-/* ajouter le css de title, cards,img,card content, card title,card subtitle, card rating
-.hebergements-cards .card {
+.hebergements-title {
   display: flex;
+  align-items: center;
+  height: 26px;
+  padding-bottom: 30px;
 }
+.hebergements-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 30px;
+}
+.hebergements-cards .card {
+  width: 250.33px;
+  height: 207.25px;
+  padding: 0px 0px 15px 0px;
+  gap: 4px;
+  border-radius: 20px;
+}
+
+.hebergements-cards img {
+  width: 240.33px;
+  height: 124px;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+}
+.hebergements-cards .card-content {
+  height: 64.25px;
+  padding: 0px 0px 0px 15px;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.hebergements-cards .card-title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.hebergements-cards .card-subtitle {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.hebergements-cards .card-rating {
+  margin-bottom: 8px;
+}
+#more {
+  display: flex;
+  width: 811px;
+  height: 21px;
+
+  padding-top: 30px;
+}
+#more a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 /****** Populaires ***********/
 .populaires {
   width: 32%;
@@ -229,26 +253,80 @@ a {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
-.Activités {
+.Activites {
   display: flex;
-  background-color: var(--main-bg-color);
+  flex-wrap: wrap;
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
 }
+.Activites-title {
+  display: flex;
+  padding-bottom: 30px;
+}
+.Activites-cards {
+  width: 1280px;
+  height: 439px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.Activites-cards .card {
+  width: 297.5px;
+  height: 439px;
+}
+.Activites-cards img {
+  width: 297.5px;
+  height: 380px;
+  border-radius: 20px 20px 0px 0px;
+}
+.Activites-cards .card-content {
+  display: flex;
+  height: 59px;
+  padding: 20px 19px 20px 19px;
+  gap: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+.Activites-cards .card-title {
+  margin: 0;
+}
+
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  height: 163px;
+  background-color: var(--main-bg-color);
 }
+#a-propos,
+#nos-hebergements,
+#assistance {
+  display: flex;
+  height: 163px;
+  flex-direction: column;
+  width: 446.67px;
+}
+
 footer ul {
   list-style: none;
 }
-#a-propos #nos-hebergements #assitance {
-  width: 77px;
-  height: 21px;
-  gap: 0px;
-  opacity: 0px;
+#a-propos h3 li {
+  padding: 0px 20px;
+}
+
+/*footer #a-propos,
+#nos-hebergements,
+#assistance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*
+#a-propos,
+#nos-hebergements,
+#assitance ul {
+  display: flex;
+  align-items: center;
+  width: 446.67px;
+  height: 163px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
