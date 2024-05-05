@@ -14,8 +14,41 @@
 }
 
 body {
-    display: flex;
     justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li a {
+    display: block;
+    padding: 14px 16px;
+  }
+
+/***** Header **********/
+
+#navbar-hebergements {
+    font-size: 12px;
+    float: right;
+  }
+
+#navbar-activites {
+    font-size: 12px;
+    float: right;
+  }
+
+
+
+#logo-booki {
+    width: 45px;
 }
 
 .main-container {
@@ -162,6 +195,11 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+    /* Header */
+
+    #logo-booki {
+        text-align: center;
+        }
+
 }
