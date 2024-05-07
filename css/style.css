@@ -58,6 +58,54 @@ a {
     color: var(--main-bg-color)
 }
 
+/******* Header *********/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+/* .navigation{
+    position: relative;
+}
+
+.navigation > div:hover::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+  } */
+
+.navigation > div:hover {
+    color: #0065FC ;
+}
+
+
+.navigation > div:first-child {
+    margin-right: 10px;
+  }
+
+  .host:hover {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+  }  
+  
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
