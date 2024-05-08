@@ -14,95 +14,178 @@
 }
 
 body {
-  width: 1440px;
-  height: 1831.02px;
   display: flex;
   justify-content: center;
   margin: 0;
-  /*enlever la marge du body par défaut*/
 }
-/* Ajout du css pour le header*/
+/*----------------------------------HEADER-----------------------------------------*/
 header {
-  width: 1440px;
-  height: 79px;
-}
-
-nav {
-  width: 1440px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  height: 79px;
+  margin-bottom: 30px;
 }
-.menu {
-  width: 344px;
-  height: 35px;
-  padding: 0px 50px 0px 0px;
-  margin-bottom: 35px;
+header img {  
+  width:4.55%;
+  padding: 30px 50px 30px 0px;
 }
-/*liste mise en flex et enlever les puces*/
-.menu ul {
+nav ul {
   display: flex;
-  left: 1096px;
+  width: 88%;
+  gap: 68px;
   list-style: none;
   align-items: center;
-  width: 244px;
-  height: 35px;
-  padding: 0px 50px 0px 50px;
-  gap: 68px;
+  padding: 0px 0px 0px 50px;
 }
-.header-logo {
-  display: flex;
-  align-items: center;
-  width: 161.09px;
-  height: 79px;
-}
-
-.logo {
-  padding: 30px 50px 30px 50px;
-  gap: 10px;
-  opacity: 0px;
-}
-img {
-  width: 61.09px;
-  height: 19px;
-}
-/*mise en place de la couleur bleu et de la barre au survol du lien*/
 header nav ul li a:hover {
   width: 140px;
-  padding-top: 16px;
+  padding-top: 14px;
   color: #0065fc;
   border-top: 2px solid #0065fc;
   text-decoration-color: #0065fc;
 }
-.A {
-  width: 63px;
-  height: 35px;
+.am, .hm {
+  height: 35px;    
   font-size: 16px;
   font-weight: 400;
-  line-height: 18.78px;
 }
-.HM {
-  width: 112px;
-  height: 35px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18.78px;
+/*-----------------------------------FORMULAIRE-----------------------------*/
+.info-group {  
+  height: 281px;
+  border: 2px yellow solid;
+  margin-bottom: 30px;
 }
-button {
-  background-color: white;
+.formulaire .section-title {
+  margin-bottom: 35px;
 }
-/* fin mise en forme du header */
-/*mise en forme du formulaire*/
 
+.formulaire .section-title span {
+  font-weight: 400; 
+  font-size: 15px;
+  padding-top: 8px;
+}
+form input {
+  border: none;
+  padding: 0px;        
+}
+
+i .fa-solid .fa-location-dot{ 
+  text-align: center;
+  width: 50px;
+  height: 49px;
+       
+}
+
+.fa-location-dot {
+    display: inline;
+    height: 18px;
+    width: 14px;
+    padding: 16px 18px 15px 18px;
+    border-radius: 15px 0px 0px 15px;   
+    color: black;   
+    background-color: #f2f2f2;
+    opacity: 1;   
+  }
+.city {  
+  width: 195px;
+  height: 47px;
+  border-top: 1px #F2F2F2 solid;
+  border-bottom: 1px #F2F2F2 solid;   
+  text-align: center;  
+  font-size: 18px;
+  font-weight: 700;  
+  padding: 0px;    
+}
+
+.city ::placeholder{
+  color: black;  
+}
+
+.search {         
+  width: 132px;
+  height: 49px;
+  border: none;
+  background-color: #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+}
+
+.filter-button {
+  display: flex;
+  padding-top: 35px;
+  align-items: center; 
+  margin-bottom: 35px;
+ 
+}
+.filter-title{   
+  width: 54px;
+  height: 21px;  
+  font-weight: 700;
+  font-size: 18px;
+  padding-right: 15px;
+  margin: 0; 
+}
+
+.fa-solid .fa-money-bill-wave,
+.fa-solid .fa-person,
+.fa-solid .fa-heart,
+.fa-solid .fa-fire{    
+  height: 22px;
+  width: 22px;
+ } 
+ 
+.fa-money-bill-wave::before,
+.fa-person::before,
+.fa-heart::before,
+.fa-fire::before {
+   color: var(--main-color); 
+   padding-right: 10px;
+   padding-left: 17px;
+    
+ }
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-fire{ 
+  width: 169px;
+  height: 46px;   
+  color: #000000;     
+  font-size: 17px;
+  font-weight: 700;  
+  align-content: center; 
+  border-radius: 25px;
+  border: 2px #d9d9d9 solid;  
+  background-color: transparent;
+  margin-right: 15px;
+  margin-bottom: ;
+
+ }
+i.fa-solid:hover {
+  background-color: #deebff; 
+}
+.fa-solid .fa-info {  
+  padding: 0px 2.5px;   
+  height: 24px;  
+}
+
+.fa-info {
+  display: inline;  
+  border-radius: 50%;
+  border: 1px #d9d9d9 solid;
+  padding: 7px 10px;
+  margin-right: 10px;
+}
+
+/*.info .text-info {
+  
+}
+
+/*-------------------------------MAIN-CONTAINER--------------------------------*/
 .main-container {
-  display: block;
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
-  gap: 30px;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -140,7 +223,7 @@ a {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -155,56 +238,49 @@ a {
   width: 65%;
 }
 .hebergements-title {
-  display: flex;
-  align-items: center;
-  height: 26px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 }
-.hebergements-cards {
+.hebergements-cards-1,
+.hebergements-cards-2 {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-.hebergements-cards .card {
-  width: 250.33px;
+.hebergements-cards-1 a,
+.hebergements-cards-2 a {
+  width: 30%;
   height: 207.25px;
-  padding: 0px 0px 15px 0px;
-  gap: 4px;
-  border-radius: 20px;
+}
+.hebergements-cards-1 img,
+.hebergements-cards-2 img {
+  width: 100%;
+  height: 114px;
+  border-radius: 15px 15px 0px 0px;
+}
+.hebergements-cards-1 .card-content,
+.hebergements-cards-2 .card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 83.25px;
+  padding: 3px 15px 0px 15px;
 }
 
-.hebergements-cards img {
-  width: 240.33px;
-  height: 124px;
-  padding: 5px;
-  border-radius: 20px 20px 0px 0px;
+.hebergements-cards-1 .card-title,
+.hebergements-cards-2 .card-title,
+.hebergements-cards-1 .card-subtitle,
+.hebergements-cards-2 .card-subtitle,
+.hebergements-cards-1 .card-rating,
+.hebergements-cards-2 .card-rating {
+  margin: 0;
+  padding: 4px 0px;
 }
-.hebergements-cards .card-content {
-  height: 64.25px;
-  padding: 0px 0px 0px 15px;
-  gap: 8px;
-  box-sizing: border-box;
-}
-.hebergements-cards .card-title {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.hebergements-cards .card-subtitle {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.hebergements-cards .card-rating {
-  margin-bottom: 8px;
-}
-#more {
-  display: flex;
+
+.cta {
   width: 811px;
   height: 21px;
-
-  padding-top: 30px;
 }
-#more a {
+.cta-link {
   font-size: 18px;
   font-weight: 700;
 }
@@ -253,65 +329,63 @@ a {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
-.Activites {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 20px;
+/*-----------------------------------ACTIVITES---------------------------*/
+.activites section {
+  border: 2px rgb(255, 187, 0) solid;
   padding: 30px;
+}
+.activites {
   box-sizing: border-box;
 }
-.Activites-title {
-  display: flex;
+.activites-title {
   padding-bottom: 30px;
 }
-.Activites-cards {
-  width: 1280px;
-  height: 439px;
+.activites-cards {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
 }
-.Activites-cards .card {
-  width: 297.5px;
+.activites-cards a {
+  width: 22.2%;
   height: 439px;
 }
-.Activites-cards img {
-  width: 297.5px;
+.activites-cards img {
+  width: 100%;
   height: 380px;
   border-radius: 20px 20px 0px 0px;
 }
-.Activites-cards .card-content {
-  display: flex;
-  height: 59px;
+.activites-cards .card-content {
   padding: 20px 19px 20px 19px;
-  gap: 10px;
-  border-radius: 0px 0px 20px 20px;
 }
-.Activites-cards .card-title {
+.activites-cards .card-title {
   margin: 0;
 }
-
+/*-------------------------------------FOOTER------------------------------------------*/
 footer {
-  display: flex;
   height: 163px;
-  background-color: var(--main-bg-color);
-}
-#a-propos,
-#nos-hebergements,
-#assistance {
-  display: flex;
-  height: 163px;
-  flex-direction: column;
-  width: 446.67px;
+  background-color: var(--main-bg-color); 
+  padding-top: 30px;
 }
 
-footer ul {
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border: 2px green solid;
+  margin:0px;
+
+}
+
+.footer ul {
   list-style: none;
+ padding: 0px;
 }
-#a-propos h3 li {
-  padding: 0px 20px;
-}
+.footer li a {
+  
+  
+
+*/
+
+/*#a-propos h3  {
+  padding: 0px 20px;*/
 
 /*footer #a-propos,
 #nos-hebergements,
