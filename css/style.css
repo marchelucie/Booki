@@ -71,28 +71,10 @@ a {
     margin-bottom: 30px;
 }
 
-
 .navigation {
     display: flex;
     margin-top: -30px;
 }
-/* TODO */
-
-/* Je veux une barre bleue de la longueur du bonton survolé, au-dessus du mot survolé */
-
-/* .navigation{
-    position: relative;
-}
-
-.navigation > div:hover::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: blue;
-  } */
 
 .navigation > div:hover {
     color: #0065FC ;
@@ -104,17 +86,6 @@ a {
 .navigation > div:first-child {
     margin-right: 60px;
   }
-
-/*TODO*/
-/* .host:hover {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: blue;
-  }   */
   
 
 
