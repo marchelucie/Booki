@@ -13,10 +13,44 @@
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
+  a:active {
+    color: blue;
 }
+
+/***** Header **********/
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 50px 20px;
+}
+
+.logo {
+    order: 1;
+    width: 45px;
+}
+
+.navigation a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#navbar-hebergements {
+    margin-left: auto;
+    order: 2;
+    font-size: 12px;
+    padding-top: 20px;
+  }
+
+#navbar-activites {
+    order: 3;
+    font-size: 12px;
+    padding: 0px 0px 20px;
+    padding-top: 20px;
+    margin-left: 40px;
+  }
 
 .main-container {
     width: 100%;
@@ -81,7 +115,7 @@ a {
     width: 32%;
 }
 
-.populaires-title {
+.populaires-title .hebergements-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,6 +196,32 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+    /* Header */
+
+    /* Navbar */
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    
+        
+
+
 }
