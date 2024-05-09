@@ -13,43 +13,44 @@
     color: var(--main-color);
 }
 
-body {
-    justify-content: center;
+  a:active {
+    color: blue;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  li {
-    display: inline;
-  }
-
-  li a {
-    display: block;
-    padding: 14px 16px;
-  }
 
 /***** Header **********/
 
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 50px 20px;
+}
+
+.logo {
+    order: 1;
+    width: 45px;
+}
+
+.navigation a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
 #navbar-hebergements {
+    margin-left: auto;
+    order: 2;
     font-size: 12px;
-    float: right;
+    padding-top: 20px;
   }
 
 #navbar-activites {
+    order: 3;
     font-size: 12px;
-    float: right;
+    padding: 0px 0px 20px;
+    padding-top: 20px;
+    margin-left: 40px;
   }
-
-
-
-#logo-booki {
-    width: 45px;
-}
 
 .main-container {
     width: 100%;
@@ -114,7 +115,7 @@ a {
     width: 32%;
 }
 
-.populaires-title {
+.populaires-title .hebergements-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,8 +199,29 @@ a {
 @media (max-width: 768px) {
     /* Header */
 
-    #logo-booki {
-        text-align: center;
-        }
+    /* Navbar */
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    
+        
+
 
 }
