@@ -77,8 +77,8 @@ a {
 }
 
 .navigation > div:hover {
-    color: #0065FC ;
-    border-top: 1px solid #0065FC;
+    color: var(--main-color) ;
+    border-top: 1px solid var(--main-color);
     padding-top: 10px;
 }
 
@@ -87,6 +87,42 @@ a {
     margin-right: 60px;
   }
   
+/******** Search Bar ***************/
+
+#search_bar {
+    display: flex;
+}
+
+
+#search_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 50px;
+    background-color: var(--main-bg-color);
+    border-radius: 30% 0% 0% 30%;
+}
+
+
+#search_input{
+    font-size: medium;
+    font-weight: bold;
+    height: 49px;
+    width: 132px;
+}
+
+#search_button {
+    height: 49px;
+    width: 132px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0% 15% 15% 0%;
+    background-color: #0065FC;
+    color: white;
+    border-color: #0065FC;
+}
+
 
 
 
