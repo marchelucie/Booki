@@ -414,10 +414,6 @@ footer .assistance {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
-  header nav ul li a:hover {
-    cursor: pointer;
-  }
-
   .info-group {
     height: 322px;
   }
@@ -461,7 +457,7 @@ footer .assistance {
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: 30.8%;
   }
 
   .populaires-cards .card-title,
@@ -476,18 +472,18 @@ footer .assistance {
   .activites {
     justify-content: space-between;
     width: 100%;
-    height: 390.02px;
   }
+  .activites-cards .card {
+    height: 270px;
+  }
+
   .activites-cards img {
     height: 200px;
   }
   .activites-cards a {
-    align-content: stretch;
-    height: 270px;
     width: 23.24%;
   }
   .activites-cards .card-title {
-    justify-content: stretch;
     padding: 20px 0px 20px 15px;
     margin: 0;
   }
