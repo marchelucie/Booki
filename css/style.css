@@ -55,14 +55,12 @@ header nav ul li a:hover {
   height: 281px;
   margin-bottom: 30px;
 }
-.formulaire .section-title {
-  margin-bottom: 35px;
-}
 
-.formulaire .section-title span {
+.formulaire p {
   font-weight: 400;
-  font-size: 15px;
-  padding-top: 8px;
+  font-size: 16px;
+  margin-bottom: 35px;
+  margin-top: 0px;
 }
 form input {
   border: none;
@@ -163,7 +161,6 @@ i .fa-solid .fa-location-dot {
   align-content: center;
   border-radius: 25px;
   border: 2px #d9d9d9 solid;
-
   margin-right: 17px;
   padding-right: 17px;
 }
@@ -527,13 +524,25 @@ footer .assistance {
     text-decoration-color: #0065fc;
   }
 
+  .info-group {
+    width: 100%;
+    height: 432px;
+    margin-bottom: 35px;
+    padding: 0px 20px;
+  }
+  .info-group h2 {
+    width: 335px;
+    height: 52px;
+    padding-bottom: 8px;
+  }
   .search {
     display: none;
   }
+
   i .fa-solid .fa-magnifying-glass {
     text-align: center;
-    width: 49px;
-    height: 49px;
+    width: 48px;
+    height: 48px;
   }
   .fa-magnifying-glass {
     display: inline;
@@ -543,10 +552,69 @@ footer .assistance {
     background-color: #0065fc;
     height: 17px;
     width: 17px;
-    padding: 15px 16px;
+    padding: 14px 15px;
   }
+  .filter-button {
+    display: block;
+    width: 100%;
+    height: 161px;
+    margin-bottom: 35px;
+  }
+  .filter-title {
+    padding-bottom: 20px;
+  }
+  .fa-money-bill-wave input,
+  .fa-person input,
+  .fa-heart input,
+  .fa-fire input {
+    font-size: 14px;
+  }
+  .fa-money-bill-wave,
+  .fa-person,
+  .fa-heart,
+  .fa-fire {
+    width: 50%;
+    height: 50px;
+
+    margin: 0;
+    align-items: center;
+  }
+
   .hebergements-and-populaires,
   .populaires {
+    flex-direction: column-reverse;
+  }
+  .hebergements-and-populaires section {
+    background-color: transparent;
+  }
+
+  .populaires {
+    width: 100%;
+  }
+
+  .hebergements {
+    width: 100%;
+  }
+  .hebergements-cards a {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .activites {
+    width: 100%;
+  }
+  .activites-cards {
     flex-direction: column;
+  }
+  .activites-cards a {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .a-propos,
+  .nos-hebergements,
+  .assistance {
+    width: 100%;
+    margin: 0;
   }
 }
