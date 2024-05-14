@@ -143,19 +143,24 @@ i .fa-solid .fa-location-dot {
   padding-right: 10px;
   padding-left: 19px;
 }
-.fa-money-bill-wave,
-.fa-person,
-.fa-heart,
-.fa-fire {
+.fa-money-bill-wave input,
+.fa-person input,
+.fa-heart input,
+.fa-fire input {
+  background-color: transparent;
   height: 46px;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
-  text-transform: ;
+}
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
+.fa-fire {
   align-content: center;
   border-radius: 25px;
   border: 2px #d9d9d9 solid;
-  background-color: transparent;
+
   margin-right: 17px;
   padding-right: 17px;
 }
@@ -265,18 +270,19 @@ a {
 .hebergements .card-title {
   margin: 0;
   padding-left: 10px;
-  margin-top: 1px;
+  padding-top: 10px;
 }
 .hebergements .card-subtitle {
   padding-left: 10px;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .hebergements .card-rating {
   margin: 0;
   padding-left: 10px;
-  margin-top: 2px;
+  margin-bottom: 5px;
 }
 
 .cta {
