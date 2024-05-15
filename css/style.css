@@ -144,27 +144,22 @@ i .fa-solid .fa-location-dot {
   padding-right: 10px;
   padding-left: 19px;
 }
-.fa-money-bill-wave input,
-.fa-person input,
-.fa-heart input,
-.fa-fire input {
+
+.filter-button a {
   background-color: transparent;
   height: 46px;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
-}
-.fa-money-bill-wave,
-.fa-person,
-.fa-heart,
-.fa-fire {
   align-content: center;
   border-radius: 25px;
   border: 2px #d9d9d9 solid;
-  margin-right: 17px;
+  margin-right: 15px;
   padding-right: 17px;
+  text-decoration: none;
 }
-.filter-button .fa-solid:hover {
+
+.filter-button a:hover {
   background-color: #deebff;
 }
 
@@ -416,21 +411,16 @@ footer .assistance {
 
   .filter-button {
     display: block;
-    max-width: 668px;
     height: 91px;
     margin-bottom: 35px;
   }
-
+  .filter-button a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right: 5px;
+  }
   .filter-title {
     margin-bottom: 20px;
-  }
-
-  .fa-money-bill-wave,
-  .fa-person,
-  .fa-heart,
-  .fa-fire {
-    font-size: 16px;
-    margin-right: 0px;
   }
 
   .hebergements-and-populaires {
@@ -554,17 +544,17 @@ footer .assistance {
     padding-bottom: 20px;
   }
 
-  .filter-button {
+  .filter-button a {
     display: block;
     width: 100%;
     height: 161px;
     margin-bottom: 35px;
   }
 
-  .fa-money-bill-wave input,
-  .fa-person input,
-  .fa-heart input,
-  .fa-fire input {
+  .fa-money-bill-wave,
+  .fa-person,
+  .fa-heart,
+  .fa-fire {
     font-size: 14px;
   }
   .fa-money-bill-wave,
