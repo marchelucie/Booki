@@ -591,8 +591,6 @@ footer .assistance {
   }
 
   .filter {
-    display: flex;
-    flex-direction: column;
     height: 161px;
     width: 100%;
     margin-bottom: 35px;
@@ -604,9 +602,8 @@ footer .assistance {
 
   .filter-button {
     display: flex;
-    width: 50%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 50%;
     align-items: flex-start;
     padding-top: 10px;
     margin-right: 5px;
