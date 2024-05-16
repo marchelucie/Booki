@@ -474,7 +474,7 @@ footer .assistance {
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: 30.8%;
   }
 
   .populaires-cards .card-title,
@@ -669,12 +669,8 @@ footer .assistance {
   }
 
   .populaires-cards {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-  .populaires-cards a {
     width: 100%;
+    margin-top: 15px;
   }
 
   .activites {
