@@ -479,6 +479,7 @@ footer .assistance {
 @media (max-width: 767.98px) and (min-width: 320px) {
   .main-container {
     padding: 0px;
+    max-width: 767.98px;
   }
   header {
     flex-direction: column;
@@ -540,16 +541,51 @@ footer .assistance {
     width: 17px;
     padding: 14px 15px;
   }
-  .filter-title {
-    padding-bottom: 20px;
-  }
-
-  .filter-button a {
-    display: block;
-    width: 100%;
+  .filter-button {
+    display: inline-block;
     height: 161px;
+    width: 100%;
     margin-bottom: 35px;
   }
+  .filter-button a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+  }
+  .filter-title {
+    margin-bottom: 20px;
+  } /*
+  .fa-solid .fa-money-bill-wave,
+.fa-solid .fa-person,
+.fa-solid .fa-heart,
+.fa-solid .fa-fire {
+  height: 22px;
+  width: 22px;
+}*/
+
+  .fa-money-bill-wave::before,
+  .fa-person::before,
+  .fa-heart::before,
+  .fa-fire::before {
+    color: var(--main-color);
+    padding-right: 10px;
+    padding-left: 19px;
+  }
+
+  /* .filter-button a {
+    background-color: transparent;
+    height: 46px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    align-content: center;
+    border-radius: 25px;
+    border: 2px #d9d9d9 solid;
+    margin-right: 17px;
+    padding-right: 17px;
+    text-decoration: none;
+  }*/
 
   .fa-money-bill-wave,
   .fa-person,
@@ -561,8 +597,6 @@ footer .assistance {
   .fa-person,
   .fa-heart,
   .fa-fire {
-    width: 158.5px;
-    height: 46px;
     margin: 0;
     padding-right: 0px;
     margin-bottom: 20px;
