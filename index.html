@@ -12,16 +12,20 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Separate css file to make it easier and not having a huge file -->
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
     <div class="main-container">
-        <header>
-            <img src="images/logo/Booki.png" alt="Booki logo" />
-            <nav>
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+        <header class="header">
+            <div>
+                <img class="header-img" src="images/logo/Booki.png" alt="Booki logo" />
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav_menu">
+                    <li class="header-nav_menu-item"><a class="header-nav_link" href="#">Hébergements</a></li>
+                    <li class="header-nav_menu-item"><a class="header-nav_link" href="#">Activités</a></li>
                 </ul>
             </nav>
         </header>
