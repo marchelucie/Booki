@@ -24,6 +24,18 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    /* 
+    To put the footer down on the screen
+    100vh is the whole screen and min height: to fill the screen. 
+    */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ /* the middle part will take the available space */
+.main-container main{
+    flex-grow: 1;
 }
 
 a {
