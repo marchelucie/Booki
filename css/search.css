@@ -52,6 +52,8 @@
     gap: 15px;
     border: none;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .search-filters_title {
@@ -89,10 +91,27 @@
     font-weight: 700;
 }
 
+.search-filters_group{
+    font-size: 17px;
+}
+
 .search-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin: 35px 0;
+    gap: 10px;
+}
+
+.search-info_icon{
+    font-size: 10px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
 }
 
 
@@ -100,6 +119,10 @@
     .search-filters_title {
         display: initial;
         margin-bottom: 20px;
+    }
+
+    .search-filters_group{
+        font-size: 16px;
     }
 }
 
@@ -110,10 +133,12 @@
 
     .search-filters{
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .search-filters_group{
-        flex-basis: calc(50% - 10px);
+        font-size: 14px;
+        flex: 1 0 calc(50% - 10px);
         display: flex;
     }
 
