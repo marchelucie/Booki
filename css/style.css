@@ -140,6 +140,14 @@ p {
     padding: 0;
 }
 
+.is-hidden-mobile{
+    display: inherit;
+}
+
+.is-visible-mobile{
+    display: none;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -181,5 +189,14 @@ p {
 @media (max-width: 767.98px) {
     .main-container {
         padding: 0;
+    }
+
+/* to change word for icon osn the search bar */
+    .is-hidden-mobile{
+        display: none;
+    }
+
+    .is-visible-mobile{
+        display: inherit;
     }
 }
