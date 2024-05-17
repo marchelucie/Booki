@@ -10,27 +10,6 @@
     height: 49px;
 }
 
-.search-filters {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.search-filters_title {
-    display: contents;
-}
-
-.search-filters_label {
-    display: inline-flex;
-    flex-direction: row;
-}
-
-.search-info {
-    display: flex;
-    flex-direction: row;
-    margin: 35px 0;
-}
-
 .search-bar_icon {
     display: flex;
     justify-content: center;
@@ -67,9 +46,60 @@
     color: black;
 }
 
+.search-filters {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border: none;
+    align-items: center;
+}
+
+.search-filters_title {
+    display: contents;
+    font-weight: 700;
+}
+
+.search-filters_input{
+    position: absolute;
+    opacity: 0;
+}
+
+.search-filters_label {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0 19px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+}
+
+/* To check the label that contain the checkbox*/
+.search-filters_label:has(.search-filters_input:checked) {
+    background-color: #DEEBFF;
+} 
+
+.search-filters_label:hover {
+    background-color: #DEEBFF;
+}
+
+.search-filters_label-p{
+    font-weight: 700;
+}
+
+.search-info {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+}
+
+
 @media (max-width: 1024px) {
     .search-filters_title {
         display: initial;
+        margin-bottom: 20px;
     }
 }
 
@@ -78,12 +108,22 @@
         margin: 30px 20px;
     }
 
-    .search-filters {
+    .search-filters{
         flex-wrap: wrap;
     }
 
-    .search-filters_group {
-        flex-basis: 50%;
+    .search-filters_group{
+        flex-basis: calc(50% - 10px);
+        display: flex;
+    }
+
+    .search-filters_label{
+        flex-grow: 1;
+        justify-content: start;
+    }
+
+    .search-bar_icon{
+        flex-shrink: 0;
     }
 
     .search-bar_btn{
@@ -95,16 +135,18 @@
     }
 
     .search-bar_input {
-        width: 236px;
+        width: 100%;
         position: relative;
         z-index: 1;
         text-align: left;
         padding-left: 24px;
+        padding-right: 71px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
 
+    /* leave or remove focus ? */
     .search-bar_input:focus-visible {
-        outline: none;
+        outline-color: var(--main-color);
     }
 }
