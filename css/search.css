@@ -174,4 +174,8 @@
     .search-bar_input:focus-visible {
         outline-color: var(--main-color);
     }
+
+    .search-info_icon{
+        flex-shrink: 0;
+    }
 }
