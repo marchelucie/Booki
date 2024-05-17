@@ -1,0 +1,33 @@
+.search-filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-filters_title{
+    display: contents;
+}
+
+.search-filters_label{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.search-info{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1024px){
+    .search-filters_title{
+        display: initial;
+    }
+}
+@media (max-width: 767.98px){
+    .search-filters{
+        flex-wrap: wrap;
+    }
+
+    .search-filters_group{
+        flex-basis: 50%;
+    }
+}

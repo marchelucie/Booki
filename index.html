@@ -15,6 +15,7 @@
     <!-- Separate css file to make it easier and not having a huge file -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/search.css">
 </head>
 
 <body>
@@ -44,36 +45,35 @@
                     </form>
                 </div>
                 <fieldset class="search-filters">
-                    <legend>Filtres</legend>
-                    <div>
+                    <legend class="search-filters_title">Filtres</legend>
+                    <div class="search-filters_group">
                         <input type="checkbox" id="economique" name="economique" />
-                        <label for="economique">
+                        <label class="search-filters_label" for="economique">
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <p>Économique</p>
                         </label>
                     </div>
-                    <div>
+                    <div class="search-filters_group">
                         <input type="checkbox" id="familial" name="familial" />
-                        <label for="familial">
+                        <label class="search-filters_label" for="familial">
                             <i class="fa-solid fa-person"></i>
                             <p>Familial</p>
                         </label>
                     </div>
-                    <div>
+                    <div class="search-filters_group">
                         <input type="checkbox" id="romantique" name="romantique" />
-                        <label for="romantique">
+                        <label class="search-filters_label" for="romantique">
                             <i class="fa-solid fa-heart"></i>
                             <p>Romantique</p>
                         </label>
                     </div>
-                    <div>
+                    <div class="search-filters_group">
                         <input type="checkbox" id="Nospepites" name="Nospepites" />
-                        <label for="Nospepites">
+                        <label class="search-filters_label" for="Nospepites">
                             <i class="fa-sharp fa-solid fa-fire"></i>
                             <p>Nos pépites</p>
                         </label>
                     </div>
-
                 </fieldset>
                 <div class="search-info">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
