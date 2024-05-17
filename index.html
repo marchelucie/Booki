@@ -33,17 +33,17 @@
         </header>
         <main>
             <div class="search">
-                <div class="search-title">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre-ville ou en pleine nature</p>
+                <div>
+                    <h1 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="search-subtitle">En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div class="search-bar">
-                    <form action="#">
-                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                        <input type="text" placeholder="localisation" value="Marseille, France">
-                        <button type="submit">Rechercher</button>
-                    </form>
-                </div>
+                <form class="search-bar" action="#">
+                    <div class="search-bar_icon">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                    </div>
+                    <input class="search-bar_input" type="text" placeholder="localisation" value="Marseille, France">
+                    <button class="search-bar_btn" type="submit">Rechercher</button>
+                </form>
                 <fieldset class="search-filters">
                     <legend class="search-filters_title">Filtres</legend>
                     <div class="search-filters_group">
