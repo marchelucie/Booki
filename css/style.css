@@ -220,7 +220,7 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 67%;
+    width: 68%;
 }
 
 .hebergements-title {
@@ -231,7 +231,7 @@ a {
 
 .hebergements-cards {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 31% 31% 31%;
     gap: 30px;
 }
 
@@ -269,7 +269,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-    width: 30%;
+    width: 29%;
 }
 
 .populaires-title {
@@ -333,12 +333,10 @@ a {
 
 .activities-card .card {
     position: relative;
-    width: 297.5px;
-    height: 439px;
 }
 
 .activities-card img {
-    width: 103.5%;
+    width: 103.8%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
     margin-top: -5px;
