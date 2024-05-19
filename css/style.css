@@ -327,8 +327,8 @@ a {
 
 .activities-card {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 1%;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 3%;
 }
 
 .activities-card .card {
@@ -347,6 +347,35 @@ a {
     display: flex;
     margin-left: 5%;
     
+}
+
+/******** Footer **********/
+
+.footer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-content: center;
+    background-color: var(--main-bg-color);
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.about-content,
+.help-content,
+.our-host-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 
