@@ -195,20 +195,20 @@ i .fa-solid .fa-location-dot {
   padding-left: 19px;
 }
 
-.filter-button a {
+.filter-button {
+  display: flex;
+}
+
+.filter-button .button {
   background-color: transparent;
-  height: 46px;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
-  align-content: center;
   border-radius: 25px;
   border: 2px #d9d9d9 solid;
   margin-right: 15px;
-  padding-right: 17px;
   text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 17px 15px 0px;
 }
 
 .filter-button a:hover {
@@ -444,6 +444,22 @@ footer .assistance {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  header nav ul li a:focus {
+    width: 140px;
+    padding-top: 14px;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    text-decoration-color: #0065fc;
+  }
+
+  header nav ul li a:active {
+    width: 140px;
+    padding-bottom: 14px;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    text-decoration-color: #0065fc;
+  }
+
   .info-group {
     height: 322px;
   }
@@ -454,14 +470,27 @@ footer .assistance {
     margin-bottom: 35px;
   }
 
-  .filter-button a {
-    padding-bottom: 10px;
-    padding-top: 10px;
+  .filter-button {
+    display: flex;
+  }
+
+  .filter-button .button {
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
     margin-right: 5px;
   }
 
   .filter-title {
     margin-bottom: 20px;
+  }
+
+  .filter-button a:active {
+    background-color: #deebff;
+  }
+
+  .filter-button a:focus {
+    background-color: #deebff;
   }
 
   .hebergements-and-populaires {
@@ -554,10 +583,22 @@ footer .assistance {
   }
 
   header nav ul li a:hover {
-    padding-bottom: 15px;
+    display: none;
+  }
+
+  header nav ul li a:active {
+    width: 140px;
+    padding-bottom: 14px;
     color: #0065fc;
     border-bottom: 2px solid #0065fc;
-    border-top: 2px solid #ffffff;
+    text-decoration-color: #0065fc;
+  }
+
+  header nav ul li a:focus {
+    width: 140px;
+    padding-bottom: 14px;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
     text-decoration-color: #0065fc;
   }
 
@@ -602,6 +643,7 @@ footer .assistance {
   .filter {
     height: 161px;
     margin-bottom: 35px;
+    width: 100%;
   }
 
   .filter-title {
@@ -609,20 +651,32 @@ footer .assistance {
   }
 
   .filter-button {
-    display: grid;
-    grid-template-columns: 156.5px 156.5px;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
+    padding-left: 0px;
   }
-  .filter-button a {
+
+  .button {
+    margin: 10px 0px;
     font-size: 14px;
     font-weight: 700;
     align-content: center;
-    height: 46px;
-    margin: 0;
+  }
+
+  .filter-button .button {
+    width: 150.5px;
+    padding: 10px 0px;
+  }
+
+  .filter-button a:active {
+    background-color: #deebff;
+  }
+
+  .filter-button a:focus {
+    background-color: #deebff;
   }
 
   .fa-money-bill-wave,
@@ -638,17 +692,25 @@ footer .assistance {
   .fa-fire {
     padding-right: 0px;
   }
+
   .fa-solid .fa-info {
     padding: 0px 2.5px;
     height: 24px;
   }
+
   form ul {
     padding-top: 20px;
+    display: inline;
   }
 
   form ul li {
     display: inline;
   }
+
+  .text-info {
+    align-content: center;
+  }
+
   .icon .fa-info {
     border-radius: 50%;
     border: 1px #d9d9d9 solid;
@@ -689,6 +751,7 @@ footer .assistance {
     flex-direction: column;
     margin-top: 15px;
   }
+
   .populaires-cards a {
     width: 100%;
   }
