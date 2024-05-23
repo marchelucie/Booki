@@ -146,7 +146,6 @@ a {
     font-size: 18px;
     font-weight: bold;
     color: black;
-    
     height: 49px;
     width: 195px;
     border: var(--main-bg-color) solid 1px;
@@ -173,14 +172,17 @@ a {
 
 /****** Filterbar  ******************/
 
-#filter_label {
-    font-weight: bold;
-}
-
 .filters {
     display: flex;
     align-items: center;
+    flex-direction: row;
     padding: 30px 0px 30px 0;
+    font-weight: bold;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
 }
 
 .filter {
@@ -212,10 +214,10 @@ a {
 
 /****** Infobar *******/
 .infobar {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 30px;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    align-items: center;
 }
 
 .infobar-text {
@@ -412,8 +414,31 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+     
+
+    /* FILTERBAR */
+    .filters {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    #filter-label {
+        align-self: flex-start;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        align-self: flex-start;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
