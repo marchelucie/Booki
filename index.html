@@ -30,20 +30,23 @@
         <main>
             <!-- HEADLINE -->
             <div class="headline">
-                <h2 class="headline-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h2 class="headline-title">Trouvez votre hébergement<br class="break-small-screen"> pour des vacances de rêve</h2>
                 <div class="headline-subtitle">En plein centre-ville ou en pleine nature</div>
             </div>
 
             <!-- SEARCHBAR -->
-            <div id="search_bar">
-                <label for="search" id="search_logo"><i class="fa-solid fa-location-dot"></i></label>
-                <input type="search" name="search" id="search_input" placeholder="   Marseille, France"><button
-                    id="search_button">Rechercher</button>
+            <div id="search-bar">
+                <label for="search-input" id="search-logo"><i class="fa-solid fa-location-dot"></i></label>
+                <input type="search" name="search" id="search-input" placeholder="   Marseille, France">
+                <button id="search-button">
+                    <span class="search-text">Rechercher</span>
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </button>
             </div>
 
             <!-- FILTERBAR -->
             <section class="filters">
-                <label for="filter-label" id="filter-label">Filtres</label>
+                <p id="filter-label">Filtres</p>
                 <div class="filter-buttons">
                     <button class="filter" id="eco-button"><span><i class="fa-solid fa-money-bill-wave"></i></span> <span
                             class="filter-span"></span>Économique</button>
@@ -215,6 +218,7 @@
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
+                    <!-- Card 1 -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg"
@@ -235,6 +239,7 @@
                                 </div>
                             </article>
                         </a>
+                        <!-- Card 2 -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg"
@@ -255,6 +260,7 @@
                                 </div>
                             </article>
                         </a>
+                        <!-- Card 3 -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg"
@@ -286,15 +292,15 @@
                 </div>
 
                 <div class="activities-card">
-                    <!-- ACTIVITES 1 -->
-                    
+                    <!-- ACTIVITES 1 -->      
+                    <a href="#">              
                         <article class="card">
                             <img src="images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port de Marseille">
                             <div class="card-txt">
                                 <h3 class="card-title">Vieux-Port</h3>
                             </div>
-                        </article>
-                    
+                        </article>                    
+                    </a>
 
                     <!-- ACTIVITES 2 -->
                     <a href="#">
