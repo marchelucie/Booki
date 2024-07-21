@@ -1,8 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-}
-
+  }
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -16,6 +15,7 @@
 body {
     display: flex;
     justify-content: center;
+     
 }
 
 .main-container {
@@ -57,6 +57,191 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/*h1-h2-h3-h4-h5-p*/
+h1{
+    font-weight: 700;
+    font-size: 22px;
+   
+}
+p{
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+/*HEADER*/
+.Header-Booki{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+       
+}
+.Header-Booki.Menu{
+    display: block;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+#logo-Booki {
+    width: 61.09px;
+    height: 19px;
+    top: 30px;
+    left: 50px;
+}
+.Logo{
+    flex-basis: 65px;
+    padding: 20px 15px 30px 5px;
+    gap: 68px;
+}
+.Menu{ 
+    font-size: 15px;
+    vertical-align: baseline;
+    padding-top: 5px;
+}
+.L-Hebergements{
+    margin: 50px 50px 0px 0px;
+    padding-top: 10px;
+}
+.L-Activities{
+    margin: 0px 0px 0px 50px;
+    padding-top: 10px;   
+}
+.Menu :hover{    
+        color: #0065FC;
+        border: #0065FC;
+        border-top: solid;
+}
+/*section : Search-Filter*/
+
+.Search-Filter{
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER-FILTER*/
+.search-title{
+    margin-top: 5px;
+}
+/*BARRE DE RECHERCHE*/
+.Search-Zone{
+    margin: 15px auto 20px 0px;
+    display: flex;
+    flex-direction: row; 
+}
+.Find{
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;
+    align-items: center;
+    width: 377px;
+    height: 49px;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    border-radius: 15px;
+    box-sizing:border-box;
+    background-clip: padding-box;
+    background-color: #F2F2F2;
+}
+#Local-Dot{
+    color: black;    
+    min-width: 13%;
+    max-width: 13%;    
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+    width: 14px;
+    height: 18px;
+}
+#Site-Search{
+    border: hidden;
+    font-size: 18px;
+    font-weight: 700;    
+    min-width: 52%;
+    max-width: 52%;
+    height: 100%;
+    padding: 0;
+    background-color: white
+}
+#Site-Search::placeholder{
+    font-size: 14px;      
+}
+.Search-BTN{
+    border: hidden;    
+    background-color: #0065FC;
+    font-size: 18px;
+    font-weight: 700;
+    color: #DEEBFF;
+    min-width: 35%;
+    max-width: 35%;
+    height: 100%;
+    border-top-right-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;   
+}
+
+/*ZONE DE FILTRE*/
+
+.Filter-Zone  {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex ;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;     
+}
+.Filter-Choice{
+   display: inline-block,   
+}
+.Filter-Zone button{
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #d9d9d9;
+    width: 173px;
+    height: 50px;
+    background-color: #fff;
+    text-wrap: nowrap; 
+}
+#Eco, #Roman, #AllStars{
+    flex-basis: 170px;
+    justify-content: center;
+    align-items: center;    
+}
+#Fami{
+    flex-basis: 130px;
+    justify-content: center;
+    align-items: center;
+}
+.Filter-Zone button:hover{
+    background-color: #DEEBFF;
+}
+#Icon-BTN{
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    margin-top: 5px;    
+}
+.Info{
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 10px;
+}
+#I-Icon{
+    display: flex;
+    border:1px solid #d9d9d9;
+    border-radius: 100%;
+    justify-content: center;
+    align-content: center;
+    width: 24px;
+    height: 24px;
+}
+#I-Icon i{
+    padding-top: 2px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -64,7 +249,7 @@ a {
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires article aside {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -72,12 +257,12 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
 }
 
 /****** Populaires ***********/
-.populaires {
+#populaires {
     width: 32%;
 }
 
