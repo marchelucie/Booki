@@ -56,6 +56,10 @@ h1{
     font-weight: 700;
     font-size: 22px;   
 }
+h2{
+    font-size: 18px;
+    font-weight: 700;
+}
 h3{
     font-weight: 700;
     font-size: 16px;
@@ -428,6 +432,44 @@ p{
     margin: 0;
 }
 
+/*FOOTER*/
+ul{
+    list-style-type: none;
+}
+
+#Footer-Booki{
+    display: flex;
+    max-width: 1340px;    
+    padding: 0 50px 0 50px;    
+}
+#Menu-Footer{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1240px;
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+}
+.titre-Li{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 445px;
+    flex-basis: auto;
+    padding: 20px;    
+}
+.titre-Li a h2{
+    margin-top: 0;
+}
+.titre-Li ul{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    row-gap: 15px;
+}
+.Onglet-F{
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
