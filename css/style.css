@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-  }
+}
 :root {
     --main-color: #0065FC;
     --main-bg-color: #f2f2f2;
@@ -9,55 +9,45 @@
     --BG-border-grey-color: #d9d9d9;
     --White-BG-color: #fff;
 }
-
 .fa-solid {
     color: var(--main-color);
 }
-
 body {
     display: flex;
     justify-content: center;
-     
+    /*align-items: center;*/     
 }
-.main-container {
-    width: 100%;
-    max-width: 1440px;
+.main-container {  
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-width: 1440px; /*vérifier la pertinence du max-width*/
     padding: 0 50px;
-    box-sizing: border-box;
+    box-sizing: border-box;/* vérifier la pertinence de box-sizing*/ 
+}
+.main-container header{
+    width: 100%;
 }
 main{
+    display: flex;
+    flex-flow: column nowrap;
     width: 100%;
+    width: 100%;
+    max-width: 1340px;
+    width: 100%;    
     max-width: 1340px;
 }
 a {
     color: inherit;
     text-decoration: none;
 }
-
 .section-title {
     margin: 0;
     font-size: 22px;
 }
-
-.card {
-    background-color:var(--White-BG-color);
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
 .euro {
-    font-weight: 700;
+    font-weight: 600;
 }
-
 .neutral-star {
     color: var(--main-bg-color)
 }
@@ -74,14 +64,12 @@ p{
     font-weight: 400;
     font-size: 16px;  
 }
-
 /*HEADER*/
 .Header-Booki{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; 
-    margin-bottom: 20px;
-       
+    margin-bottom: 20px;       
 }
 .Header-Booki.Menu{
     display: block;
@@ -100,7 +88,7 @@ p{
     gap: 68px;
 }
 .Menu{ 
-    font-size: 15px;
+    font-size: 16px;
     vertical-align: baseline;
     padding-top: 5px;
 }
@@ -128,6 +116,7 @@ p{
 .search-title{
     margin-top: 5px;
 }
+
 /*BARRE DE RECHERCHE*/
 .Search-Zone{
     margin: 15px auto 20px 0px;
@@ -199,7 +188,11 @@ p{
     column-gap: 15px;     
 }
 .Filter-Choice{
-   display: inline-block;   
+   display: flex;   
+}
+.Filter-BTN{
+    display: flex;
+   column-gap: 15px;
 }
 .Filter-Zone button{
     display: flex;
@@ -208,8 +201,11 @@ p{
     border: 2px solid;
     border-radius: 25px;
     border-color: var(--BG-border-grey-color);
-    width: 173px;
-    height: 50px;
+    padding: 9px 18px 9px 18px;
+    column-gap: 10px;
+    flex-basis: content;
+    justify-content: center;
+    align-items: center;    
     background-color: var(--White-BG-color);
     white-space: nowrap; 
 }
@@ -217,24 +213,14 @@ p{
     font-size: 18px;
     font-weight: 700;
 }
-#Eco, #Roman, #AllStars{
-    flex-basis: 170px;
-    justify-content: center;
-    align-items: center;    
-}
-#Fami{
-    flex-basis: 130px;
-    justify-content: center;
-    align-items: center;
-}
 .Filter-Zone button:hover{
     background-color: var(--filter-bg-color);
 }
 #Icon-BTN{
     height: 22px;
     width: 22px;
-    margin-right: 10px;
-    margin-top: 5px;    
+    align-self: center; 
+    padding-top: 5px;
 }
 .Info{
     font-size: 16px;
@@ -257,122 +243,122 @@ p{
 #I-Icon i{
     padding-top: 2px;
 }
-
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+#hebergements-and-populaires {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-height: 614px;
+    flex-flow: row nowrap;    
+    max-height: 100%;
     width: 100%;
     max-width: 1340px;
-    gap: 40px;    
+    column-gap: 40px;    
 }
- .hebergements, .populaires  {
+ #hebergements, #populaires  {
+    display: flex;
+    flex-direction: column; 
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-    row-gap: 30px; 
-    min-width: fit-content;
-    min-height: fit-content;
+    padding: 30px;    
 }
-
 /****** Hebergements ***********/
-.hebergements{
-    width: 65%;
-    min-height: 614px;
-    display: flex; 
-    flex-direction: column;
-    /*justify-content: space-between;*/
-    background-color:var(--main-bg-color);    
+#hebergements{
+    width: 73%;    
+    flex-wrap: wrap;/*pour l'écran mobile passage sur flex-flow: row nowrap;*/
 }
 .hebergments-title{
-    width: 100%;
-       
+    width: 100%;    
 }
-.section-title{
-    margin: 10px 0 0 30px;
+.H-title{
+    margin: 10px 0 30px 10px;
 }
 .hebergements-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;   
-    max-height: fit-content;
-    gap: 30px;
-    margin-left: 30px;    
+    justify-content: center;
+    gap: 30px;    
 }
-/*.Card-Link{
-   color: inherit;
-   text-decoration: none;   
-}*/
-.H-cards{ 
+.Card-Link{   
+   flex-basis: content;   
+}
+.H-cards{
+    display: flex;
+    flex-flow: column;  
     height: 207.25px;
     width: 250.33px;
     background-color:var(--White-BG-color);
     border-radius: 20px; 
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));    
+    padding: 0 0 15px 0;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    gap: 4px;   
 }
 .H-cards img{
-    min-width: 100%;
-    height: 65%;
+    display: flex;
+    min-width: fit-content;
+    height: 60%;
+    border: 5px solid #fff;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;      
+    border-top-right-radius: 20px;         
 }
-.H-cards .card-content{
-    min-width: 100%;
-    height: 35%;
+.H-card-content{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    justify-content:flex-start;
+    max-width: 100%;
+    height: 40%;
+    padding: 0 15px 0 15px;
+    gap: 8px;   
 }
-.H-cards .card-title{
-    margin: 10px 0 4px 0;
+.card-title{
+    margin: 4px 0 4px 0;
 }
 .Hcard-subtitle{
-    margin: 0px;
+    margin: 8px 0 8px 0;
     font-weight: 400;
     font-size: 14px;
 }
-.H-cards .card-title .card-rating{
-    margin-bottom: 5px;
+.card-rating {
+  display: flex;
+  max-width: fit-content;  
+}
+.card-rating i{
+    width: 14.29px;
+    height: 13.25px;
 }
 .H-Foot{
-    margin-bottom: 20px;
-    box-sizing: border-box;
+    margin: 30px 0 0px 0;    
 }
 .More-title{
     font-weight: 700;
     font-size: 18px;
-   margin: 0;
+    margin: 0;
 }
-
 /****** Populaires ***********/
-.populaires {
+#populaires {
     width: 32%;
+    justify-content: center;
 }
-
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.populaires-title i{
+    height: 15.75px;
+    width: 18px;    
+}
+.card-title {
+    font-size: 16px;
+}
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
 }
-
 .populaires-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -381,19 +367,68 @@ p{
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
 .populaires-cards .card-subtitle {
     margin: 0;
 }
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+.card {
+    background-color:var(--White-BG-color);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+
+}
+.card img {
+    object-fit: cover;
+}
+/*Activités*/
+#Activities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1340px;
+    padding: 30px;
+    gap: 30px;
+}
+#Activities-Title{
+    width: 100%;
+}
+.Action-Cards{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: fit-content;
+    border-radius: 20px;
+    gap: 30px;  
+}
+.A-Cards{
+    flex-basis: content;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);    
+}
+.A-Picture{
+    height: 380px;
+    width: 297.5px;
+    border-radius: 20px 20px 0 0; 
+    
+}
+.A-Card-Title{
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 19px 20px 19px;
+    gap: 10px;
+}
+.A-Card-Title h3{
+    margin: 0;
+}
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
