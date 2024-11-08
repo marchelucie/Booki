@@ -3,6 +3,8 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -18,10 +20,25 @@ body {
     justify-content: center;
 }
 
+/******Header******/
+
+header {
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    width: 40%;
+    height: auto;
+    image-rendering:optimizeQuality;
+}
+
+/******Main******/
+
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 50px 50px;
     box-sizing: border-box;
 }
 
@@ -57,6 +74,7 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -121,7 +139,7 @@ a {
     margin-bottom: 5px;
 }
 
-
+/****** Footer ***********/
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
