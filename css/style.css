@@ -28,10 +28,16 @@ header {
 
 .logo {
     display: flex;
-    width: 40%;
+    width: 5%;
     height: auto;
-    image-rendering:optimizeQuality;
+    justify-content: flex-start;
 }
+
+.button-header{
+    justify-content: flex-end;
+
+}
+
 
 /******Main******/
 
