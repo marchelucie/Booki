@@ -24,7 +24,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 
 
@@ -36,7 +36,7 @@ header {
 .button-header {
     display: flex;
     gap: 40px;
-    padding-top: 18px;
+    padding-top: 20px;
     border-top: 2px solid transparent;
 
 }
@@ -45,8 +45,8 @@ header {
     cursor: pointer;
     color: #0065FC;
     border-top: 2px #0065FC solid;
-    padding-top: 18px;
-    margin-top: -18px;
+    padding-top: 20px;
+    margin-top: -20px;
 }
 
 /******Navigation******/
@@ -66,28 +66,38 @@ header {
 }
 
 .fa-location-dot{
+
     color: black;
     background-color: #F2F2F2;
     padding : 15px 15px 15px 15px;
     border-radius: 13px 0px 0px 13px;
 }
 
+
 .booki-search{
-    background-color: white;
-    border-block: 1px #F2F2F2 solid;
+
+    margin-left: 20px;
+    margin-right: 0px;
+    gap: 10%;
+    border-top: 1px red solid;
+    border-bottom: 1px red solid;
     padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: -5px;
-    margin-right: -5px;
+    padding-bottom : 13px;
 }
+
 
 .search{
     color: white;
     background-color: #0065FC;
     padding: 15px 15px 15px 15px;
     border-radius: 0px 13px 13px 0;
+}
+
+.filtres{
+    display: flex;
+    margin-top: 20px;
+    font-weight: 700;
+
 }
 
 
