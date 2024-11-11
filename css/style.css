@@ -108,6 +108,7 @@ header {
 
 
 .text-filtres{
+    display: flex;
     margin-top: -15px;
     margin-left: 10px;
     border: 2px var(--main-bg-color) solid;
@@ -118,6 +119,10 @@ header {
 .text-filtres:hover{
     background-color: var(--filter-bg-color);
     cursor: pointer;
+}
+
+.text-filtres span{
+    margin-left: 10px;
 }
 
 .information-filtres{
