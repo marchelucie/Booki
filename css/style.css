@@ -67,27 +67,23 @@ header {
 }
 
 .article-search{
-     flex-direction: row;
+    display: flex;
+    flex-direction: row;
+     
 }
 
 .fa-location-dot{
-
     color: black;
     background-color: var(--main-bg-color);
-    padding : 15px 15px 15px 15px;
+    padding : 15px;
     border-radius: 13px 0px 0px 13px;
 }
 
 
 .booki-search{
-
-    margin-left: 20px;
-    margin-right: 0px;
-    gap: 10%;
     border-top: 2px var(--main-bg-color) solid;
     border-bottom: 2px var(--main-bg-color) solid;
-    padding-top: 13px;
-    padding-bottom : 13px;
+    padding: 13px;
 }
 
 
