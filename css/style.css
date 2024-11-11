@@ -18,6 +18,18 @@ body {
     justify-content: center;
 }
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /******Header******/
 
 header {
@@ -80,10 +92,18 @@ header {
 }
 
 
-.booki-search{
+#booki-search{
+    padding: 13px;
+    width: 12%;
     border-top: 2px var(--main-bg-color) solid;
     border-bottom: 2px var(--main-bg-color) solid;
-    padding: 13px;
+    border-left: var(--main-bg-color) solid;
+    border-right: white; 
+}
+
+#booki-search::placeholder{
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -93,6 +113,7 @@ header {
     padding: 15px;
     border-radius: 0px 13px 13px 0;
 }
+
 
 
 .article-filtres{
@@ -142,18 +163,6 @@ header {
 }
 
 /******Main******/
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 50px 50px;
-    box-sizing: border-box;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
 .section-title {
     margin: 0;
