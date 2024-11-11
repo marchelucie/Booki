@@ -29,8 +29,8 @@ header {
 
 
 .logo {
-    padding-top: 50px;
-    width: 5%; 
+    padding-top: 40px;
+    width: 60px; 
 }
 
 .button-header {
@@ -54,15 +54,16 @@ header {
 .nav-container {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .nav-container h1{
-    margin-bottom: 0%;
+    margin-top: 60px;
+    margin-bottom: -5px;
 }
 
 .nav-container p{
     margin-bottom: 30px;
-    margin-top: 8px;
 }
 
 .article-search{
@@ -100,8 +101,8 @@ header {
 
 .article-filtres{
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .filtres{
@@ -134,8 +135,8 @@ header {
     align-items: center;
     border:2px var(--main-bg-color)solid;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 42px;
+    width: 42px;
 
 }
 
