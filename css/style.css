@@ -53,7 +53,7 @@ header {
 
 }
 
-.button:hover {
+#button-hebergements:hover, #button-activites:hover {
     cursor: pointer;
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
@@ -94,7 +94,7 @@ header {
 
 #booki-search{
     padding: 13px;
-    width: 12%;
+    width: 10%;
     border-top: 2px var(--main-bg-color) solid;
     border-bottom: 2px var(--main-bg-color) solid;
     border-left: var(--main-bg-color) solid;
@@ -164,7 +164,7 @@ header {
 
 /******Main******/
 
-.section-title {
+#section-title {
     margin: 0;
     font-size: 22px;
 }
@@ -210,7 +210,61 @@ header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    flex-direction: row;
 }
+
+.hebergements-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marseille-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.marseille-cards .m-cards{
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.marseille-cards img{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.marseille-cards .m-cards-content{
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.marseille-cards .room-title{
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.marseille-cards .room-subtitle{
+    margin: 0;
+}
+
+.marseille-cards .room-rating{
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
 
 /****** Populaires ***********/
 .populaires {
