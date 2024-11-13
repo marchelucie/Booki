@@ -58,6 +58,15 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ******/
+.main-logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
