@@ -19,6 +19,8 @@ body {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -144,8 +146,8 @@ a {
     margin-bottom: 5px;
 }
 
+/* Activités à Marseille*/
 #id-activites-title {
-    background-color: var(--main-bg-color);
 }
 
 /* Footer*/
@@ -153,8 +155,9 @@ a {
     display: flex;
     background-color: var(--main-bg-color);
     justify-content:space-between;
-    position: absolute;
+    position:absolute;
     bottom: 0;
+    margin-top: auto;
 }
 
 .footer-divs {
