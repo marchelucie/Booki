@@ -66,7 +66,6 @@ header {
 .nav-container {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .nav-container h1{
@@ -114,19 +113,16 @@ header {
     border-radius: 0px 13px 13px 0;
 }
 
-
-
 .article-filtres{
     display: flex;
+    font-weight: bold;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .filtres{
     display: flex;
-    font-weight: bold;
 }
-
 
 .text-filtres{
     display: flex;
@@ -262,9 +258,11 @@ header {
 }
 
 
-
-
-
+#afficher-plus{
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 10px;
+}
 
 
 /****** Populaires ***********/
