@@ -222,6 +222,7 @@ header {
 .marseille-cards {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .marseille-cards .m-cards{
@@ -229,7 +230,7 @@ header {
     margin-top: 10px;
     padding: 5px;
     border-radius: 20px;
-    width: 250px;
+    width: 240px;
 }
 
 .marseille-cards img{
