@@ -144,6 +144,10 @@ a {
     margin-bottom: 5px;
 }
 
+#id-activites-title {
+    background-color: var(--main-bg-color);
+}
+
 /* Footer*/
 .footer-main {
     display: flex;
