@@ -311,18 +311,40 @@ header {
 
 /****** Activités à Marseille ********/
 
-.hebergements-and-populaires {
+#activites {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+.activites-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
+
+.activites-cards .card{
+    width: 280px;
+    margin: 13px;
+  
+}
+
+.activites-cards img{
+    width: 290px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    margin: -5px;
+}
+
+.activites-cards .card-title{
+    margin-left: 13px;
+}
+
+
+
 
 /****** Footer ***********/
 
