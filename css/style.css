@@ -53,7 +53,8 @@ header {
 
 }
 
-#button-hebergements:hover, #button-activites:hover {
+#button-hebergements:hover,
+#button-activites:hover {
     cursor: pointer;
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
