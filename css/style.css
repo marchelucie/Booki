@@ -21,7 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 50px 50px;
     box-sizing: border-box;
 }
 
@@ -30,7 +30,139 @@ a {
     text-decoration: none;
 }
 
-.section-title {
+/******Header******/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -60px;
+}
+
+
+.logo {
+    padding-top: 40px;
+    width: 60px; 
+}
+
+.button-header {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+    border-top: 2px solid transparent;
+
+}
+
+#button-hebergements:hover,
+#button-activites:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+    padding-top: 18px;
+    margin-top: -20px;
+}
+
+/******Navigation******/
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container h1{
+    margin-top: 60px;
+    margin-bottom: -5px;
+}
+
+.nav-container p{
+    margin-bottom: 30px;
+}
+
+.nav-search{
+    display: flex;
+    flex-direction: row;
+     
+}
+
+.fa-location-dot{
+    color: black;
+    background-color: var(--main-bg-color);
+    padding : 15px;
+    border-radius: 13px 0px 0px 13px;
+}
+
+#booki-search{
+    padding: 13px;
+    width: 10%;
+    border-top: 2px var(--main-bg-color) solid;
+    border-bottom: 2px var(--main-bg-color) solid;
+    border-left: var(--main-bg-color) solid;
+    border-right: white; 
+}
+
+#booki-search::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+
+.search{
+    color: white;
+    background-color: var(--main-color);
+    padding: 15px;
+    border-radius: 0px 13px 13px 0;
+}
+
+.nav-filtres{
+    display: flex;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.filtres{
+    display: flex;
+}
+
+.text-filtres{
+    display: flex;
+    margin-top: -15px;
+    margin-left: 10px;
+    border: 2px var(--main-bg-color) solid;
+    padding : 12px;
+    border-radius: 40px;
+}
+
+.text-filtres:hover{
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+.text-filtres span{
+    margin-left: 10px;
+}
+
+.information-filtres{
+    display: flex;
+    
+    gap: 10px;
+}
+
+.fa-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px var(--main-bg-color)solid;
+    margin-top: 7px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+}
+
+/******Main******/
+
+#section-title {
     margin: 0;
     font-size: 22px;
 }
@@ -58,10 +190,12 @@ a {
     color: var(--main-bg-color)
 }
 
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .hebergements-and-populaires section {
@@ -74,7 +208,65 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    flex-direction: row;
 }
+
+.hebergements-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marseille-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.marseille-cards .m-cards{
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 240px;
+}
+
+.marseille-cards img{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.marseille-cards .m-cards-content{
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.marseille-cards .room-title{
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.marseille-cards .room-subtitle{
+    margin: 0;
+}
+
+.marseille-cards .room-rating{
+    margin-bottom: 5px;
+}
+
+
+#afficher-plus{
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -121,7 +313,11 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités à Marseille ********/
 
+
+
+/****** Footer ***********/
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
