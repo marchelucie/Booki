@@ -53,8 +53,7 @@ header {
 
 }
 
-#button-hebergements:hover,
-#button-activites:hover {
+.button-header a:hover{
     cursor: pointer;
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
@@ -64,17 +63,17 @@ header {
 
 /******Navigation******/
 
-.nav-container {
+.hebergements-container {
     display: flex;
     flex-direction: column;
 }
 
-.nav-container h1{
+.hebergements-container h1{
     margin-top: 60px;
     margin-bottom: -5px;
 }
 
-.nav-container p{
+.hebergements-container p{
     margin-bottom: 30px;
 }
 
@@ -113,18 +112,18 @@ header {
     border-radius: 0px 13px 13px 0;
 }
 
-.nav-filtres{
+.hebergements-filters{
     display: flex;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-.filtres{
+.filters{
     display: flex;
 }
 
-.text-filtres{
+.filter-text{
     display: flex;
     margin-top: -15px;
     margin-left: 10px;
@@ -133,18 +132,17 @@ header {
     border-radius: 40px;
 }
 
-.text-filtres:hover{
+.filter-text:hover{
     background-color: var(--filter-bg-color);
     cursor: pointer;
 }
 
-.text-filtres span{
+.filter-text span{
     margin-left: 10px;
 }
 
-.information-filtres{
+.filter-info{
     display: flex;
-    
     gap: 10px;
 }
 
@@ -217,22 +215,18 @@ header {
     align-items: center;
 }
 
-.marseille-cards {
+.hebergement-cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.marseille-cards .m-cards{
-    background-color: white;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+.hebergement-cards .card{
     margin-top: 10px;
-    padding: 5px;
-    border-radius: 20px;
     width: 240px;
 }
 
-.marseille-cards img{
+.hebergement-cards img{
     width: 100%;
     height: 120px;
     border-top-left-radius: 20px;
@@ -240,24 +234,26 @@ header {
     object-fit: cover;
 }
 
-.marseille-cards .m-cards-content{
+.hebergement-cards .card-content{
     width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
 }
 
-.marseille-cards .room-title{
+.hebergement-cards .card-title{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.hebergement-cards .card-subtitle{
     margin-top: 0px;
-    margin-bottom: 4px;
-}
-
-.marseille-cards .room-subtitle{
-    margin: 0;
-}
-
-.marseille-cards .room-rating{
     margin-bottom: 5px;
+}
+
+.hebergement-cards .card-rating{
+    margin-bottom: 0px;
 }
 
 
@@ -315,7 +311,18 @@ header {
 
 /****** Activités à Marseille ********/
 
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
 
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
 
 /****** Footer ***********/
 
