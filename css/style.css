@@ -57,7 +57,7 @@ header {
     cursor: pointer;
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
-    padding-top: 20px;
+    padding-top: 18px;
     margin-top: -20px;
 }
 
@@ -144,6 +144,7 @@ header {
 
 .information-filtres{
     display: flex;
+    
     gap: 10px;
 }
 
@@ -152,9 +153,10 @@ header {
     justify-content: center;
     align-items: center;
     border:2px var(--main-bg-color)solid;
+    margin-top: 7px;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
+    height: 30px;
+    width: 30px;
 
 }
 
