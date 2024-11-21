@@ -123,11 +123,15 @@ header {
 .filters{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter-title{
+    margin-top: 15px;
 }
 
 .filter-text{
     display: flex;
-    margin-top: -15px;
     margin-left: 10px;
     border: 2px var(--main-bg-color) solid;
     padding : 12px;
@@ -500,5 +504,37 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container{
+        margin-left: -60px;
+    }
+
+    /* header */
+    .header{
+        flex-direction: column;
+
+    }
+
+    .logo {
+        width: 80px;
+        display: flex;
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    /*Navigation*/
+
+    .button-header{
+        gap: 80px;
+        font-size: 18px;
+        border-bottom: 2px solid transparent;
+        margin-left: 60px;
+    }
+
+    .button-header a:hover{
+        border-top: white;
+        padding-top: 20px;
+        border-bottom: 2px var(--main-color) solid;
+        margin-bottom: -14px;
+    }
 }
