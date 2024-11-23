@@ -87,7 +87,7 @@ header {
 .fa-location-dot{
     color: black;
     background-color: var(--main-bg-color);
-    padding : 15px;
+    padding : 15px 15px 15px 18px;
     border-radius: 13px 0px 0px 13px;
 }
 
@@ -98,6 +98,7 @@ header {
     border-bottom: 2px var(--main-bg-color) solid;
     border-left: var(--main-bg-color) solid;
     border-right: white; 
+    text-align: center;
 }
 
 #booki-search::placeholder{
@@ -113,6 +114,10 @@ header {
     border-radius: 0px 13px 13px 0;
 }
 
+.fa-magnifying-glass{
+    display: none;
+}
+
 .hebergements-filters{
     display: flex;
     font-weight: bold;
@@ -123,7 +128,7 @@ header {
 .filters{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .filter-title{
@@ -154,6 +159,7 @@ header {
 
 .filter-info{
     display: flex;
+    align-items: first baseline;
     gap: 10px;
 }
 
@@ -161,12 +167,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px var(--main-bg-color)solid;
+    border: 2px var(--main-bg-color)solid;
     margin-top: 10px;
     border-radius: 50%;
     height: 25px;
     width: 25px;
     font-size: 12px;
+    flex-shrink: 0;
 }
 
 
@@ -522,7 +529,6 @@ header {
         justify-content: center; /* Centre les éléments verticalement */
         margin-left: -25px;
         margin-right: -25px;
-        
     }
 
     .logo{
@@ -556,18 +562,68 @@ header {
 
     /*filters*/
 
+    .hebergements-container h1{
+        font-size: 24px;
+        margin-top: 25px;
+        margin-bottom: -10px;
+    }
+
+    .hebergements-container p{
+        font-size: 18px;
+    }
+
+    .search-button {
+        display: none;
+    }
+    
     .hebergements-search{
         width: 100%;
     }
 
-    .filter-title{
-        margin-bottom: -20px;
+    #booki-search{
+        width: 100%;
+        text-align: start;
+        margin-right: -10px;
+        padding-left: 25px;
+        
     }
 
+    #booki-search::placeholder{
+        font-size: 17px;
+    }
+
+
+    .fa-magnifying-glass {
+        display: flex;
+        color: white;
+        background-color: var(--main-color);
+        border: 2px #0065FC solid;
+        padding: 15px;
+        border-radius: 15px;
+        filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
+    }
+
+    .hebergements-filters{
+        margin-right: -25px;
+    }
+
+    .filter-title{
+        margin-bottom: -20px;
+        font-size: 18px;
+    }
+
+    .filters{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
     .filter-text{
-        gap: 20px;
-        width: 150px;
-        margin-top: 10px; 
+        margin: 5px;
+        width: 40%;
+    }
+
+    .filter-info .fa-solid{
+        margin-top: 20px;
     }
 
     /*hébergement*/
