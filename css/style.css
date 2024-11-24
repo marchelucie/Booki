@@ -39,7 +39,6 @@ header {
     margin-top: -60px;
 }
 
-
 .logo {
     padding-top: 40px;
     width: 60px; 
@@ -336,33 +335,39 @@ header {
 /****** Activités à Marseille ********/
 
 #activites {
-    display: flex;
-    justify-content: space-between;
     margin-top: 50px;
     margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .activites-cards{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+}
+
+.activites-cards a{
+    width: 25%;
+    margin-left: 30px;
+    margin-right: -40px;
 }
 
 .activites-cards .card{
-    width: 280px;
-    margin: 13px;
+    width: 86%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .activites-cards img{
-    width: 290px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
+    display: flex;
     object-fit: cover;
-    margin: -5px;
 }
 
 .activites-cards .card-title{
-    margin-left: 13px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    height: 20px;
 }
 
 
@@ -371,7 +376,6 @@ header {
 .footer-container {
     display: flex;
     background-color: var(--main-bg-color);
-    padding: 30px;
     margin-top: 30px;
     margin-bottom: -60px;
 }
@@ -379,20 +383,27 @@ header {
 .informations-column{
     display: flex;
     flex-direction: row;
-    gap: 260px;
+    gap: 80%;
+    padding-left: 25px;
+    width: 30%;
 }
 
 .informations {
     gap: 30px;
     display: flex;
-    font-weight: bold;
     flex-direction: column;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
+.informations h3{
+    margin-bottom: 0px;
+    width: 180%;
+}
+
+
 .informations span{
-    margin-top: -18px;
-    font-weight: lighter;
+    margin-top: -15px;
+    width: 180%;
 }
 
 
@@ -477,22 +488,15 @@ header {
 
     /*Activités*/
 
-
-    .activites-cards{
-        gap: 0px;
-        width: 100%;
-    }
-
     .activites-cards .card{
-        width: 180px;
+        width: 80%;
     }
 
     .activites-cards img{
-        width: 190px;
-        height: 210px;
-        margin: -5px;
+        width: 100%;
+        height: 180px;
     }
-
+  
     .activites-cards .card-title{
         font-size: 15px;
         margin-top: 25px;
@@ -504,7 +508,7 @@ header {
     /*footer*/
 
     .informations-column{
-        gap: 120px;
+        width: 22%;
     }
 
 }
@@ -664,20 +668,26 @@ header {
 
     /*activités*/
 
+
     .activites-cards {
         flex-direction: column;
+        margin-left: -15px;
     }
+
+    .activites-cards .card{
+        width: 100%;
+    }
+
+    .activites-cards a{
+        width: 90%;
+    }
+    
 
     /*footer*/
 
-    .footer-container{
-        margin-left: -25px;
-        margin-right: -15px;
-    }
-
     .informations-column{
         flex-direction: column;
-        gap: 35px;
         font-size: 18px;
+        width: 100%;
     }
 }
