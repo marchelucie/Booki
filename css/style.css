@@ -378,6 +378,11 @@ a {
     gap: 30px;
 }
 
+.activite-card .card {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
 .activite-card {
     display: flex;
     flex-direction: row;
@@ -396,6 +401,15 @@ a {
     padding-left: 15px;
 }
 
+
+/********* Footer**********/
+.bas-page {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    height: 163px;
+    margin-top: 50px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
