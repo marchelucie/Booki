@@ -93,6 +93,152 @@ a {
     color: #0065FC;
 }
 
+
+/****** Filtre de recherche **********/
+.search{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.search-title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-title h2 {
+    margin: 0;
+}
+
+.search-title p {
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 49px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.color-icons{
+    color: black;
+    width: 14px;
+    height: 18px;
+    padding-left: 2px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.search-input {
+    width: 195px;
+    border: solid 2px #F2F2F2 ;
+    
+}
+
+.search-input::placeholder {
+    font-weight: bold;
+    color: black;
+    font-size: large;
+    padding-left: 25px;
+}
+
+.search-button {
+    width: 132px;
+    background-color: #0065FC;
+    color: white;
+    border: 1px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: #DEEBFF ;
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 50px;
+    align-items: center;
+}
+
+.filter h4 {
+    margin: 0;
+}
+
+
+.filter-icon {
+    color: #0065FC;
+    width: 22px;
+}
+
+.filter-button {
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-right: 19px;
+    padding-bottom: 4px;
+    padding-left: 19px;
+    font-size: 17px;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 24px;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.info-icon {
+    color: #0065FC;
+    font-size: 10px;
+}
+
+.icon-border {
+    border: solid 1px #F2F2F2;
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
