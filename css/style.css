@@ -375,7 +375,8 @@ a {
 .activite-container {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .activite-card .card {
@@ -409,6 +410,19 @@ a {
     background-color: #F2F2F2;
     height: 163px;
     margin-top: 50px;
+}
+
+.centre-bas-page {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    justify-content: flex-start;
+    width: 33%;
+}
+
+.centre-bas-page h4 {
+    margin: 0;
 }
 
 
