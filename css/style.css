@@ -73,7 +73,7 @@ a {
 }
 
 .logo img {
-    height: 19px;
+    height: 18px;
     width: 55px;
 }
 
@@ -174,6 +174,10 @@ a {
     background-color: #DEEBFF;
     color: #0065FC;
     cursor: pointer;
+}
+
+.search-button-small {
+    display: none;
 }
 
 .filter,
@@ -417,7 +421,7 @@ a {
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-    height: 163px;
+    height: 15%;
     margin-top: 50px;
 }
 
@@ -512,5 +516,194 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0;
+    }
+
+    /*****Header*****/
+    .en-tete {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-right: 2%;
+        gap: 0;
+        margin-top: 3%;
+    }
+
+    .navigation a {
+        border-top: none;
+        padding-bottom: 15px;
+        border-bottom: #DEEBFF 3px solid;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation a:hover {
+        border-top: none;
+        border-bottom: #0065FC 3px solid;
+        color: #0065FC;
+    }
+
+    /*******Barre de recherche********/
+    .search {
+        margin-top: 20%;
+        padding: 3%;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 83%;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .search-button-small {
+        display: block;
+        width: 17%;
+        background-color: #0065FC;
+        border: 1px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        /* filter: drop-shadow(0px 10px 7px 1px rgba(0,0,0,0.35)); */
+        box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.35);
+        margin-left: -4%;
+    }
+    .search-form{
+        width: 100%;
+    }
+
+    .color-small-icon {
+        font-size: 17px;
+        color: white;
+    }
+
+    .filter-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filter-button {
+        display: flex;
+        flex-direction: row;
+        width: 47%;
+        font-size: 14px;
+    }
+
+    .information {
+        margin-top: 20%;
+    }
+
+    /*********Cartes hebergements*******/
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+    .populaires {
+        margin-top: 0;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .populaires-cards img {
+        width: 30%;
+    }
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+        padding: 0;
+        padding-left: 15px;
+        padding-top: 35px
+    }
+
+    .hebergements-title  .section-title{
+        margin-bottom: 15px;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements img {
+        width: 100%;
+    }
+
+    .hebergements-more h4 {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+    /******** Activités*********/
+    .activite .section-title {
+        margin-left: 7%;
+    }
+
+    .activite-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+
+    .activite-card img {
+        width: 100%;
+        height: 141px;
+    }
+    .activite-card a {
+        width: 90%;
+    }
+    .activite-card .card-content {
+        height: 50px;
+    }
+
+    /********Footer*********/
+    .bas-page {
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+    }
+
+    .centre-bas-page {
+        width: 100%;
+    }
 }
