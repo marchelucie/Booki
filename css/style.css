@@ -139,7 +139,7 @@ header {
     display: flex;
     margin-left: 10px;
     border: 2px var(--main-bg-color) solid;
-    padding : 12px;
+    padding : 15px;
     border-radius: 40px;
 }
 
@@ -540,7 +540,7 @@ header {
         align-items: center; /* Centre les éléments horizontalement */
         justify-content: center; /* Centre les éléments verticalement */
         margin-left: -25px;
-        margin-right: -25px;
+        margin-right: -20px;
     }
 
     .logo{
@@ -616,7 +616,8 @@ header {
     }
 
     .hebergements-filters{
-        margin-right: -25px;
+        margin-right: -20px;
+        box-sizing: border-box;
     }
 
     .filter-title{
@@ -626,13 +627,27 @@ header {
 
     .filters{
         flex-wrap: wrap;
-        width: 100%;
+        width: 100%; 
     }
     
     .filter-text{
         margin: 5px;
-        width: 40%;
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 12px 15px;
     }
+    
+    .filter-text .fa-solid{
+        font-size: 19px;
+        margin-left: 0;
+    }
+
+    .filter-text span{
+        font-size: 15px;
+    }
+
 
     .filter-info .fa-solid{
         margin-top: 20px;
@@ -688,10 +703,15 @@ header {
     
 
     /*footer*/
+    .footer-container{
+        margin-left: -25px;
+        margin-right: -20px;
+    }
+
 
     .informations-column{
         flex-direction: column;
         font-size: 15px;
-        width: 100%;
+        width: 40%;
     }
 }
