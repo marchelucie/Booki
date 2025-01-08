@@ -27,34 +27,36 @@
     </header>
 
     <main>
-        <div class="search-bar">
+        <div class="headline">
+            <div class="headline-text">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature<p>
-            <div class="search-city"> <!--city search bar-->
-                <form action="city">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Marseilles, France">
-                    <button>Rechercher</button>
-                </form>
+                <p>En plein centre-ville ou en pleine nature</p>
             </div>
-            <div class="filters">
-                <h3>Filtres</h3>
+                <div class="search-bar"> <!--city search bar-->
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input id="search-city" type="text" placeholder="Marseilles, France">                        
+                    <button id="search-button" type="submit">Rechercher</button>
+                </div>
+            <div class="filter-bar">
+                <h2>Filtres</h2>
                     <a href="#"><button class="eco-filter"><i class="fa-solid fa-money-bill-wave"></i> Economique</button></a>
                     <a href="#"><button class="family-filter"><i class="fa-solid fa-person"></i> Familial</button></a>
                     <a href="#"><button class="romantic-filter"><i class="fa-solid fa-heart"></i> Romantique</button></a>
                     <a href="#"><button class="best-filter"><i class="fa-solid fa-fire"></i> Nos pépites</button></a>
+            </div>
+            <div class="infoBar">
                 <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>
 
         <div class="hebergement-and-populaires">
             <section class="hebergements-marseilles"><!--section of 6 clickable hotel cards-->
-                <h2>Hébergements à Marseilles</h2>
+                <h1>Hébergements à Marseilles</h1>
                 <div class="hebergements"> 
                     <article class="hebergement-card"> <!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -68,7 +70,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -82,7 +84,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -96,7 +98,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -110,7 +112,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -124,7 +126,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -136,16 +138,16 @@
                         </a>
                     </article>
                 </div>
-                <h3><a href="#">Afficher plus</a></h3>
+                <h2><a href="#">Afficher plus</a></h2>
             </section>
             <section class="populaires"><!--section of 3 clickable hotel cards-->
-                <h2>Les plus populaires</h2>
+                <h1>Les plus populaires</h1>
                 <i class="fa-solid fa-chart-line"></i>
                 <div class="populaires-cards">
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -159,7 +161,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -173,7 +175,7 @@
                     <article class="hebergement-card"><!--clickable card-->
                         <a href="#">
                             <img src="#" alt="hotel-du-port">
-                            <h3>Hotel du port</h3>
+                            <h2>Hotel du port</h2>
                             <p>Nuit à partir de 52€</p>
                                 <div class="hebergement-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -189,29 +191,29 @@
         </div>
 
         <div class="activities"><!--section of 4 clickable activity cards-->
-                <h2>Activités à Marseilles</h2>
+                <h1>Activités à Marseilles</h1>
             <article class="activity-card"><!--clickable activity card-->
                 <a href="#">
                     <img src="#" alt="vieux-port">
-                    <h3>Vieux-Port</h3>
+                    <h2>Vieux-Port</h2>
                 </a>
             </article>
             <article class="activity-card"><!--clickable activity card-->
                 <a href="#">
                     <img src="#" alt="fort-de-pomegues">
-                    <h3>Fort de Pomègues</h3>
+                    <h2>Fort de Pomègues</h2>
                 </a>
             </article>
             <article class="activity-card"><!--clickable activity card-->
                 <a href="#">
                     <img src="#" alt="parc-national-des-calanques">
-                    <h3>Parc national des Calanques</h3>
+                    <h2>Parc national des Calanques</h2>
                 </a>
             </article>
             <article class="activity-card"><!--clickable activity card-->
                 <a href="#">
                     <img src="#" alt="notre-dame-de-la-garde">
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <h2>Notre-Dame-de-la-Garde</h2>
                 </a>
             </article>
         </div>    
@@ -219,7 +221,7 @@
 
     <footer>
         <section class="about">
-            <h3>A propos</h3>
+            <h1>A propos</h1>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales</a></li>
@@ -227,14 +229,14 @@
             </ul>
         </section>
         <section class="hebergements-info">
-            <h3>Nos hébergements</h3>
+            <h1>Nos hébergements</h1>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Proposez votre hôtel</a></li>
             </ul>
         </section>
         <section class="assistance">
-            <h3>Assistance</h3>
+            <h1>Assistance</h1>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>

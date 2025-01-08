@@ -1,13 +1,43 @@
+/* Global */
 body{
     font-family: Raleway, sans-serif;
     color: black;
     min-width: 1024px;
     max-width: 1440px;
-    background-color: #f2f2f2;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0px 30px;
+    display:grid;
+    gap:30px;
 }
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited{
+    color: #000000;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin:0;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin:0;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    margin:0;
+}
+
+/* Header */
 
 header{
     display: flex;
@@ -52,12 +82,67 @@ nav a{
     color: #0065fc;
  }
 
-a{
-    text-decoration: none;
-    color: #000000;
-}
+ /*** Main ***/
 
-a:visited{
-    color: #000000;
-}
+ main{
+    display: grid;
+    gap: 35px;
+    padding: 0 50px;
+ }
 
+ .headline{
+    display: grid;
+    gap: 35px;
+ }
+
+.headline-text{
+    display: grid;
+    gap: 8px;
+ }
+
+ .search-bar{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:49px;
+    width:377px;
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px;
+    color:#ffffff;
+ }
+
+    .search-bar i{
+        border: 1px #f2f2f2;
+        border-radius: 15px 0px 0px 15px;
+        background-color: #f2f2f2;
+        width:50px;
+        height:49px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-size: 18px;
+        color:#000000
+    }
+
+    .search-bar input[type="text"]{
+        font-size:18px;
+        font-weight: 700;
+        height:21px;
+        width: auto;
+        text-align: center;
+        border: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #search-button{
+        background-color: #0065fc;
+        color: #ffffff;
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        padding: 15px 16px 15px 16px;
+        }
