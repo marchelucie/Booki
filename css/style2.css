@@ -102,16 +102,17 @@ nav a{
 
  .search-bar{
     display:flex;
-    flex-direction: row;
+    flex-wrap:nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     height:49px;
     width:377px;
     border: 1px #f2f2f2 solid;
     border-radius: 15px;
     color:#ffffff;
+    box-sizing: border-box;
  }
-
+ 
     .search-bar i{
         border: 1px #f2f2f2;
         border-radius: 15px 0px 0px 15px;
@@ -120,29 +121,45 @@ nav a{
         height:49px;
         display: flex;
         align-items:center;
-        justify-content: center;
+        justify-content:center;
         font-size: 18px;
-        color:#000000
+        color:#000000;
     }
 
-    .search-bar input[type="text"]{
+    #search-city{
         font-size:18px;
         font-weight: 700;
         height:21px;
-        width: auto;
+        width: 147px;
         text-align: center;
         border: none;
         align-items: center;
         justify-content: center;
+        color:#000000;
     }
+
+        ::placeholder {
+            color: #000000;
+            opacity: 1; /* because Firefox applies a lower opacity filter automatically */
+        }
 
     #search-button{
         background-color: #0065fc;
-        color: #ffffff;
+        
         border: none;
         border-radius: 0px 15px 15px 0px;
         font-size: 18px;
         font-weight: 700;
         text-align: center;
+        width:132px;
+        height:49px;
         padding: 15px 16px 15px 16px;
         }
+    
+    #search-button a{
+        color: #ffffff;
+    }
+
+    #search-button:hover{
+        cursor: pointer;
+    }
