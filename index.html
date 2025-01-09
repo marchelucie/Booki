@@ -34,8 +34,10 @@
             </div>
                 <div class="search-bar"> <!--city search bar-->
                     <i class="fa-solid fa-location-dot"></i>
-                    <input id="search-city" type="text" placeholder="Marseille, France">
-                    <button id="search-button" type="submit"><a href="#">Rechercher</a></button>                   
+                    <form method="get" action="">
+                        <input type="search" name="recherche" placeholder="Marseille, France">
+                        <input type="submit" value="Rechercher">
+                    </form>                   
                 </div>
             <div class="filter-bar">
                 <h2>Filtres</h2>
@@ -45,7 +47,7 @@
                     <a href="#"><button class="best-filter"><i class="fa-solid fa-fire"></i> Nos pépites</button></a>
             </div>
             <div class="infoBar">
-                <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>
 
