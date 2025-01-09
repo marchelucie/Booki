@@ -6,8 +6,11 @@ body{
     max-width: 1440px;
     box-sizing: border-box;
     margin: 0 auto;
-    display:grid;
-    gap:30px;
+}
+
+main{
+    padding-left: 50px;
+    padding-right:50px;
 }
 
 a{
@@ -220,3 +223,79 @@ nav a{
         box-sizing: content-box;
         justify-content: center;
     }
+
+.hebergement-and-populaires{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.populaires{
+    width: 429px;
+    height: 100%;
+    padding:30px;
+    display: grid;
+    gap:30px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.populaires-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.populaires-title i{
+    color: #0065fc;
+    font-size: 18px;
+}
+
+.populaires-cards{
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 146px 146px 146px;
+}
+
+.hebergement-card-popular{
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    width: 369px;
+    height: 146px;
+}
+
+img{
+    width: 123px;
+    height: 146px;
+    border: #ffffff 5px 0 5px 5px solid;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    object-position:center;
+    
+}
+
+.card-info{
+    
+}
+
+.card-info h2{
+
+}
+
+.card-info p{
+
+}
+
+.fa-solid .fa-stars{
+
+}
+.hebergements-Marseille{
+
+}
+    
+.hebergements{
+
+}
+
+
