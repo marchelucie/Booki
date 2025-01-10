@@ -1,16 +1,12 @@
-/* Global */
+/**** Global ****/
+*{    font-family: Raleway, sans-serif;
+    color: black;}
+
 body{
-    font-family: Raleway, sans-serif;
-    color: black;
     min-width: 1024px;
     max-width: 1440px;
     box-sizing: border-box;
     margin: 0 auto;
-}
-
-main{
-    padding-left: 50px;
-    padding-right:50px;
 }
 
 a{
@@ -40,10 +36,11 @@ p{
     margin:0;
 }
 
-/* Header */
+/*** Header ***/
 
 header{
     display: flex;
+    width:1440px;
     height:79px;
     justify-content: space-between;
 }
@@ -61,18 +58,11 @@ header{
     height: 19px;
 }
 
-.menu{
-    padding-left:50px;
-    padding-right:50px;
-    height: 35px;
-    width:344px;
-}
-
 nav{
     height: 35px;
     display: flex;
     gap: 68px;
-    justify-content: center;
+    padding: 0 50px;
 }
 nav a{
     height: 35px;
@@ -88,20 +78,28 @@ nav a{
  /*** Main ***/
 
  main{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 35px;
     padding: 0 50px;
+    margin: 0 auto;
  }
+
+/**Headline**/
 
  .headline{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 35px;
- }
+}
 
 .headline-text{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
  }
+
+/*Search bar*/
 
  .search-bar{
     display:flex;
@@ -168,12 +166,13 @@ nav a{
         cursor: pointer;
     }
 
+/*Filter bar*/    
+
 .filter-bar{
     display: flex;
     gap:15px;
     align-items: center;
     height: 50px;
-    width: 758px;
 }
 
 .filter-bar button{
@@ -220,19 +219,34 @@ nav a{
     .infoBar p{
         display: flex;
         align-items: center;
-        box-sizing: content-box;
-        justify-content: center;
     }
 
-.hebergement-and-populaires{
+/**Hébergements & Populaires**/
+
+.hebergements-and-populaires{
     display: flex;
     gap: 40px;
-    justify-content: space-between;
+
 }
 
+.hebergement-rating{
+    display: flex;
+}
+
+.fa-solid.fa-star{
+    font-size:12px;
+    color: #0065fc;
+}
+
+.fa-solid.fa-star.unrated{
+    font-size:12px;
+    color: #f2f2f2;
+}
+
+/*Populaires section*/
+
 .populaires{
-    width: 429px;
-    height: 614px;
+    height: 100%;
     padding:30px;
     display: grid;
     gap:30px;
@@ -254,7 +268,8 @@ nav a{
 }
 
 .populaires-cards{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     grid-template-rows: 146px 146px 146px;
 }
@@ -279,10 +294,9 @@ nav a{
 }
 
 .card-info{
-    width:246px;
-    height:136px;
     padding:10px 5px 5px 15px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap:24px;
 }
 
@@ -302,18 +316,10 @@ nav a{
     font-size: 14px;
 }
 
-.fa-solid.fa-star{
-    font-size:12px;
-    color: #0065fc;
-}
-
-.fa-solid.fa-star.unrated{
-    font-size:12px;
-    color: #f2f2f2;
-}
+/*Hébergements à Marseilles section*/
 
 .hebergements{
-    height: 614px;
+    height: 100%;
     width: 100%;
     padding:30px;
     display: grid;
@@ -322,9 +328,11 @@ nav a{
     background-color: #f2f2f2;
     box-sizing: border-box;
 }
+
 .hebergements h1{
     height: 26px;
 }
+
 .hebergements-Marseille h2{
     font-size: 16px;
 }
@@ -332,15 +340,14 @@ nav a{
 .hebergements-Marseille p{
     font-size: 14px;
 }
+
 .hebergements-Marseille{
-    display: grid;
+    display: flex;
     gap: 30px;
-    grid-template-columns: 250.33px 250.33px 250.33px;
-    height:207.25px;
 }
 
 .hebergement-card-marseille img{
-    width: 100%;
+    width: 250.33px;
     height: 124px;
     box-sizing: border-box;
     border: 5px solid #ffffff;
@@ -353,17 +360,83 @@ nav a{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 15px 0px #0000001A;
-    width: 250.33px;
-    height: 207.25px
-    display : flex;
+    width: 100%;
+    height: 207.25px;
+    display: flex;
+    flex-direction: column;
     gap:4px;
-    padding-bottom:15px;
-    align-content:flex-start;     
 }
 
-.card-info.marseille{
+.card-info-marseille{
     padding:0 15px;
-    display: grid;
     height:64.25px;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
+}/*class "card-info marseille" contains card text and rating.*/
+
+/**Activités**/
+
+.activities{
+    width: 100%;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    box-sizing: border-box;
 }
+
+.activity-card h2{
+    font-size: 16px;
+    padding: 20px 19px;
+}
+
+.activities-Marseille{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.activity-card{
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    width: 100%;
+    height: 439px;
+    display : flex;
+    flex-direction: column;  
+}
+
+.activity-card img{
+    width: 297.5px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    object-position:center;   
+}
+
+/*** Footer ***/
+
+footer{
+    display: flex;
+    margin: 35px 50px 0 50px;
+    background-color: #f2f2f2;
+
+ }
+
+ footer section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+ }
+
+ footer h1{
+    font-size: 18px;
+ }
+
+ footer a{
+    font-size: 16px;
+ }
