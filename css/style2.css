@@ -3,9 +3,8 @@
     color: black;}
 
 body{
-    min-width: 1024px;
+    width: 100%;
     max-width: 1440px;
-    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -40,7 +39,7 @@ p{
 
 header{
     display: flex;
-    width:1440px;
+    width:100%;
     height:79px;
     justify-content: space-between;
 }
@@ -129,7 +128,6 @@ nav a{
         align-items: center;
         justify-content: flex-end;
         height:49px;
-        width: 100%;
     }
     
 
@@ -226,7 +224,7 @@ nav a{
 .hebergements-and-populaires{
     display: flex;
     gap: 40px;
-
+    width: 100%;
 }
 
 .hebergement-rating{
@@ -280,7 +278,9 @@ nav a{
     box-shadow: 0px 3px 15px 0px #0000001A;
     width: 369px;
     height: 146px;
-    display : flex;    
+    display : flex;   
+    overflow: hidden;
+    position: relative;  
 }
 
 .hebergement-card-popular img{
@@ -319,14 +319,14 @@ nav a{
 /*Hébergements à Marseilles section*/
 
 .hebergements{
-    height: 100%;
+    height: auto;
     width: 100%;
     padding:30px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap:30px;
     border-radius: 15px;
     background-color: #f2f2f2;
-    box-sizing: border-box;
 }
 
 .hebergements h1{
@@ -341,39 +341,58 @@ nav a{
     font-size: 14px;
 }
 
-.hebergements-Marseille{
+
+.hebergements-Marseille {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px; /* Espacement entre les cards */
+    justify-content: space-between; /* Distribution équilibrée des cards */
+    height: 100%;
 }
 
-.hebergement-card-marseille img{
-    width: 250.33px;
+.card-container {
+    flex: 1 1 calc(33.333% - 20px); /* Chaque card prend environ 1/3 de la ligne, moins l'espacement */
+    max-width: calc(33.333% - 20px); /* Empêche les cards de dépasser la largeur */
+    box-sizing: border-box; /* Inclut les bordures et le padding dans le calcul de la largeur */
+}
+
+.hebergement-card-marseille {
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hebergement-card-marseille img {
+    width: 100%;
     height: 124px;
     box-sizing: border-box;
     border: 5px solid #ffffff;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    object-position:center;   
+    border-radius: 20px 20px 0 0;
+    object-position: center;   
 }
 
-.hebergement-card-marseille{
-    border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-    width: 100%;
-    height: 207.25px;
-    display: flex;
-    flex-direction: column;
-    gap:4px;
-}
-
-.card-info-marseille{
-    padding:0 15px;
-    height:64.25px;
+.card-info-marseille {
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-}/*class "card-info marseille" contains card text and rating.*/
+}
+
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 
 /**Activités**/
 
@@ -391,10 +410,19 @@ nav a{
     padding: 20px 19px;
 }
 
-.activities-Marseille{
+.activities-Marseille {
     display: flex;
-    gap: 30px;
+    flex-wrap: nowrap; /* Empêche le passage à la ligne */
+    justify-content: space-between; /* Répartit les cards sur toute la largeur */
+    gap: 30px; /* Espacement horizontal entre les cards */
     width: 100%;
+    box-sizing: border-box;
+}
+
+.card-container-activities {
+    flex: 1; /* Les cards s'étirent également */
+    max-width: calc(25% - 30px); /* Chaque card occupe 1/4 moins l'espacement */
+    box-sizing: border-box; /* Inclut le padding et les marges dans la largeur */
 }
 
 .activity-card{
@@ -404,11 +432,13 @@ nav a{
     width: 100%;
     height: 439px;
     display : flex;
-    flex-direction: column;  
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;  
 }
 
 .activity-card img{
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
