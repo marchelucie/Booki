@@ -265,7 +265,6 @@ nav a{
     border-radius: 15px;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    width:429px;
 }
 
 .section-header{
@@ -296,7 +295,6 @@ nav a{
     position: relative; 
     width: 100%; 
     box-sizing: border-box;
-    flex : 1 1 calc(33.333% - 20px);
 }
 
 .hebergement-card-popular img{
@@ -342,7 +340,6 @@ nav a{
     gap:30px;
     border-radius: 15px;
     background-color: #f2f2f2;
-    width: 871px;
 }
 
 .hebergements h1{
@@ -444,8 +441,7 @@ nav a{
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    width:25%;
 }
 
 .activity-card img{
@@ -666,10 +662,6 @@ footer a{
     .activities-Marseille{
         gap:15px;
         flex-direction: column;
-    }
-
-    .card-container-activities{
-        max-width: none;
     }
 
     .activity-card{
