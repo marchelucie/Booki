@@ -374,8 +374,6 @@ nav a{
     height:100%;
 }
 
-
-
 .hebergement-card-marseille img {
     width: 100%;
     height: 124px;
@@ -420,24 +418,26 @@ nav a{
 }
 
 .activities-Marseille {
-    display: flex;
-    gap: 30px;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
 }
 
 .activity-card{
+    box-sizing: border-box;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 15px 0px #0000001A;
     display : flex;
     flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    width:25%;
+    width:100%;
+    height: 100%;
 }
 
 .activity-card img{
     height: 380px;
+    width:100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     object-position:center;   
@@ -487,8 +487,6 @@ footer a{
     }
 
     .hebergements-Marseille-cards{
-        display: flex;
-        flex-wrap: wrap;
         gap: 30px;
         justify-content: space-between;
     }
@@ -509,7 +507,8 @@ footer a{
     }
 
     .populaires-cards{
-        flex-direction:row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 
@@ -648,6 +647,7 @@ footer a{
     }
 
     .hebergements-Marseille-cards{
+        display: flex;
         gap:15px;
         flex-direction: column;
         width: auto;
@@ -658,6 +658,7 @@ footer a{
     }
 
     .activities-Marseille{
+        display: flex;
         gap:15px;
         flex-direction: column;
     }
