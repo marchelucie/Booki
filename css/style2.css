@@ -208,14 +208,14 @@ nav a{
     cursor: pointer;
 }
 
-.infoBar{
+.info-bar{
     height:24px;
     width:100%;
     display: flex;
     gap:10px;
 }
 
-.infoBar i{
+.info-bar i{
     color: #0065fc;
     border : 1px #d9d9d9 solid;
     border-radius: 100%;
@@ -228,20 +228,20 @@ nav a{
     box-sizing: border-box;
 }
 
-.infoBar p{
+.info-bar p{
     display: flex;
     align-items: center;
 }
 
-/**Hébergements & Populaires**/
+/**Hébergements & popular**/
 
-.hebergements-and-populaires{
+.lodgings-and-popular{
     display: flex;
     gap: 40px;
     width: 100%;
 }
 
-.hebergement-rating{
+.lodging-rating{
     display: flex;
     margin-top:auto;
 }
@@ -256,9 +256,9 @@ nav a{
     color: #f2f2f2;
 }
 
-/*Populaires section*/
+/*popular section*/
 
-.populaires{
+.popular{
     padding:30px;
     display: flex;
     flex-direction: column;
@@ -266,6 +266,7 @@ nav a{
     border-radius: 15px;
     background-color: #f2f2f2;
     box-sizing: border-box;
+    width:429px;
 }
 
 .section-header{
@@ -279,7 +280,7 @@ nav a{
     font-size: 18px;
 }
 
-.populaires-cards{
+.popular-cards{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -287,7 +288,7 @@ nav a{
     box-sizing: border-box;
 }
 
-.hebergement-card-popular{
+.popular-lodging-card{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 15px 0px #0000001A;
@@ -298,7 +299,7 @@ nav a{
     box-sizing: border-box;
 }
 
-.hebergement-card-popular img{
+.popular-lodging-card img{
     width: 123px;
     height: 146px;
     box-sizing: border-box;
@@ -309,7 +310,7 @@ nav a{
     flex:none;    
 }
 
-.hebergement-card-popular .card-info{
+.popular-lodging-card .card-info{
     padding:10px 5px 5px 15px;
     display: flex;
     flex-direction: column;
@@ -317,51 +318,52 @@ nav a{
     box-sizing: border-box;
 }
 
-.hebergement-card-popular .card-text{
+.popular-lodging-card .card-text{
     display: flex;
     flex-direction: column;
     gap: 5px;
     height: 85px;
 }
 
-.populaires h2{
+.popular h2{
     font-size: 16px;
 }
 
-.populaires p{
+.popular p{
     font-size: 14px;
 }
 
 /*Hébergements à Marseilles section*/
 
-.hebergements{
+.lodgings{
     padding:30px;
     display: flex;
     flex-direction: column;
     gap:30px;
     border-radius: 15px;
     background-color: #f2f2f2;
+    flex-grow: 1;
 }
 
-.hebergements h1{
+.lodgings h1{
     height: 26px;
 }
 
-.hebergements-Marseille-cards h2{
+.lodgings-marseille h2{
     font-size: 16px;
 }
 
-.hebergements-Marseille-cards p{
+.lodgings-marseille p{
     font-size: 14px;
 }
 
-.hebergements-Marseille-cards {
+.lodgings-marseille {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
 
-.hebergement-card-marseille {
+.lodging-card-marseille {
     box-sizing: border-box;
     border-radius: 20px;
     background-color: #ffffff;
@@ -374,7 +376,7 @@ nav a{
     height:100%;
 }
 
-.hebergement-card-marseille img {
+.lodging-card-marseille img {
     width: 100%;
     height: 124px;
     box-sizing: border-box;
@@ -384,7 +386,7 @@ nav a{
     object-position: center;   
 }
 
-.hebergement-card-marseille .card-info{
+.lodging-card-marseille .card-info{
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -392,7 +394,7 @@ nav a{
     flex-grow: 1;
 }
 
-.hebergement-card-marseille .card-text{
+.lodging-card-marseille .card-text{
     display: flex;
     flex-direction: column;
     gap:8px
@@ -486,33 +488,33 @@ footer a{
         font-size: 16px;
     }
 
-    .hebergements-Marseille-cards{
+    .lodgings-marseille{
         gap: 30px;
         justify-content: space-between;
     }
 
-    .hebergements-and-populaires{
+    .lodgings-and-popular{
         display:flex;
         flex-direction: column;
         gap:50px;
     }
     
-    .hebergements{
+    .lodgings{
         width:auto;
     }
 
-    .populaires{
+    .popular{
         gap:20px;
         width: auto;
     }
 
-    .populaires-cards{
+    .popular-cards{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 
-    .hebergement-card-popular img{
+    .popular-lodging-card img{
         width:91.56px;
     }
 
@@ -617,28 +619,28 @@ footer a{
         font-size: 14px;
     }
 
-    .hebergements-and-populaires{
+    .lodgings-and-popular{
         flex-direction: column-reverse;
         gap:15px;
     }
 
-    .populaires{
+    .popular{
         border-radius: 0;
         padding: 30px 20px;
         gap:15px;
         width:auto;
     }
 
-    .populaires-cards{
+    .popular-cards{
         gap:15px;
     }
 
-    .hebergement-card-popular img{
+    .popular-lodging-card img{
         width: 111.67px;
         height:136px;
     }
 
-    .hebergements{
+    .lodgings{
         background-color:#ffffff;
         border-radius: 0;
         padding: 20px;
@@ -646,14 +648,14 @@ footer a{
         width:auto;
     }
 
-    .hebergements-Marseille-cards{
+    .lodgings-marseille{
         display: flex;
         gap:15px;
         flex-direction: column;
         width: auto;
     }
 
-    .hebergement-card-marseille{
+    .lodging-card-marseille{
         width: auto;
     }
 
